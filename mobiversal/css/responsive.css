@@ -114,16 +114,19 @@ nav ul li a:hover::before{opacity: 1;}
     nav ul.active{top: 60px;opacity: 1;visibility: visible;z-index: 10;}
 
     .btn a{font-size: 16px;}
-
+    
+    .ttl h3{top: 0}
     /*==========================================================================*/
     /*                               MAIN                                       */
     /*==========================================================================*/
     .box01{margin-bottom: 50px}
     .box01 .box01_ct{padding-top: 50px;}
+    .box01 .box01_txt{padding: 0}
     .box01 .box01_txt h2{text-align: center;}
     .box01 .box01_txt p{text-align: center;font-size: 16px;font-weight: 300;line-height: 1.75em}
     
     .box02{margin-bottom: 50px}
+    .box02 .box02_list{margin-top: 30px}
     .box02 .box02_list ul li{margin-right: 0;min-height: inherit;}
     .box02 .box02_list ul li::before{top: 15%;height: 70%}
     .box02 .box02_list ul li .box02_txt{padding-left: 15px}
@@ -135,7 +138,6 @@ nav ul li a:hover::before{opacity: 1;}
     .box02 .box02_list ul li.ocean .box02_txt{padding: 0}
 
     .box03 .box03_list ul li{height: 120px}
-    .box03 .ttl h3{top: 130px}
 
     .box04{margin:50px 0 200px;}
     .box04 .ttl h3{top: -30px}
@@ -221,7 +223,7 @@ nav ul li a:hover::before{opacity: 1;}
     .contact_info p{font-size: 16px;}
 
     /* WORK PAGE */
-    .work_temp .inner{padding: 50px 15px;flex-direction: column;}
+    .work_temp .inner{padding: 50px 15px 20px;flex-direction: column;}
     .work_temp .work_temp_txt{width: 100%;order: 1;text-align: center;}
     .work_temp .work_temp_txt .big{font-size: 30px;}
     .work_temp .work_temp_txt p{font-size: 16px;}
