@@ -100,13 +100,15 @@ td{line-height: 1.75em;font-size: 14px;}
 .fs16{font-size: 16px;}
 
 .btn{text-align: center;display: block;margin:0 auto;}
-.btn a{position: relative;text-align: center;color: #fff;width: 290px;height: 40px;background: #1b3a8e;font-size: 14px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 5px;text-transform: uppercase;}
+.btn a{position: relative;text-align: center;color: #fff;width: 290px;height: 40px;background: #1b3a8e;font-size: 14px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 10px;text-transform: uppercase;}
 .btn:last-child a{margin-bottom: 0}
 .btn a span{font-weight: bold}
 .btn a img{}
 .btn_red a{background: #e30922;border-color: #e30922}
 .btn_white a{background: #fff;border-color: #323232;color: #323232}
 .btn_org a{background: #ec971f;border-color: #ec971f;color: #fff}
+.btn_yel a{background: #ffd201;border-color: #ffd201;color: #3d3d3d}
+
 .btn_buy{}
 .btn_buy a{display: flex;flex-direction: column;align-items: center;height: 60px}
 .btn_buy a span{font-size: 12px;font-weight: normal;text-transform: none;line-height: 1em;}
@@ -224,16 +226,20 @@ td{line-height: 1.75em;font-size: 14px;}
 /*                               CHILD PAGE                                 */
 /*==========================================================================*/
 
-/* =========== LOGIN PAGE =========== */
+/* LOGIN PAGE */
 #login{}
 .login_ct{}
-
+.login_ct #logo{margin-bottom: 50px}
 .login_ct p{margin-bottom: 10px}
 .login_ct .red{margin-top: 15px;}
 .login_ct .tel{display: flex;padding-bottom: 10px;border-bottom: 1px solid #ccc;margin-top: 15px}
 .login_ct .confirm{}
 .login_ct .tel select{width: 60px;border:none;border-radius: 0;background: #f1f3f5}
 .login_ct .tel input{width: calc(100% - 120px);margin-left: 10px;padding-left: 10px;border:none;border-radius: 0;background: #f1f3f5;border-left: 1px solid #ccc}
+
+/* REGISTER PAGE */
+
+
 
 /* BOX TERM */
 #term #wrapper{padding-bottom: 15px}
@@ -268,16 +274,13 @@ td{line-height: 1.75em;font-size: 14px;}
 .confirm_btn p{width: 45%;}
 .confirm_btn p a{max-width: 100%;margin-bottom: 0}
 
-/* CONTROL BUTTON */
-.control_ct{margin-top: 30px}
-
 /* BOX MODAL POPUP */
 .btn_modal{cursor: pointer}
 .box_modal{position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 9;opacity: 0;transform: scale(0);transition: all ease 0.3s}
 .box_modal.active{transform: scale(1);opacity: 1;}
 .box_modal_bg{background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 0;}
 .box_modal .btn_close{position: absolute;top: 15px;right: 15px;line-height: 0}
-.box_modal_ct{background: #fff;width: 600px;height: 90%;top: 5%;left: calc(50% - 300px);position: absolute;z-index: 1;padding-bottom: 15px;overflow: auto}
+.box_modal_ct{background: #fff;width:600px;height: 90%;top: 5%;left: calc(50% - 300px);position: absolute;z-index: 1;padding-bottom: 15px;overflow: auto}
 .box_modal_head{width: 100%;height: 100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center;text-align: center;color: #fff;position: relative;text-transform: uppercase;}
 .box_modal_head h3{font-size: 24px}
 .box_modal_body{padding: 20px;margin-bottom: 10px}
@@ -287,18 +290,24 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages{background: #fff}
 .game_pages #wrapper{min-width: inherit;margin: 0 auto;width: 768px;position: relative;padding-bottom: 30px;min-height: 100vh;box-sizing: border-box;border:1px solid #999;}
 .game_pages .container{width: 100%;padding: 0 15px;}
-.game_pages #header{height:100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;display: flex;justify-content: space-between;padding: 0 15px;}
-.game_pages #header p.bold{text-align: center;color: #fff;text-transform: uppercase;font-size: 18px;}
 
-#max4d #header{background: url('../images/head_bg_purple.png') left center no-repeat;background-size: cover;}
+.game_pages #header{height:70px;background: #1e3d94;align-items: center;display: flex;justify-content: center;position: relative;width: 100%;padding-top: 20px}
+.game_pages #header .container{position: relative;}
+.game_pages #header h1{text-align: center;color: #fff;text-transform: uppercase;font-size: 18px;width: 100%;line-height: 1em}
+.game_pages #header p{margin-bottom: 0;position: absolute;top: -5px;left: 15px;line-height: 1em}
+.game_pages #header .btn_nav{}
+.game_pages #header .btn_noti{left: inherit;right: 15px}
+.game_pages #header .btn_noti span{width: 20px;height: 20px;border-radius: 50%;background: #f93e3d;color: #fff;display: flex;align-items: center;justify-content: center;font-size: 12px;position: absolute;top: -10px;right: -8px;}
 
-#max3d #header,
-#mega645 #header{background: url('../images/head_bg_645.png') left center no-repeat;background-size: cover;}
+.game_pages #slider{box-shadow: 0 0 8px #ccc, 0 0 9px #ccc}
 
-.game_pages #logo{width: 80px;}
-.game_pages .logo_game{width: 100px;}
-.game_pages #main{margin-top: 30px}
+#max4d #header{}
+#max3d #header{}
+#mega645 #header{}
+
+.game_pages #main{margin-top: 15px}
 .game_pages p{}
+.game_pages p.mb10{margin-bottom: 10px}
 .game_pages input[type="text"],
 .game_pages input[type="password"],
 .game_pages input[type="tel"],
@@ -306,55 +315,51 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages input[type="number"]{width: 100%;}
 .game_pages input::placeholder{color: #ccc}
 
-.game_pages.bg2{background: #f1f3f5}
-.game_pages.bg2 #header{justify-content: center;height: 60px}
-.game_pages.bg2 #logo{width: 100%;text-align: center;position: relative;color: #fff;font-size: 18px;justify-content: center;text-transform: uppercase;}
-.game_pages.bg2 #logo a{width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;position: absolute;top: calc(50% - 15px);left: -5px;background: #fff;transform: rotate(180deg);border-radius: 50%;}
-.game_pages.bg2 #logo a img{width: 9px}
+.game_pages.bg2{background: #1e3d94}
+.game_pages.bg2 p{color: #fff;}
+.game_pages.bg2u{background: #fff;}
+.game_pages .btn a{height: 50px;font-size: 16px;font-weight: bold;letter-spacing: 0.05em}
+.game_pages a.yel{color: #ffd201}
 
 /* =========== GAME MAIN PAGE =========== */
-#games{background: #f1f3f5}
-#games #wrapper{background: #4da2f9}
-#games #header{position: absolute;top: 15px;left: 0;z-index: 3;background: none;height: auto;}
 #games .read{text-align: center;font-size: 14px;margin-top: 15px}
 #games .read a{color: #fff}
 
-.games_ct{margin-top: 15px;}
-.games_ct .container{width: 100%;}
-.games_ct .games_item{background: #fff;border-radius: 5px;margin-bottom: 15px;display: flex;align-content: center;position: relative;height: 80px;padding-left: 10px}
+.games_ct{}
+.games_ct .games_item{background: #fff;border-radius: 0 10px 10px 0;display: flex;align-content: center;position: relative;height: 80px;width: calc(100% - 10px);margin:0 0 15px 10px;box-shadow: 0 1px 8px #acacac}
+.games_ct .games_item::before{background: url('../images/ic_game_keno_bg.png') center no-repeat;width: 10px;height: 80px;position: absolute;top: 0;left: -10px;content: ''}
 .games_ct .games_item p{margin-bottom: 0;line-height: 1.3em}
-.games_ct .games_item .img{width: 80px;height: 80px;display: flex;align-items: center;text-align: center;justify-content: center;margin-right: 20px}
-.games_ct .games_item .txt{width: calc(100% - 100px);display: flex;flex-direction: column;justify-content: center}
-.games_ct .games_item .txt p{}
+.games_ct .games_item .name{width: 60px;height: 100%;display: flex;align-items: center;text-align: center;justify-content: center;margin-right: 20px;font-size: 20px;color: #fff;}
+.games_ct .games_item .txt{width: calc(100% - 140px);display: flex;flex-direction: column;justify-content: center}
+.games_ct .games_item .txt p{color: #fff;}
 .games_ct .games_item .big{text-transform: capitalize;}
 .games_ct .games_item .money{font-weight: bold;font-size: 18px}
 .games_ct .games_item .date,
-.games_ct .games_item .time{font-size: 14px}
+.games_ct .games_item .time{font-size: 12px}
 .games_ct .games_item .date span,
 .games_ct .games_item .time span{font-weight: bold;margin-left: 5px}
 .games_ct .games_item .bold{font-weight: bold}
-.games_ct .games_item .arr{position: absolute;top: 5px;right: 5px;width: 50px;height: calc(100% - 10px);border-radius: 0 5px 5px 0;background: #ffc000;display: flex;align-items: center;justify-content: center;text-align: center;}
+.games_ct .games_item .arr{position: absolute;top: 5px;right: 0;width: 40px;height: calc(100% - 10px);display: flex;align-items: center;justify-content: center;text-align: center;border-left: 1px dashed #fff;}
 .games_ct .games_item .arr a{line-height: 0}
+.games_ct .games_item .arr a img{max-width: 14px;}
 
-.games_ct .games_item.keno .money{color: #cf5f3a}
-.games_ct .games_item.keno .arr{background: #cf5f3a}
-.games_ct .games_item.om3d .money{color: #ea6a28}
-.games_ct .games_item.om3d .arr{background: #ea6a28}
-.games_ct .games_item.power .money{color: #e30922}
-.games_ct .games_item.power .arr{background: #e30922}
-.games_ct .games_item.mega645 .money{color: #2164b2}
-.games_ct .games_item.mega645 .arr{background: #2164b2}
-.games_ct .games_item.max3dp .money{color: #39ae41}
-.games_ct .games_item.max3dp .arr{background: #39ae41}
-.games_ct .games_item.max4d .money{color: #81005d}
-.games_ct .games_item.max4d .arr{background: #81005d}
-.games_ct .games_item.max3d .money{color: #b21a8f}
-.games_ct .games_item.max3d .arr{background: #b21a8f}
+.games_ct .games_item.keno{background: #df5386}
+.games_ct .games_item.max3d{background: #ffbb5a}
+.games_ct .games_item.max3d::before{background: url('../images/ic_game_3d_bg.png')}
+.games_ct .games_item.max4d{background: #974398}
+.games_ct .games_item.max4d::before{background: url('../images/ic_game_4d_bg.png')}
+.games_ct .games_item.mega645{background: #059bd1}
+.games_ct .games_item.mega645::before{background: url('../images/ic_game_mega_bg.png')}
+.games_ct .games_item.power{background: #04a03c}
+.games_ct .games_item.power::before{background: url('../images/ic_game_power_bg.png')}
 
-.game_3dplus .s .num span{width: 70px;border-radius: 30px;margin: 0 5px 0 0}
+.games_ct .games_item.history{width: 100%;background: #ededed;margin-left: 0}
+.games_ct .games_item.history::before{display: none;}
+.games_ct .games_item.history .txt{text-align: center;align-items: center;width: 100%;}
+.games_ct .games_item.history .txt p{text-transform: uppercase;color: #fff;}
 
 .games_guide{}
-.games_guide a{border:3px solid #fff;border-radius: 5px;width: 100%;display: flex;align-items: center;justify-content: center;font-size: 18px;text-transform: uppercase;color: #fff;padding: 15px;}
+.games_guide a{border-radius: 10px;width: 100%;display: flex;align-items: center;justify-content: center;font-size: 18px;text-transform: uppercase;color: #1c3f94;padding: 15px;background: #ffd201;font-weight: bold;}
 .games_guide a img{margin-right: 5px;}
 
 /* =========== PAYMENT PAGE =========== */
@@ -631,14 +636,12 @@ td{line-height: 1.75em;font-size: 14px;}
 /* =========== FUNCTION BOTTOM =========== */
 .h_menu #wrapper{padding-bottom: 75px}
 
-.function_bot{display: flex;position: fixed;bottom: 0;left: calc(50% - 384px);width: 768px;height: 60px;align-items: center;justify-content: space-between;background: #fff;z-index: 10;}
-.function_bot .function_3col{display: flex;justify-content: space-between}
-.function_bot .function_3col p{width: calc(100% / 3);}
-.function_bot p{width: 50%;height: 60px;margin-bottom: 0;border-right: 1px dashed #999;}
-.function_bot p a{width: 100%;height: 100%;padding: 0 15px;display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: center;margin-bottom: 0}
-.function_bot p:last-child{border:none;}
-.function_bot p img{}
-.function_bot p span{font-size: 12px;text-transform: capitalize}
+.function_bot{display: flex;position: fixed;bottom: 0;left: calc(50% - 384px);width: 768px;height: 60px;align-items: center;justify-content: space-between;background: #1e3d94;z-index: 10;}
+.function_bot p{width: calc(100% / 3);height: 60px;margin-bottom: 0;}
+.function_bot p a{width: 100%;height: 100%;padding: 0;display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: center;margin-bottom: 0;color: #fff;}
+.function_bot p.active a{color: #FFD201}
+.function_bot p img{margin-bottom: 5px}
+.function_bot p span{font-size: 12px;text-transform: uppercase;}
 
 /* CHORME ONLY  */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 

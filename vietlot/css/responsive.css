@@ -4,6 +4,7 @@
 
 @media screen and (min-width: 769px) {
     .btn a:hover{background: #fff;color:#073265;}
+    .btn_yel a:hover{border-color: #fff}
     #payment_bank .confirm_txt p a:hover,
     .btn_red a:hover{background: #fff;color: #e30922}
     #payment_bank .confirm_txt .btn_white:hover a,
@@ -32,7 +33,7 @@
     .game_content .game_item .icon:hover,
     .game_pages.bg2 #logo a:hover,
     .game_content .game_item .num span:hover{opacity: 0.7;cursor: pointer}
-
+    .game_pages a.yel:hover{text-decoration: underline;}
     .game_pages .read a:hover{text-decoration: underline;color: #333;}
     .confirm_txt p a:hover{text-decoration: none;}
     .cart_content ul li .delete:hover{color: red}
@@ -145,7 +146,8 @@
     /*                               CHILD PAGE                                 */
     /*==========================================================================*/
     /* ALL GAME PAGE */
-    .game_pages #header h1{display: flex}
+    .game_pages #wrapper{border:none;}
+    .game_pages #header h1{display: block}
     .game_pages p{}
 
 
@@ -186,15 +188,13 @@
     .box07_ct{width: 100%}
 
     /* SUB PAGE */
-    .games_ct .games_item{padding-left: 5px;}
+    .games_ct .games_item .txt{width: calc(100% - 120px)}
+    .games_ct .games_item .name{font-size: 18px;}
     .games_ct .games_item .date,
     .games_ct .games_item .time{font-size: 12px}
     .games_ct .games_item .date span,
     .games_ct .games_item .time span{margin-left: 0}
     .games_ct .games_item .money{font-size: 20px}
-    .games_ct .games_item .img{width: 80px;margin-right: 10px}
-    .games_ct .games_item .arr{width: 30px;}
-    .games_ct .games_item .arr a{width: 9px}
     
     /* BOX MODAL POPUP */
     .box_modal_ct{width: 90%;left: 5%}
