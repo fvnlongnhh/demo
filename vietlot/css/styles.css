@@ -459,7 +459,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_select_2 .game_price select{width: 100%}
 
 .game_select_2 .game_date{width: 60%;position: relative}
-.game_select_2 .game_date ul{position: absolute;background: #fff;border: 1px solid #ddd;box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);border-radius: 3px;top: 110%;right: 0;width: 180px;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
+.game_select_2 .game_date ul{position: absolute;background: #fff;border: 1px solid #ddd;box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);border-radius: 3px;top: 110%;right: 0;width: 100%;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
 .game_select_2 .game_date ul.active{top: 110%;visibility: visible;opacity: 1;z-index: 3;}
 .game_select_2 .game_date ul li{font-size: 12px;padding: 5px;border-bottom: 1px solid #ededed;display: flex;align-items: center;color: #ccc;position: relative;}
 .game_select_2 .game_date ul li.check{color: #000}
@@ -471,7 +471,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_select_2 .game_date .select_box span{margin-right: 5px}
 
 .game_select_2 .game_type{width: 35%;position: relative}
-.game_select_2 .game_type ul{position: absolute;background: #fff;border: 1px solid #ddd;box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);border-radius: 3px;top: 110%;left: 0;width: 180px;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
+.game_select_2 .game_type ul{position: absolute;background: #fff;border: 1px solid #ddd;box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);border-radius: 3px;top: 110%;left: 0;width: 140px;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
 .game_select_2 .game_type ul.active{top: 110%;visibility: visible;opacity: 1;z-index: 3;}
 .game_select_2 .game_type ul li{font-size: 12px;padding: 5px;border-bottom: 1px solid #ededed;display: flex;align-items: center;position: relative;color: #ccc}
 .game_select_2 .game_type ul li.check{color: #000}
@@ -541,11 +541,11 @@ td{line-height: 1.75em;font-size: 14px;}
 .box_pick_num_ct .box_head p.name{position: absolute;top: calc(50% - 14px);left: 15px;color: #fff;font-size: 18px;font-weight: bold}
 .box_pick_num_ct .box_head p.right{position: absolute;top: calc(50% - 11px);right: 15px}
 .box_pick_num_ct .box_body{padding: 15px 5px;display: flex;justify-content: space-between;}
-.box_pick_num_ct .box_body_l{width: calc(100% - 150px)}
-.box_pick_num_ct .box_body_l ul{display: flex;flex-wrap: wrap}
+.box_pick_num_ct .box_body_l{margin: 0 auto}
+.box_pick_num_ct .box_body_l ul{display: flex;flex-wrap: wrap;justify-content: center;}
 .box_pick_num_ct .box_body_l ul li{width: 30px;height: 30px;border-radius: 50%;border:1px solid #df5386;display: flex;justify-content: center;align-items: center;margin:0 5px 5px 0;font-size: 14px;cursor: pointer;padding-top: 2px}
 .box_pick_num_ct .box_body_l ul li.on{background: #df5386;color: #fff;}
-.box_pick_num_ct .box_body_l ul li:nth-child(8n + 8){margin-right: 0}
+
 .box_pick_num_ct .box_body_r{width: 100px}
 .box_pick_num_ct .box_body_r ul{display: flex;flex-direction: column;}
 .box_pick_num_ct .box_body_r ul li{width: 100%;height: 30px;border-radius: 3px;border:1px solid #ccc;font-size: 14px;display: flex;align-items: center;justify-content: center;text-align: center;margin-bottom: 10px;transition: all ease 0.3s}

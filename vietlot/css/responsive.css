@@ -226,7 +226,7 @@
     .game_content .game_item_power .num span:nth-child(6n + 6){margin-right: 0px}
 
     .game_3dplus .game_item .num span{width: 70px;height: 35px;}
-
+    .box_pick_num_ct .box_body_l ul li:nth-child(8n + 8){margin-right: 0}
 }
 
 @media screen and (max-width: 380px) {
