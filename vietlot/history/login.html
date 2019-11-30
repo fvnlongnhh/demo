@@ -28,16 +28,32 @@
                         <p class="center"><a href="../games/"><img src="../images/logo.png" width="150" alt="Lucky Best"></a></p>
                         <p>Nhập số điện thoại của bạn</p>
                         <p class="tel"><span>+84</span><input type="tel" max="10" placeholder="Số điện thoại của bạn"></p>
+                        <p>Nhập mật khẩu</p>
+                        <p class="password"><span></span><input type="password" id="ip_pass" placeholder="Nhập mật khẩu của bạn"></p>
                     </div>
 
                     <div class="control_ct">
                         <p class="btn btn_yel"><a href="./login_done.html">Đăng nhập</a></p>
+                        <p class="center"><a href="./password.html">Quên mật khẩu</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="../js/vietlot.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.password span').click(function() {
+                var x = document.getElementById("ip_pass");
+                $('.password span').toggleClass('on');
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+            });
+        });     
+    </script>
 </body>
 
 </html>
