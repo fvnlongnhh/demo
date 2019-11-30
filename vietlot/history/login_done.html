@@ -18,7 +18,7 @@
 <body id="login_done" class="game_pages bg2">
     <div id="wrapper">
         <div id="header">
-            <h1 id="logo">Đăng nhập<a href="../games/"><img src="../images/ic_arr.png" alt="Trở về"></a></h1>
+            <h1 id="logo">Đăng nhập</h1>
         </div>
         <!-- main start -->
         <div id="main" class="clearfix">
@@ -27,18 +27,31 @@
                     <div class="login_ct">
                         <p class="center"><a href="../games/"><img src="../images/logo.png" width="150" alt="Lucky Best"></a></p>
                         <p>Nhập mật khẩu</p>
-                        <p><input type="password"></p>
-                        <p class="center bold"><a class="red" href="./password.html">Quên mật khẩu ?</a></p>
+                        <p class="password"><span></span><input type="password" id="ip_pass" placeholder="Nhập mật khẩu của bạn"></p>
                     </div>
 
                     <div class="control_ct">
-                        <p class="btn btn_white"><a href="./term.html">Đăng nhập</a></p>
+                        <p class="btn btn_yel"><a href="../games/">Đăng nhập</a></p>
+                        <p class="center"><a href="./password.html">Quên mật khẩu</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="../js/vietlot.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.password span').click(function() {
+                var x = document.getElementById("ip_pass");
+                $('.password span').toggleClass('on');
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+            });
+        });     
+    </script>
 </body>
 
 </html>

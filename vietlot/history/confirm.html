@@ -15,10 +15,10 @@
 <script src="../js/jquery.js"></script>
 </head>
 
-<body id="confirm" class="game_pages bg2">
+<body id="login" class="game_pages bg2">
     <div id="wrapper">
         <div id="header">
-            <h1 id="logo">Xác thực số điện thoại<a href="../games/"><img src="../images/ic_arr.png" alt="Trở về"></a></h1>
+            <h1 id="logo">Xác thực số điện thoại</h1>
         </div>
         <!-- main start -->
         <div id="main" class="clearfix">
@@ -26,12 +26,30 @@
                 <div class="main_ct">
                     <div class="login_ct">
                         <p class="center"><a href="../games/"><img src="../images/logo.png" width="150" alt="Lucky Best"></a></p>
-                        <p class="red">Nhập mã xác nhận</p>
-                        <p class="confirm"><input type="tel"></p>
+                        <p>Nhập mã OTP</p>
+                        <p><input type="num" max="10"></p>
                     </div>
 
                     <div class="control_ct">
-                        <p class="btn btn_white"><a href="./password.html">Xác nhận</a></p>
+                        <p class="btn btn_yel"><a href="./term.html">Xác nhận</a></p>
+                        <p class="center"><a class="btn_modal">Gửi lại OTP <span>30 giây</span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONFIRM TEL -->
+        <div class="box_modal active">
+            <div class="box_modal_bg"></div>
+            <div class="box_modal_ct box_otp">
+                <div class="box_modal_body">
+                    <div class="getotp_ct">
+                       <p class="bold">Khôi phục mật khẩu</p>
+                       <p>Chúng tôi sẽ gửi một mã xác nhận đến số điện thoại <span>0123455678</span>. Bạn có muốn tiếp tục ?</p>
+                       <div class="get_otp_btn">
+                           <p><a class="close_modal">Từ chối</a></p>
+                           <p><a class="close_modal">Đồng ý</a></p>
+                       </div>
                     </div>
                 </div>
             </div>

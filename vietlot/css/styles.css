@@ -113,6 +113,10 @@ td{line-height: 1.75em;font-size: 14px;}
 .btn_buy a{display: flex;flex-direction: column;align-items: center;height: 60px}
 .btn_buy a span{font-size: 12px;font-weight: normal;text-transform: none;line-height: 1em;}
 
+.btn_disable{margin-top: 15px;}
+.btn_disable a{background: #d6d6d6;color: #9d9d9d;cursor: no-drop;border-color: #d6d6d6}
+.btn_disable.active a{background: #ffd201;color: #1b3a8e;border-color: #ffd201;cursor: pointer}
+
 /* SLICK ARROW */
 .slick-arrow{width: 40px;height: 40px;position: absolute;top: calc(50% - 20px);left: 15px;z-index: 1;background: none;border: none;transform: translateY(-20px);opacity: 0;transition: all ease-in-out 0.4s}
 .slick-arrow::before{width: 40px;height: 40px;background:url('../images/btn_prev.png') center no-repeat;background-size: cover;z-index: 1;content: '';display: block;}
@@ -230,16 +234,34 @@ td{line-height: 1.75em;font-size: 14px;}
 #login{}
 .login_ct{}
 .login_ct #logo{margin-bottom: 50px}
-.login_ct p{margin-bottom: 10px}
+.login_ct p{margin-bottom: 10px;color: #fff;}
+.login_ct input{border-radius: 0;border:none;border-bottom: 1px solid #fff;margin-bottom: 30px;padding: 0;color: #fff;width: 100%;background: none}
 .login_ct .red{margin-top: 15px;}
 .login_ct .tel{display: flex;padding-bottom: 10px;border-bottom: 1px solid #ccc;margin-top: 15px}
 .login_ct .confirm{}
-.login_ct .tel select{width: 60px;border:none;border-radius: 0;background: #f1f3f5}
-.login_ct .tel input{width: calc(100% - 120px);margin-left: 10px;padding-left: 10px;border:none;border-radius: 0;background: #f1f3f5;border-left: 1px solid #ccc}
+.login_ct .tel{display: flex;margin-bottom: 30px;border-bottom: 1px solid #7f97c0;align-items: center;}
+.login_ct .tel span{margin-right: 10px;padding-right: 10px;border-right: 1px solid #fff}
+.login_ct .tel input{margin-bottom: 0;border-bottom: none;}
+.login_ct .password{position: relative;}
+.login_ct .password span{width: 35px;height: 35px;background: url('../images/ic_pass_hide_w.png') center no-repeat;background-size: 20px 15px;position: absolute;top: 0;right: 0;z-index: 3;}
+.login_ct .password span.on{background: url('../images/ic_pass_show_w.png') center no-repeat;background-size: 20px 15px;}
+
+.control_ct p{color: #fff}
+.control_ct .center a{color: #fff;text-decoration: underline;}
 
 /* REGISTER PAGE */
-
-
+.regis_ct{}
+.regis_ct .step{display: flex;justify-content: center;margin-bottom: 30px}
+.regis_ct .step li{width: 10px;height: 10px;background: #ededed;border-radius: 50%;margin: 0 5px}
+.regis_ct .step li.active{background: #1e3d94}
+.regis_ct p{color: #1e3d94;font-weight: bold;margin-bottom: 0}
+.regis_ct input{border-radius: 0;border:none;border-bottom: 1px solid #7f97c0;margin-bottom: 30px;padding: 0;color: #1e3d94;width: 100%;}
+.regis_ct .tel{display: flex;margin-bottom: 30px;border-bottom: 1px solid #7f97c0;align-items: center;}
+.regis_ct .tel span{margin-right: 10px;padding-right: 10px;border-right: 1px solid #1e3d94}
+.regis_ct .tel input{margin-bottom: 0;border-bottom: none;}
+.regis_ct .password{position: relative;}
+.regis_ct .password span{width: 35px;height: 35px;background: url('../images/ic_pass_hide.png') center no-repeat;background-size: 20px 15px;position: absolute;top: 0;right: 0;z-index: 3;}
+.regis_ct .password span.on{background: url('../images/ic_pass_show.png') center no-repeat;background-size: 20px 15px;}
 
 /* BOX TERM */
 #term #wrapper{padding-bottom: 15px}
@@ -257,8 +279,9 @@ td{line-height: 1.75em;font-size: 14px;}
 .term_btn p{margin-bottom: 0}
 .term_btn .accept{width: calc(100% - 100px);text-transform: uppercase;font-weight: bold;display: flex;align-items: center;}
 .term_btn .accept input{margin-right: 5px}
-.term_btn .btn{width: 100px}
-.term_btn .btn a{max-width: 100%}
+.term_btn .btn{width: 120px}
+.term_btn .btn a{max-width: 100%;background: #1c3f94;color: #ffd201;border-color: #1c3f94;font-size: 14px;height: 40px;}
+
 
 /* BOX CONFIRM */
 .confirm_ct{}
@@ -285,6 +308,17 @@ td{line-height: 1.75em;font-size: 14px;}
 .box_modal_head h3{font-size: 24px}
 .box_modal_body{padding: 20px;margin-bottom: 10px}
 .box_modal_foot{}
+
+/* GET OTP PAGE */
+.box_otp{height: 200px;padding-bottom: 0;top: calc(50% - 100px)}
+.box_otp .box_modal_body{margin-bottom: 0;padding-bottom: 0}
+.getotp_ct{}
+.getotp_ct p{}
+.getotp_ct p span{color: #ea433c;}
+.getotp_ct .get_otp_btn{display: flex;justify-content: flex-end}
+.getotp_ct .get_otp_btn p{margin-left: 30px;}
+.getotp_ct .get_otp_btn p a{text-transform: uppercase;font-size: 18px;color: #1e3d94}
+
 
 /* ALL GAME PAGE */
 .game_pages{background: #fff}
@@ -315,8 +349,8 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages input[type="number"]{width: 100%;}
 .game_pages input::placeholder{color: #ccc}
 
-.game_pages.bg2{background: #1e3d94}
-.game_pages.bg2 p{color: #fff;}
+.game_pages.bg2 #wrapper{background: #1e3d94}
+.game_pages.bg2u #wrapper{background: #fff}
 .game_pages.bg2u{background: #fff;}
 .game_pages .btn a{height: 50px;font-size: 16px;font-weight: bold;letter-spacing: 0.05em}
 .game_pages a.yel{color: #ffd201}
