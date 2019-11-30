@@ -328,7 +328,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages #header{height:70px;background: #1e3d94;align-items: center;display: flex;justify-content: center;position: relative;width: 100%;padding-top: 20px}
 .game_pages #header .container{position: relative;}
 .game_pages #header h1{text-align: center;color: #fff;text-transform: uppercase;font-size: 20px;width: 100%;line-height: 1em}
-.game_pages #header p{margin-bottom: 0;position: absolute;top: -5px;left: 15px;line-height: 1em}
+.game_pages #header p{margin-bottom: 0;position: absolute;top: -2px;left: 15px;line-height: 1em}
 .game_pages #header .btn_nav{}
 .game_pages #header .btn_noti{left: inherit;right: 15px}
 .game_pages #header .btn_noti img{max-width: 18px}
@@ -392,7 +392,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .games_guide{}
 .games_guide a{border-radius: 10px;width: 100%;display: flex;align-items: center;justify-content: center;font-size: 18px;text-transform: uppercase;color: #1c3f94;padding: 15px;background: #ffd201;font-weight: bold;}
 .games_guide a img{margin-right: 5px;}
-
+#guide .games_ct .games_item .money{font-weight: normal;}
 /* =========== PAYMENT PAGE =========== */
 #payment_bank #wrapper{padding-bottom: 0}
 #payment_bank .confirm_txt p a{color: #fff;text-decoration: none;}
@@ -559,8 +559,10 @@ td{line-height: 1.75em;font-size: 14px;}
 .box_pick_num_ct .box_body_auto .box_body_l ul{flex-direction: column;width: calc(100% / 3);justify-content: center;align-items: center}
 
 /* =========== COLOR PAGE =========== */
+#guide_keno #header,
 #keno #header{background: #df5386}
 /* ------------ */
+#guide_3d #header,
 #max3d #header{background: #ffbb5a}
 #max3d .box_pick_num_ct .box_body_l ul li,
 #max3d .game_content .game_item .num span{border-color: #ffbb5a}
@@ -580,6 +582,7 @@ td{line-height: 1.75em;font-size: 14px;}
 #max3d .game_select_2 .game_date .select_box::before,
 #max3d .game_select_2 .game_type .select_type::before{background: url('../images/ic_3d_arr.png') center no-repeat;background-size: cover}
 /* ------------ */
+#guide_4d #header,
 #max4d #header{background: #974398}
 #max4d .box_pick_num_ct .box_body_l ul li,
 #max4d .game_content .game_item .num span{border-color: #974398}
@@ -599,6 +602,7 @@ td{line-height: 1.75em;font-size: 14px;}
 #max4d .game_select_2 .game_date .select_box::before,
 #max4d .game_select_2 .game_type .select_type::before{background: url('../images/ic_4d_arr.png') center no-repeat;background-size: cover}
 /* ------------ */
+#guide_mega #header,
 #mega645 #header{background: #059bd1}
 #mega645 .box_pick_num_ct .box_body_l ul li,
 #mega645 .game_content .game_item .num span{border-color: #059bd1}
@@ -618,6 +622,7 @@ td{line-height: 1.75em;font-size: 14px;}
 #mega645 .game_select_2 .game_date .select_box::before,
 #mega645 .game_select_2 .game_type .select_type::before{background: url('../images/ic_mega_arr.png') center no-repeat;background-size: cover}
 /* ------------ */
+#guide_power #header,
 #power #header{background: #04a03c}
 #power .box_pick_num_ct .box_body_l ul li,
 #power .game_content .game_item .num span{border-color: #04a03c}
@@ -720,12 +725,10 @@ td{line-height: 1.75em;font-size: 14px;}
 /* CONTACT PAGE */
 .contact_content{}
 .contact_content .contact_list{display: flex;flex-direction: column;}
-.contact_content .contact_list h3{text-align: center;margin-bottom: 30px;font-family: "Times New Roman", Times, serif;font-size: 18px;text-transform: uppercase;font-weight: bold;}
-.contact_content .contact_list dl{display: flex;align-items: center;border-bottom: 1px dashed #999;margin-bottom: 15px;padding-bottom: 15px;}
-.contact_content .contact_list dt{width: 50px;height: 50px}
-.contact_content .contact_list dd{width: calc(100% - 70px);margin-left: 20px;}
-.contact_content .contact_list dd p{margin-bottom: 0}
-.contact_content .contact_list dd p a{color: red}
+.contact_content .contact_list h3{margin-bottom: 30px;font-size: 18px;text-transform: uppercase;font-weight: bold;}
+.contact_content .contact_list p{display: flex;align-items: center;margin-bottom: 15px;}
+.contact_content .contact_list p img{margin-right: 10px}
+.contact_content .contact_list p a{color: #1c3f94;text-decoration: underline;}
 
 /* REWARD PAGE */
 #reward .box_modal_ct{background: none;}
