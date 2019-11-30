@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=-100%, user-scalable=yes" />
 <meta name="format-detection" content="telephone=no">
-<title>Thiết lập mật khẩu</title>
+<title>Xác thực số điện thoại</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -19,7 +19,7 @@
     <div id="wrapper">
         <div id="header">
             <div class="container">
-                <h1 id="logo">Thiết lập mật khẩu</h1>
+                <h1 id="logo">Xác thực số điện thoại</h1>
                 <p><a href="./register_info.html"><img src="../images/ic_prev.png" width="10" alt="Back"></a></p>
             </div>
         </div>
@@ -31,40 +31,39 @@
                         <ul class="step">
                             <li></li>
                             <li></li>
-                            <li></li>
                             <li class="active"></li>
+                            <li></li>
                         </ul>
-                        <p>Thiết lập mật khẩu</p>
-                        <p class="password"><input type="password" placeholder="********" id="ip_pass"><span></span></p>
-                        <p>Nhập lại mật khẩu</p>
-                        <p class="password"><input type="password" placeholder="Nhập lại mật khẩu của bạn" id="ip_pass2"><span></span></p>
+                        <p>Nhập mã OTP</p>
+                        <p><input type="num"></p>
                     </div>
 
                     <div class="control_ct">
-                        <p class="btn btn_disable"><a href="./login.html">Hoàn tất</a></p>
-                        <p class="btn btn_disable active"><a href="./login.html">Hoàn tất</a></p>
+                        <p class="btn btn_disable"><a href="./regis_password.html">Hoàn tất</a></p>
+                        <p class="btn btn_disable active"><a href="./regis_password.html">Hoàn tất</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONFIRM TEL -->
+        <div class="box_modal active">
+            <div class="box_modal_bg"></div>
+            <div class="box_modal_ct box_otp">
+                <div class="box_modal_body">
+                    <div class="getotp_ct">
+                       <p class="bold">Khôi phục mật khẩu</p>
+                       <p>Chúng tôi sẽ gửi một mã xác nhận đến số điện thoại <span>0123455678</span>. Bạn có muốn tiếp tục ?</p>
+                       <div class="get_otp_btn">
+                           <p><a class="close_modal">Từ chối</a></p>
+                           <p><a class="close_modal">Đồng ý</a></p>
+                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="../js/vietlot.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.password span').click(function() {
-                var x = document.getElementById("ip_pass");
-                var y = document.getElementById("ip_pass2");
-                $('.password span').toggleClass('on');
-                    if (x.type === "password" && y.type ===  "password") {
-                        x.type = "text";
-                        y.type = "text";
-                    } else {
-                        x.type = "password";
-                        y.type = "password";
-                    }
-            });
-        });     
-    </script>
 </body>
 
 </html>
