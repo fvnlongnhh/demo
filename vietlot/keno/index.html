@@ -18,36 +18,50 @@
 <body id="keno" class="game_pages">
     <div id="wrapper">
         <div id="header">
-            <h1 id="logo"><a href="../games/"><img src="../images/logo.png"></a></h1>
-            <div class="logo_game"><img src="../images/game_keno.png" alt="KENO"></div>
+            <div class="container">
+                <p class="btn_nav"><a href="../games/"><img src="../images/ic_prev.png" width="12" alt="Back"></a></p>
+                <h1>Keno</h1>
+                <p class="btn_noti"><img src="../images/ic_notifi.png" width="24" alt="Thông báo"><span>12</span></p>
+            </div>
         </div>
         <!-- main start -->
         <div id="main" class="clearfix">
             <div class="container">
                 <div class="main_ct">
-                    <div class="game_select">
+                    <div class="game_select game_select_2">
                         <div class="game_type">
-                            <p>Loại hình</p>
-                            <select name="type" id="type">
-                                <option>1</option>
-                                <option>Lớn Nhỏ - Chẵn lẻ</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
+                            <p>Chọn loại hình</p>
+                            <p class="select_type"><span>Bậc 1</span></p>
+                            <ul class="type_list">
+                                <li class="check"><span></span><label>Lớn Nhỏ - Chẫn Lẻ</label></li>
+                                <li><span></span><label>Bậc 1</label></li>
+                                <li><span></span><label>Bậc 2</label></li>
+                                <li><span></span><label>Bậc 3</label></li>
+                                <li><span></span><label>Bậc 4</label></li>
+                                <li><span></span><label>Bậc 5</label></li>
+                                <li><span></span><label>Bậc 6</label></li>
+                                <li><span></span><label>Bậc 7</label></li>
+                                <li><span></span><label>Bậc 8</label></li>
+                                <li><span></span><label>Bậc 9</label></li>
+                                <li><span></span><label>Bậc 10</label></li>
+                            </ul>
                         </div>
 
                         <div class="game_date">
-                            <p>Kỳ quay</p>
-                            <select name="date" id="date">
-                                <option> #0007879 - 20:50 13/11/2019 </option>
-                            </select>
+                            <p>Kỳ mua</p>
+                            <p class="select_box"><span>1</span> lựa chọn</p>
+                            <ul class="date_list">
+                                <li class="check"><span></span><label>Kỳ #00091 - T2 18/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00092 - T3 19/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00093 - T4 20/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00094 - T5 21/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00095 - T6 22/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00096 - T7 23/11/2019</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="game_random">
+                            <p>Số tự chọn<button><img src="../images/ic_random_w.png" width="16">Chọn ngẫu nhiên</button></p>
                         </div>
                     </div>
 
@@ -55,19 +69,19 @@
                         <div class="game_item">
                             <p class="name">A</p>
                             <p class="num">
-                                <span class="open_boxpick">22</span>
-                                <span class="open_boxpick">44</span>
-                                <span class="open_boxpick">66</span>
-                                <span class="open_boxpick">88</span>
-                                <span class="open_boxpick">39</span>
-                                <span class="open_boxpick">49</span>
-                                <span class="open_boxpick">59</span>
-                                <span class="open_boxpick">69</span>
-                                <span class="open_boxpick">96</span>
-                                <span class="open_boxpick">21</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick active">44</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick active">22</span>
                             </p>
                             <p class="icon">
-                                <img src="../images/ic_refresh.png" alt="Chọn ngẫu nhiên">
+                                <img src="../images/ic_keno_refresh.png" alt="Chọn ngẫu nhiên">
                             </p>
                             <div class="price">
                                 <select name="price" id="price">
@@ -84,14 +98,15 @@
                         <div class="game_item">
                             <p class="name">B</p>
                             <p class="num">
-                                <span class="open_boxpick">22</span>
-                                <span class="open_boxpick">44</span>
-                                <span class="open_boxpick">66</span>
-                                <span class="open_boxpick">88</span>
-                                <span class="open_boxpick">39</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick active">44</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
+                                <span class="open_boxpick no_numb">?</span>
                             </p>
                             <p class="icon">
-                                <img src="../images/ic_trash.png" alt="Chọn lại">
+                                <img src="../images/ic_delete.png" alt="Chọn lại">
                             </p>
                             <div class="price">
                                 <select name="price" id="price">
@@ -112,7 +127,7 @@
                                 <span>Nhỏ</span>
                             </p>
                             <p class="icon">
-                                <img src="../images/ic_trash.png" alt="Chọn lại">
+                                <img src="../images/ic_keno_refresh.png" alt="Chọn lại">
                             </p>
                             <div class="price">
                                 <select name="price" id="price">
@@ -128,12 +143,12 @@
 
                         <div class="game_item">
                             <p class="name">C</p>
-                            <p class="num num_big">
+                            <p class="num num_big ">
                                 <span>Chẵn</span>
                                 <span>Lẻ</span>
                             </p>
                             <p class="icon">
-                                <img src="../images/ic_trash.png" alt="Chọn lại">
+                                <img src="../images/ic_keno_refresh.png" alt="Chọn lại">
                             </p>
                             <div class="price">
                                 <select name="price" id="price">
@@ -150,7 +165,11 @@
 
                     <div class="game_total">
                         <p class="right">Tạm tính : <span>10.000.000đ</span></p>
-                        <p class="btn btn_buy"><a href="../result/ticket.html">Mua nhanh <span>Thời gian mua còn lại của kỳ  #0008066 03:38</span></a></p>
+                    </div>
+
+                    <div class="game_checkout">
+                        <p class="wallet"><img src="../images/ic_keno_wallet.png" width="30" alt="Ví điện tử"><span>100.000.000đ</span></p>
+                        <p class="btn"><a href="../games/">Mua ngay</a></p>
                     </div>
 
                     <!-- BOX PICK NUMBER -->
@@ -158,6 +177,8 @@
                         <div class="box_pick_num_bg"></div>
                         <div class="box_pick_num_ct">
                             <div class="box_head">
+                                <p class="name">A</p>
+                                <p>Số tự chọn</p>
                                 <p class="right"><img src="../images/ic_menu_close.png" width="15" alt="Đóng"></p>
                             </div>
 
@@ -246,24 +267,11 @@
                                         <li>80</li>
                                     </ul>
                                 </div>
-                                <div class="box_body_r">
-                                    <ul class="select_price">
-                                        <li>10K</li>
-                                        <li>20K</li>
-                                        <li>50K</li>
-                                        <li>100K</li>
-                                        <li>200K</li>
-                                        <li>500K</li>
-                                    </ul>
-                                    <ul class="list_btn">
-                                        <li class="random">Ngẫu nhiên</li>
-                                        <li class="cancel">Hủy</li>
-                                    </ul>
-                                </div>
                             </div>
 
                             <div class="box_bot">
-                                <p class="btn btn_red"><a>Đồng ý</a></p>
+                                <p><a><img src="../images/ic_uncheck.png" width="40"><span>Chưa chọn</span></a></p>
+                                <p class="done"><a><img src="../images/ic_keno_checked.png" width="40"><span>Hợp lệ</span></a></p>
                             </div>
                         </div>
                     </div>

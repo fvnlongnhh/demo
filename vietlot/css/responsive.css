@@ -26,6 +26,7 @@
     .games_guide a:hover,
     .games_ct .games_item:hover,
     #btn_top:hover,
+    .game_select .game_random p button:hover,
     .box_modal .btn_close:hover,
     .box04_ct ul li a:hover,
     .box_pick_num_ct .box_head p:hover,
@@ -157,7 +158,6 @@
     .box_pick_num_ct .box_body{flex-direction: column;}
     .box_pick_num_ct .box_body_l{width: 100%}
     .box_pick_num_ct .box_body_l ul{justify-content: center;}
-    .box_pick_num_ct .box_body_l ul li{margin: 0 3px 5px}
     .box_pick_num_ct .box_body_r{width: 100%;margin-top: 15px;padding-top: 15px;border-top: 1px solid #ededed}
     .box_pick_num_ct .box_bot .btn a{width: 260px;}
     
@@ -219,7 +219,7 @@
     .box01_ct ul li span{font-size: 16px;}
     .game_content .game_item .num span{width: calc((100vw - 190px) / 5);height: calc((100vw - 190px) / 5);font-size: 12px;}
     .game_content .game_item .num span:nth-child(5n + 5){margin-right: 0}
-    .game_content .game_item .num_big span{width: 70px;height: 35px}
+    .game_content .game_item .num_big span{width: 75px;height: 35px}
 
     .game_content .game_item_power .num span{width: calc((100vw - 120px) / 6);height: calc((100vw - 120px) / 6);font-size: 12px;}
     .game_content .game_item_power .num span:nth-child(5n + 5){margin-right: 5px}

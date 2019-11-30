@@ -327,7 +327,7 @@ td{line-height: 1.75em;font-size: 14px;}
 
 .game_pages #header{height:70px;background: #1e3d94;align-items: center;display: flex;justify-content: center;position: relative;width: 100%;padding-top: 20px}
 .game_pages #header .container{position: relative;}
-.game_pages #header h1{text-align: center;color: #fff;text-transform: uppercase;font-size: 18px;width: 100%;line-height: 1em}
+.game_pages #header h1{text-align: center;color: #fff;text-transform: uppercase;font-size: 20px;width: 100%;line-height: 1em}
 .game_pages #header p{margin-bottom: 0;position: absolute;top: -5px;left: 15px;line-height: 1em}
 .game_pages #header .btn_nav{}
 .game_pages #header .btn_noti{left: inherit;right: 15px}
@@ -438,50 +438,78 @@ td{line-height: 1.75em;font-size: 14px;}
 .guide_txt .bold{font-family: "Times New Roman", Times, serif;font-size: 18px;} 
 
 /* =========== GAMES =========== */
-.game_select{display: flex;justify-content: space-between;padding-bottom: 10px;border-bottom: 1px solid #ededed}
+.game_select{display: flex;justify-content: space-between;padding-bottom: 10px;border-bottom: 1px solid #ededed;flex-wrap: wrap}
 .game_select div p{font-weight: bold;}
 .game_select .game_type{width: 29%;flex-direction: column;display: flex}
 .game_select .game_type p{margin-bottom: 5px}
 .game_select .game_date{width: 69%;flex-direction: column;display: flex}
 .game_select .game_date p{margin-bottom: 5px}
 
+.game_select .game_random{width: 100%;margin-top: 15px;}
+.game_select .game_random p{position: relative;display: flex;align-items: center;justify-content: space-between;}
+.game_select .game_random p span{color: #999;font-size: 10px;font-weight: normal;margin-left: 5px;}
+.game_select .game_random p button{background: #df5386;color: #fff;display: flex;width: 140px;height: 35px;justify-content: center;align-items: center;text-align: center;box-shadow: none;border:none;border-radius: 5px;font-size: 14px	}
+.game_select .game_random p button img{margin-right: 10px}
+
 .game_select_2{position: relative;}
-.game_select_2 .game_type{width: 49%}
 .game_select_2 .link_cart{position: absolute;top: -20px;right: 0}
 .game_select_2 .link_cart p{position: relative;}
 .game_select_2 .link_cart span{position: absolute;top: -5px;right: -5px;display: flex;align-items: center;justify-content: center;text-align: center;font-size: 12px;width: 20px;height: 20px;background: #fff;color: #333;border-radius: 50%;border:1px solid #ea433c;}
 .game_select_2 .game_price{width: 49%}
 .game_select_2 .game_price select{width: 100%}
-.game_select_2 .game_date{width: 49%;position: relative}
+
+.game_select_2 .game_date{width: 60%;position: relative}
 .game_select_2 .game_date ul{position: absolute;background: #fff;border: 1px solid #ddd;box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);border-radius: 3px;top: 110%;right: 0;width: 180px;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
 .game_select_2 .game_date ul.active{top: 110%;visibility: visible;opacity: 1;z-index: 3;}
-.game_select_2 .game_date ul li{font-size: 12px;padding: 5px;border-bottom: 1px solid #ededed;display: flex;align-items: center;}
-.game_select_2 .game_date ul li.check span{background: url('../images/ic_check.png') center no-repeat #44ad00;background-size: cover;border: none;box-shadow: none;}
-.game_select_2 .game_date ul li span{width: 14px;height: 14px;border: 1px solid #AEAEAE;border-radius: 2px;box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);background-color: #fff;display: inline-block;margin-right: 10px}
+.game_select_2 .game_date ul li{font-size: 12px;padding: 5px;border-bottom: 1px solid #ededed;display: flex;align-items: center;color: #ccc;position: relative;}
+.game_select_2 .game_date ul li.check{color: #000}
+.game_select_2 .game_date ul li.check span{background: url('../images/ic_keno_checked.png') center no-repeat;background-size: cover;}
+.game_select_2 .game_date ul li span{width: 14px;height: 14px;background: #fff;position: absolute;top: calc(50% - 7px);right: 5px;background-size: cover}
 .game_select_2 .game_date ul li label{font-size: 12px;}
-.game_select_2 .game_date .select_box{height: 35px;border: 1px solid #999;padding: 5px;font-size: 14px;background: #fff;border-radius: 5px;font-weight: normal;display: flex;align-items: center;position: relative;}
-.game_select_2 .game_date .select_box::before{width: 0;height: 0;border-style: solid;border-width: 6px 3px 0 3px;border-color: #333 transparent transparent transparent;position: absolute;top: calc(50% - 3px);right: 5px;content: ''}
+.game_select_2 .game_date .select_box{height: 35px;border-bottom: 1px solid #999;padding: 5px 0;font-size: 14px;background: #fff;font-weight: normal;display: flex;align-items: center;position: relative;}
+.game_select_2 .game_date .select_box::before{width: 10px;height: 5px;position: absolute;top: calc(50% - 3px);right: 5px;content: '';background: url('../images/ic_keno_arr.png') center no-repeat;background-size: cover;}
 .game_select_2 .game_date .select_box span{margin-right: 5px}
+
+.game_select_2 .game_type{width: 35%;position: relative}
+.game_select_2 .game_type ul{position: absolute;background: #fff;border: 1px solid #ddd;box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);border-radius: 3px;top: 110%;left: 0;width: 180px;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
+.game_select_2 .game_type ul.active{top: 110%;visibility: visible;opacity: 1;z-index: 3;}
+.game_select_2 .game_type ul li{font-size: 12px;padding: 5px;border-bottom: 1px solid #ededed;display: flex;align-items: center;position: relative;color: #ccc}
+.game_select_2 .game_type ul li.check{color: #000}
+.game_select_2 .game_type ul li.check span{background: url('../images/ic_keno_checked.png') center no-repeat;background-size: cover;}
+.game_select_2 .game_type ul li span{width: 14px;height: 14px;background: url('../images/ic_keno_check.png');position: absolute;top: calc(50% - 7px);right: 5px;background-size: cover}
+.game_select_2 .game_type ul li label{font-size: 12px;}
+.game_select_2 .game_type .select_type{height: 35px;border-bottom: 1px solid #999;padding: 5px 0;font-size: 14px;background: #fff;font-weight: normal;display: flex;align-items: center;position: relative;}
+.game_select_2 .game_type .select_type::before{width: 10px;height: 5px;position: absolute;top: calc(50% - 3px);right: 5px;content: '';background: url('../images/ic_keno_arr.png') center no-repeat;background-size: cover;}
+.game_select_2 .game_type .select_type span{margin-right: 5px}
 
 .game_form{}
 .game_content .game_item{padding: 10px 0;border-bottom: 1px solid #ededed;display: flex;align-items: center;}
 .game_content .game_item p{margin-bottom: 0;}
-.game_content .game_item .name{font-weight: bold;color: #ea433c;width: 20px;font-size: 18px;}
+.game_content .game_item .name{font-weight: bold;color: #df5386;width: 20px;font-size: 18px;}
 .game_content .game_item .num{width: calc(100% - 135px);display: flex;flex-wrap: wrap;}
-.game_content .game_item .num span{width: 35px;height: 35px;border-radius: 50%;border:1px solid #ea433c;display: flex;justify-content: center;align-items: center;margin:2px 5px 2px 0;font-size: 14px;padding-top: 2px}
-.game_content .game_item .num span.active{background: #ea433c;color: #fff;}
-.game_content .game_item .icon{width: 30px;height: 30px;margin: 0 10px;padding: 8px;background: #eea236;display: flex;justify-content: center;align-items: center;border-radius: 50%;}
+.game_content .game_item .num span{width: 35px;height: 35px;border-radius: 50%;border:1px solid #df5386;display: flex;justify-content: center;align-items: center;margin:2px 5px 2px 0;font-size: 14px;padding-top: 2px}
+.game_content .game_item .num span.active{background: #df5386;color: #fff;}
+.game_content .game_item .num span.no_numb{background: #d7d7d7;border-color: #d7d7d7;color: #fff;}
+.game_content .game_item .icon{width: 30px;height: 30px;margin: 0 10px;padding: 8px;display: flex;justify-content: center;align-items: center;}
 .game_content .game_item .price{width: 65px;}
-.game_content .game_item .num_big span{width: 80px;border-radius: 30px;}
+.game_content .game_item .num_big span{width: 75px;border-radius: 5px;margin-right: 5px;text-transform: uppercase;}
+.game_content .game_item .num_big span:last-child{margin-right: 0}
 
 .game_content .game_item_power{}
 .game_content .game_item_power .num{width: calc(100% - 60px)}
 .game_content .game_item_power .icon{margin-right: 0}
 
-.game_total{margin-top: 15px;}
+.game_total{margin-top: 15px;border-bottom: 1px solid #ededed;padding-bottom: 10px;}
 .game_total p{margin-bottom: 15px}
-.game_total .right{}
+.game_total .right{display: flex;justify-content: space-between;}
 .game_total .right span{color: #ea433c;font-size: 18px;font-weight: bold;}
+
+.game_checkout{display: flex;justify-content: space-between;align-items: center;padding: 10px 0}
+.game_checkout p{margin-bottom: 0}
+.game_checkout .wallet{display: flex;align-items: center}
+.game_checkout .wallet span{font-size: 20px;font-weight: bold;color: #df5386}
+.game_checkout .btn{width: 120px;margin: 0}
+.game_checkout .btn a{width: 100%;font-weight: normal;font-size: 14px;background: #d6d6d6;color: #9e9e9e;height: 40px;border-color: #d6d6d6;height: 35px;border-radius: 5px}
 
 /* =========== GAMES ÔM 3D+ =========== */
 .game_om3d_content{display: flex;border-bottom: 1px solid #ededed;padding: 10px 0}
@@ -508,20 +536,25 @@ td{line-height: 1.75em;font-size: 14px;}
 .box_pick_num.active{top: 0;visibility: visible;opacity: 1;}
 .box_pick_num_bg{background: rgba(0, 0, 0, 0.5);position: absolute;width: 100%;height: 100%;z-index: 0;}
 .box_pick_num_ct{width: 600px;box-shadow: 0 5px 15px rgba(0,0,0,.5);position: absolute;top: 5vh;left: calc(50% - 300px);z-index: 1;background: #fff;border-radius: 5px;overflow: hidden;height: 90vh;overflow: auto;}
-.box_pick_num_ct .box_head{background: #ea433c;height: 50px;width: 100%;display: flex;justify-content: flex-end;align-items: center;padding: 0 15px}
-.box_pick_num_ct .box_body{padding: 15px;display: flex;justify-content: space-between;}
+.box_pick_num_ct .box_head{background: #df5386;height: 50px;width: 100%;display: flex;justify-content: center;align-items: center;padding: 0 15px;position: relative;}
+.box_pick_num_ct .box_head p{margin-bottom: 0;color: #fff;text-transform: uppercase;}
+.box_pick_num_ct .box_head p.name{position: absolute;top: calc(50% - 14px);left: 15px;color: #fff;font-size: 18px;font-weight: bold}
+.box_pick_num_ct .box_head p.right{position: absolute;top: calc(50% - 11px);right: 15px}
+.box_pick_num_ct .box_body{padding: 15px 5px;display: flex;justify-content: space-between;}
 .box_pick_num_ct .box_body_l{width: calc(100% - 150px)}
 .box_pick_num_ct .box_body_l ul{display: flex;flex-wrap: wrap}
-.box_pick_num_ct .box_body_l ul li{width: 35px;height: 35px;border-radius: 50%;border:1px solid #ea433c;display: flex;justify-content: center;align-items: center;margin:0 7px 7px 0;font-size: 14px;cursor: pointer;padding-top: 2px}
-.box_pick_num_ct .box_body_l ul li.on{background: #ea433c;color: #fff;}
+.box_pick_num_ct .box_body_l ul li{width: 30px;height: 30px;border-radius: 50%;border:1px solid #df5386;display: flex;justify-content: center;align-items: center;margin:0 5px 5px 0;font-size: 14px;cursor: pointer;padding-top: 2px}
+.box_pick_num_ct .box_body_l ul li.on{background: #df5386;color: #fff;}
+.box_pick_num_ct .box_body_l ul li:nth-child(8n + 8){margin-right: 0}
 .box_pick_num_ct .box_body_r{width: 100px}
 .box_pick_num_ct .box_body_r ul{display: flex;flex-direction: column;}
 .box_pick_num_ct .box_body_r ul li{width: 100%;height: 30px;border-radius: 3px;border:1px solid #ccc;font-size: 14px;display: flex;align-items: center;justify-content: center;text-align: center;margin-bottom: 10px;transition: all ease 0.3s}
-.box_pick_num_ct .box_body_r ul li.on{background: #ea433c;color: #fff;border-color: #ea433c}
+.box_pick_num_ct .box_body_r ul li.on{background: #df5386;color: #fff;border-color: #df5386}
 .box_pick_num_ct .box_body_r .list_btn{margin-top: 30px}
 .box_pick_num_ct .box_body_r .list_btn li{background: #f0ad4e;color: #fff;border-color: #f0ad4e}
 .box_pick_num_ct .box_bot{border-top: 1px solid #ededed;padding: 15px 0;}
-.box_pick_num_ct .box_bot .btn{}
+.box_pick_num_ct .box_bot p a{display: flex;flex-direction: column;align-items: center;justify-content: center;font-size: 14px;}
+
 .box_pick_num_ct .box_body_r ul li:last-child{margin-bottom: 0}
 
 .box_pick_num_ct .box_body_3d{display: flex;justify-content: space-between;}
@@ -540,7 +573,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .box_pick_num_ct .box_body_auto .box_body_l ul{flex-direction: column;width: calc(100% / 3);justify-content: center;align-items: center}
 
 /* =========== KENO PAGE =========== */
-#keno #header{background: url('../images/head_bg_keno.jpg') left center no-repeat;background-size: cover;}
+#keno #header{background: #df5386}
 
 
 /* =========== CART PAGE =========== */

@@ -82,16 +82,33 @@ $(document).ready(function() {
         $(this).toggleClass('on');
     });
 
-    $('.box_bot a, .box_head p').click(function(){
+    $('.box_bot a, .box_head .right').click(function(){
         $('.box_pick_num').removeClass('active');
     });
 
     $('.select_box').click(function(){
+        $('.type_list').removeClass('active');
         $('.date_list').toggleClass('active');
     });
 
+    $('.select_type').click(function(){
+        $('.type_list').toggleClass('active');
+        $('.date_list').removeClass('active');
+    });
+
+    $('.type_list li').click(function(){
+        $('.type_list li').removeClass('check');
+        $(this).toggleClass('check');
+    });
+
+
     $('.date_list li').click(function(){
         $(this).toggleClass('check');
+    });
+
+    $('.num_big span').click(function(){
+        $(this).parent().find('span').removeClass('active');
+        $(this).toggleClass('active');
     });
 
     
