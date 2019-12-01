@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=-100%, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no">
+<title>Thống Kê Số</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+<script src="../js/jquery.js"></script>
+</head>
+
+<body id="rate" class="game_pages">
+    <div id="wrapper">
+        <div id="header">
+            <div class="container">
+                <p class="btn_nav"></p>
+                <h1>Thống Kê Số</h1>
+                <p class="btn_noti"><a href="../history/notifi.html"></a><img src="../images/ic_notifi.png" width="24" alt="Thông báo"><span>12</span></p>
+            </div>
+        </div>
+        <!-- main start -->
+        <div id="main" class="clearfix">
+            <div class="rate_tab">
+                <ul>
+                    <li class="active" data-tab="tab-1">KENO</li>
+                    <li data-tab="tab-2">Mega 6/45</li>
+                    <li data-tab="tab-3">Power 6/55</li>
+                </ul>
+            </div>
+
+            <div class="rate_content">
+                <div class="rate_tab_ct active" id="tab-1">
+                    <p class="big">Thống kê 30 kỳ gần nhất</p>
+                    <p class="bold">10 số về nhiều nhất</p>
+                    <ul class="rate_numb more">
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                    </ul>
+                    <p class="bold">10 số về ít nhất</p>
+                    <ul class="rate_numb less">
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                    </ul>
+                    <p class="bold">Lớn Nhỏ - Chẵn Lẻ</p>
+                    <ul class="rate_big_sm">
+                        <li class="more">Lớn : 5 kỳ</li>
+                        <li class="more">Chẵn : 5 kỳ</li>
+                        <li class="less">Nhỏ : 1 kỳ</li>
+                        <li class="less">Lẻ : 0 kỳ</li>
+                    </ul>
+                </div>
+
+                <div class="rate_tab_ct mega" id="tab-2">
+                    <div class="rate_tab_chart">
+                        <ul>
+                            <li>
+                                <span class="numb">11</span>
+                                <span class="size" style="width: 75%"></span>
+                                <span class="times">20</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">39</span>
+                                <span class="size" style="width: 70%"></span>
+                                <span class="times">15</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">21</span>
+                                <span class="size" style="width: 65%"></span>
+                                <span class="times">13</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">09</span>
+                                <span class="size" style="width: 60%"></span>
+                                <span class="times">12</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">11</span>
+                                <span class="size" style="width: 50%"></span>
+                                <span class="times">11</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">40</span>
+                                <span class="size" style="width: 40%"></span>
+                                <span class="times">10</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">14</span>
+                                <span class="size" style="width: 30%"></span>
+                                <span class="times">9</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">26</span>
+                                <span class="size" style="width: 20%"></span>
+                                <span class="times">7</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">18</span>
+                                <span class="size" style="width: 10%"></span>
+                                <span class="times">6</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">22</span>
+                                <span class="size" style="width: 5%"></span>
+                                <span class="times">4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rate_tab_ct power" id="tab-3">
+                    <div class="rate_tab_chart">
+                        <ul>
+                            <li>
+                                <span class="numb">11</span>
+                                <span class="size" style="width: 75%"></span>
+                                <span class="times">20</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">39</span>
+                                <span class="size" style="width: 70%"></span>
+                                <span class="times">15</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">21</span>
+                                <span class="size" style="width: 65%"></span>
+                                <span class="times">13</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">09</span>
+                                <span class="size" style="width: 60%"></span>
+                                <span class="times">12</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">11</span>
+                                <span class="size" style="width: 50%"></span>
+                                <span class="times">11</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">40</span>
+                                <span class="size" style="width: 40%"></span>
+                                <span class="times">10</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">14</span>
+                                <span class="size" style="width: 30%"></span>
+                                <span class="times">9</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">26</span>
+                                <span class="size" style="width: 20%"></span>
+                                <span class="times">7</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">18</span>
+                                <span class="size" style="width: 10%"></span>
+                                <span class="times">6</span>
+                            </li>
+
+                            <li>
+                                <span class="numb">22</span>
+                                <span class="size" style="width: 5%"></span>
+                                <span class="times">4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main end -->
+        <div id="footer">
+
+        </div>
+    </div>
+    <script src="../js/vietlot.js"></script>
+</body>
+
+</html>

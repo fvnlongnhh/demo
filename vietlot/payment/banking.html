@@ -15,25 +15,29 @@
 <script src="../js/jquery.js"></script>
 </head>
 
-<body id="payment_bank" class="game_pages bg2">
+<body id="payment_bank" class="game_pages">
     <div id="wrapper">
         <div id="header">
-            <h1 id="logo">Nạp tiền vào tài khoản<a href="./"><img src="../images/ic_arr.png" alt="Trở về"></a></h1>
+            <div class="container">
+                <p class="btn_arr"><a href="../payment/"><img src="../images/ic_prev.png" width="12" alt="Back"></a></p>
+                <h1>Chuyển khoản</h1>
+                <p class="btn_noti"><a href="../history/notifi.html"></a><img src="../images/ic_notifi.png" width="24" alt="Thông báo"><span>12</span></p>
+            </div>
         </div>
         <!-- main start -->
         <div id="main" class="clearfix">
             <div class="payment_content">
                 <div class="container">
                     <div class="payment_txt">
-                        <p class="bold">LuckyBest hỗ trợ nạp tiền qua hình thức chuyển khoản ngân hàng với nội dung chuyển khoản :</p>
+                        <p>LuckyBest hỗ trợ nạp tiền qua hình thức chuyển khoản ngân hàng với nội dung chuyển khoản :</p>
                         <p class="red center">NAP&lt;SDT&gt;</p>
                         <p class="center">Ví dụ : NAP0123456789</p>
                     </div>
 
                     <div class="payment_bank">
-                        <p>Danh sách tài khoản ngân hàng của LuckyBest</p>
+                        <p class="bold">Danh sách tài khoản ngân hàng của LuckyBest</p>
                         <div class="payment_list">
-                            <div class="payment_item no_link">
+                            <div class="payment_item">
                                 <p class="img"><a><img src="../images/dt6.png" width="100"></a></p>
                                 <div class="txt">
                                     <p>Chủ tài khoản : <span>Công ty LuckyBest</span></p>
@@ -43,7 +47,7 @@
                                 </div>
                             </div>
 
-                            <div class="payment_item no_link">
+                            <div class="payment_item">
                                 <p class="img"><a><img src="../images/dt4.png" width="100"></a></p>
                                 <div class="txt">
                                     <p>Chủ tài khoản : <span>Công ty LuckyBest</span></p>
@@ -53,7 +57,7 @@
                                 </div>
                             </div>
 
-                            <div class="payment_item no_link">
+                            <div class="payment_item">
                                 <p class="img"><a><img src="../images/dt5.png" width="100"></a></p>
                                 <div class="txt">
                                     <p>Chủ tài khoản : <span>Công ty LuckyBest</span></p>
@@ -63,7 +67,7 @@
                                 </div>
                             </div>
 
-                            <div class="payment_item no_link">
+                            <div class="payment_item">
                                 <p class="img"><a><img src="../images/dt3.png" width="100"></a></p>
                                 <div class="txt">
                                     <p>Chủ tài khoản : <span>Công ty LuckyBest</span></p>
@@ -79,7 +83,7 @@
         </div>
 
         <!-- CONFIRM TEL -->
-        <div class="box_modal active">
+        <div class="box_modal box_payment">
             <div class="box_modal_bg"></div>
             <div class="box_modal_ct">
                 <div class="box_modal_head">
@@ -89,14 +93,14 @@
                 <div class="box_modal_body">
                     <div class="confirm_ct">
                         <div class="confirm_txt">
-                            <p class="bold">Khi nạp tiền với hình thức Chuyển khoản ngân hàng: </p>
+                            <p class="big">Khi nạp tiền với hình thức Chuyển khoản ngân hàng: </p>
                             <p>* Nội dung chuyển khoản : <span class="red">NAP0123456789</span></p>
-                            <p>* Số tiền tối thiểu mỗi lần chuyển khoản : 50.000đ</p>
+                            <p>* Số tiền tối thiểu mỗi lần chuyển khoản : <span class="red">50.000đ</span></p>
                             <p>* Thời gian chờ : trong khoảng 4h làm việc</p>
                             <p class="bold"><input type="checkbox">&nbsp;&nbsp;&nbsp;Không hiển thị lại lần sau</p>
                             <div class="confirm_btn">
-                                <p class="btn btn_white"><a class="close_modal">Đóng</a></p>
-                                <p class="btn btn_red"><a class="close_modal">Tiếp tục</a></p>
+                                <p class="deny"><a class="close_modal">Từ chối</a></p>
+                                <p class="accept"><a class="close_modal">Đồng ý</a></p>
                             </div>
                         </div>
                     </div>

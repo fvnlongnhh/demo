@@ -55,7 +55,7 @@ $(document).ready(function() {
     });
 
 
-    $('.games_item, .guide_item, .payment_item').on('click', function() {
+    $('.games_item, .guide_item, #payment .payment_item').on('click', function() {
         var href = $(this).find('a').attr('href');
         location.href = href;
     });
@@ -111,5 +111,15 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
-    
+    if( $('.rate_content').length) {
+        $('.rate_tab li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('.rate_tab li').removeClass('active');
+            $('.rate_tab_ct').removeClass('active');
+
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+        });
+    }
 });
