@@ -111,7 +111,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
-    if( $('.rate_content').length) {
+    if( $('.result_content').length) {
         $('.rate_tab li').click(function(){
             var tab_id = $(this).attr('data-tab');
 
@@ -122,4 +122,18 @@ $(document).ready(function() {
             $("#"+tab_id).addClass('active');
         });
     }
+
+    if( $('.result_content').length) {
+        $('.result_tab li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('.result_tab li').removeClass('active');
+            $('.result_tab_ct').removeClass('active');
+
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+        });
+    }
+
+    
 });
