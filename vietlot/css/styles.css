@@ -329,7 +329,8 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages #header .container{position: relative;}
 .game_pages #header h1{text-align: center;color: #fff;text-transform: uppercase;font-size: 20px;width: 100%;line-height: 1em}
 .game_pages #header p{margin-bottom: 0;position: absolute;top: -2px;left: 15px;line-height: 1em}
-.game_pages #header .btn_nav{}
+.game_pages #header .btn_arr{}
+.game_pages #header .btn_nav{width: 30px;height: 27px;background: url('../images/ic_gnavi.png') center no-repeat;background-size: cover;}
 .game_pages #header .btn_noti{left: inherit;right: 15px}
 .game_pages #header .btn_noti img{max-width: 18px}
 .game_pages #header .btn_noti span{width: 20px;height: 20px;border-radius: 50%;background: #f93e3d;color: #fff;display: flex;align-items: center;justify-content: center;font-size: 12px;position: absolute;top: -10px;right: -8px;}
@@ -393,6 +394,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .games_guide a{border-radius: 10px;width: 100%;display: flex;align-items: center;justify-content: center;font-size: 18px;text-transform: uppercase;color: #1c3f94;padding: 15px;background: #ffd201;font-weight: bold;}
 .games_guide a img{margin-right: 5px;}
 #guide .games_ct .games_item .money{font-weight: normal;}
+
 /* =========== PAYMENT PAGE =========== */
 #payment_bank #wrapper{padding-bottom: 0}
 #payment_bank .confirm_txt p a{color: #fff;text-decoration: none;}
@@ -400,16 +402,17 @@ td{line-height: 1.75em;font-size: 14px;}
 #payment_bank .confirm_txt .bold {display: flex;align-items: center;}
 
 .payment_content{}
-.payment_wallet{display: flex;justify-content: space-between;width: 100%;margin-bottom: 15px;padding-bottom: 15px;border-bottom: 1px dashed #999}
-.payment_wallet p{width: 50%;margin-bottom: 0}
-.payment_wallet .red{display: flex;justify-content: flex-end}
-.payment_item{padding: 15px 10px;background: #fff;border-radius: 5px;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);position: relative;margin-bottom: 15px;display: flex;align-items: center;cursor: pointer}
+.payment_wallet{width: 100%;margin-bottom: 15px;padding-bottom: 15px;border-bottom: 1px solid #ededed}
+.payment_wallet p{margin-bottom: 0;display: flex;align-items: flex-end;}
+.payment_wallet p span{display: flex;justify-content: flex-end;font-size: 22px;font-weight: bold;color: red;margin-left: 10px;line-height: 1em}
+
+.payment_item{padding: 20px 10px;background: #fff;border-radius: 5px;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);position: relative;margin-bottom: 15px;display: flex;align-items: center;cursor: pointer;position: relative;border:1px solid #1c3f94;}
 .payment_item p{margin-bottom: 0;font-size: 12px}
-.payment_item .img{width: 70px;margin: 0 10px 0 0}
-.payment_item .txt{width: calc(100% - 80px);position: relative;padding-right: 15px;text-align: center;}
-.payment_item .txt::before{content: '';position: absolute;top: calc(50% - 8px);right: 0;width: 9px;height: 16px;background: url('../images/ic_arr.png') center no-repeat;background-size: cover;}
-.payment_item .txt .green{color: green}
-.payment_item .txt .sm a{font-size: 12px;color: #2164b2;text-decoration: underline;margin-top: 10px;display: block}
+.payment_item .img{width: 60px;margin: 0 10px 0 0;text-align: center;}
+.payment_item .txt{width: calc(100% - 80px);position: relative;}
+.payment_item .txt .big{color: #ffd201;text-transform: uppercase;font-weight: bold;font-size: 16px;letter-spacing: 0.025em}
+.payment_item .link{position: absolute;top: calc(50% -15px);right: 10px;}
+.payment_item .link a{font-size: 12px;color: #2164b2;text-decoration: underline;margin-top: 10px;display: block;background: #ffd201;color: #000;display: flex;align-items: center;justify-content: center;text-align: center;border-radius: 5px;height: 30px;padding: 0 15px;text-decoration: none}
 
 .payment_txt{margin-bottom: 15px;}
 .payment_txt p{margin-bottom: 10px}
@@ -418,8 +421,12 @@ td{line-height: 1.75em;font-size: 14px;}
 .payment_item.no_link .txt{padding-right: 0;text-align:left;}
 .payment_item.no_link .txt::before{display: none;}
 
+.payment_item.blue{background: #1c3f94;}
+.payment_item.blue p{color: #fff;}
+
 /* =========== GUIDE PAGE =========== */
 .guide_pages #wrapper{padding-bottom: 0}
+.guide_pages #header .btn_nav{background: none;}
 .guide_content{}
 .guide_item{padding: 15px 10px;background: #fff;border-radius: 5px;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);position: relative;margin-bottom: 15px;display: flex;align-items: center;cursor: pointer}
 .guide_item .img{width: 70px;margin: 0 10px 0 0}
