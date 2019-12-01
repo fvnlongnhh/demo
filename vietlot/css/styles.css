@@ -265,7 +265,7 @@ td{line-height: 1.75em;font-size: 14px;}
 
 /* BOX TERM */
 #term #wrapper{padding-bottom: 15px}
-.term_ct{max-height: calc(100vh - 165px);overflow: auto}
+.term_ct{max-height: calc(100vh - 185px);overflow: auto}
 .term_ct p{margin-bottom: 15px}
 
 .term_ct h3{font-family: "Times New Roman", Times, serif;font-size: 24px;text-transform: uppercase;margin-bottom: 15px;font-weight: bold}
@@ -484,12 +484,11 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_content .game_item p{margin-bottom: 0;}
 .game_content .game_item .name{font-weight: bold;color: #df5386;width: 20px;font-size: 18px;}
 .game_content .game_item .num{width: calc(100% - 135px);display: flex;flex-wrap: wrap;}
-.game_content .game_item .num span{width: 35px;height: 35px;border-radius: 50%;border:1px solid #df5386;display: flex;justify-content: center;align-items: center;margin:2px 5px 2px 0;font-size: 14px;padding-top: 2px}
-.game_content .game_item .num span.active{background: #df5386;color: #fff;}
-.game_content .game_item .num span.no_numb{background: #d7d7d7;border-color: #d7d7d7;color: #fff;}
+.game_content .game_item .num span{width: 35px;height: 35px;border-radius: 50%;display: flex;justify-content: center;align-items: center;margin:2px 5px 2px 0;font-size: 14px;padding-top: 2px;background: #d7d7d7;border:1px solid #d7d7d7;color: #fff;}
+.game_content .game_item .num span.active{background: #df5386;color: #fff;border-color: #df5386}
 .game_content .game_item .icon{width: 30px;height: 30px;margin: 0 10px;padding: 8px;display: flex;justify-content: center;align-items: center;}
 .game_content .game_item .price{width: 65px;}
-.game_content .game_item .num_big span{width: 75px;border-radius: 5px;margin-right: 5px;text-transform: uppercase;}
+.game_content .game_item .num_big span{width: 75px;border-radius: 5px;margin-right: 5px;text-transform: uppercase;background: #fff;border-color: #df5386;color: #000}
 .game_content .game_item .num_big span:last-child{margin-right: 0}
 
 .game_content .game_item_power{}

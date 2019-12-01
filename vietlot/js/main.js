@@ -105,7 +105,7 @@ $(document).ready(function () {
             return false;
         });
         
-        $("#gnavi ul li a").click(function () {
+        $("#gnavi ul li:not(.btn) a").click(function () {
             $('.btn_side').removeClass('open');
             $("#gnavi").removeClass("active");
             return false;
