@@ -111,7 +111,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
-    if( $('.result_content').length) {
+    if( $('.rate_content').length) {
         $('.rate_tab li').click(function(){
             var tab_id = $(this).attr('data-tab');
 

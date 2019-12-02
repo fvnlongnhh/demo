@@ -193,7 +193,7 @@
     /* MAIN PAGE */
     .box02_ct{padding: 15px;}
     .box07_ct{width: 100%}
-
+    
     /* SUB PAGE */
     .games_ct .games_item .txt{width: calc(100% - 120px)}
     .games_ct .games_item .name{font-size: 18px;}
@@ -214,10 +214,11 @@
     .ticket_btn .btn{width: 48%;}
     .ticket_btn .btn a{width: 100%;}
 
-
     /* CONFIRM TEL */
     .confirm_tel select{width: 70px}
     .confirm_tel input{width: calc(98% - 70px)}
+
+    .result_tab ul{width: 480px;}
     
 }
 
@@ -241,12 +242,35 @@
     .payment_bank .payment_item .txt p span{font-size: 14px;width: calc(100% - 80px)}
 
     .guide_video iframe{width: calc(100vw - 30px);height: calc((100vw - 30px) * 9 / 16)}
+
+    /* RESULT PAGE */
+    .result_mega .date,
+    .result_power .date,
+    .result_3d .date,
+    .result_4d .date{flex-direction: column;}
+    .result_mega .date p,
+    .result_power .date p,
+    .result_3d .date p,
+    .result_4d .date p{width: 100%;}
+    .result_mega .date .alert,
+    .result_power .date .alert,
+    .result_3d .date .alert,
+    .result_4d .date .alert{justify-content: flex-start}
+
+    .result_keno ul li .date{flex-direction: column}
+    .result_keno ul li .date .days{width: 100%;text-align: center;margin-bottom: 5px;justify-content: center}
+    .result_keno ul li .date .random{width: 100%;justify-content: center}
+    
+    .result_power .numb span{margin: 0 3px}
+    .result_power .numb span:first-child{margin-left: 0}
+    .result_power .numb span:last-child{margin-right: 0}
 }
 
 @media screen and (max-width: 380px) {
     .btn{padding: 0;width: 100%;box-sizing: border-box}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 340px) {
+    .result_3d .prize .prize_numb ul li{width: 30px;height: 30px}
 
 }

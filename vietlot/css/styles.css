@@ -729,7 +729,7 @@ td{line-height: 1.75em;font-size: 14px;}
 #result #main{margin-top: 0}
 
 .result_tab{width: 100%;overflow: auto}
-.result_tab ul{width: 540px;}
+.result_tab ul{width: 100%;}
 .result_tab{}
 .result_tab ul{display: flex;border-bottom: 1px solid #ccc;}
 .result_tab ul li{width: calc(100% / 3);padding: 10px;text-align: center;color:#ccc;position: relative;transition: all ease 0.3s;text-transform: uppercase;font-size: 14px;}
@@ -737,10 +737,96 @@ td{line-height: 1.75em;font-size: 14px;}
 .result_tab ul li.active{color: #1d3c94}
 .result_tab ul li.active::before{opacity: 1;}
 
-.result_content{padding: 15px;}
 .result_tab_ct{display: none}
 .result_tab_ct.active{display: block}
-.result_tab_ct .result_keno{padding: 0}
+
+.result_keno{padding: 15px;}
+.result_keno ul{}
+.result_keno ul li{background: #ffda8c;margin-bottom: 30px}
+.result_keno ul li p{padding: 0;}
+.result_keno ul li .date{padding: 10px;display: flex;border-bottom: 1px solid #fff;align-items: center;margin-bottom: 10px}
+.result_keno ul li .date p{padding: 0;width: 50%;margin-bottom: 0}
+.result_keno ul li .date .days{font-size: 14px;display: flex;justify-content: space-between;margin: 0;}
+.result_keno ul li .date .random{display: flex;justify-content: flex-end}
+.result_keno ul li .date .random span{padding: 1px 0;border-radius: 5px;background: #fff;color: #000;text-align: center;display:flex;margin-left: 10px;width: 65px;text-align: center;align-items: center;justify-content: center;}
+.result_keno ul li .date .random span:first-child{margin-left: 0}
+.result_keno ul li .numb{display: flex;justify-content: center;flex-wrap: wrap;padding:0 0 5px 0}
+.result_keno ul li .numb span{width: 35px;height: 35px;border-radius: 50%;background: #fff;color: #000;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 5px 5px;border:1px solid #000;}
+
+.result_keno ul li:nth-child(even){background: #f1f3f5}
+.result_keno ul li:nth-child(even) .date{border-color: #111}
+.result_keno ul li:nth-child(even) .random span{background: #ffda8c}
+
+.result_mega{padding: 15px}
+.result_mega p{padding: 0;}
+.result_mega .date{padding: 10px 0;display: flex;border-bottom: 1px solid #ccc;align-items: center;margin-bottom: 10px}
+.result_mega .date p{padding: 0;width: 50%;margin-bottom: 0}
+.result_mega .date .days{font-size: 14px;display: flex;justify-content: space-between;margin: 0;}
+.result_mega .date .alert{font-size: 12px;display: flex;justify-content: flex-end;margin: 0;color: #f93d3c;align-items: center}
+.result_mega .date .alert img{flex-shrink: 0;margin-right: 5px;}
+.result_mega .numb{display: flex;justify-content: center;flex-wrap: wrap;padding:0 0 5px 0}
+.result_mega .numb span{width: 35px;height: 35px;border-radius: 50%;background: #f93d3c;color: #fff;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 5px 5px;}
+
+.result_power{padding: 15px}
+.result_power p{padding: 0;}
+.result_power .date{padding: 10px 0;display: flex;border-bottom: 1px solid #ccc;align-items: center;margin-bottom: 10px}
+.result_power .date p{padding: 0;width: 50%;margin-bottom: 0}
+.result_power .date .days{font-size: 14px;display: flex;justify-content: space-between;margin: 0;}
+.result_power .date .alert{font-size: 12px;display: flex;justify-content: flex-end;margin: 0;color: #f93d3c;align-items: center}
+.result_power .date .alert img{flex-shrink: 0;margin-right: 5px;}
+.result_power .numb{display: flex;justify-content: center;flex-wrap: wrap;padding:0}
+.result_power .numb span{width: 35px;height: 35px;border-radius: 50%;background: #f93d3c;color: #fff;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 5px;}
+.result_power .numb span.on{background: #04a03c}
+
+.result_3d{padding: 15px}
+.result_3d p{padding: 0;}
+.result_3d .date{padding: 10px 0;display: flex;border-bottom: 1px solid #ccc;align-items: center;margin-bottom: 20px}
+.result_3d .date p{padding: 0;width: 50%;margin-bottom: 0}
+.result_3d .date .days{font-size: 14px;display: flex;justify-content: space-between;margin: 0;}
+.result_3d .date .alert{font-size: 12px;display: flex;justify-content: flex-end;margin: 0;color: #f93d3c;align-items: center}
+.result_3d .date .alert img{flex-shrink: 0;margin-right: 5px;}
+
+.result_3d .prize{display: flex;align-items: flex-start;margin-bottom: 20px;border-bottom: 1px solid #ccc;padding-bottom: 15px}
+.result_3d .prize p{width: 60px;}
+.result_3d .prize .prize_numb{width: calc(100% - 60px);display: flex;justify-content: flex-end;}
+.result_3d .prize .prize_numb ul{width: 120px;display: flex;flex-wrap: wrap;margin-left: 30px}
+.result_3d .prize .prize_numb ul li{width: 35px;height: 35px;border-radius: 50%;background: #ffbb5a;color: #fff;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 0 5px 5px;border:1px solid #ffbb5a;}
+.result_3d .prize .prize_numb ul:first-child,
+.result_3d .prize .prize_numb ul li:nth-child(3n + 1){margin-left: 0}
+.result_3d .prize.no1 .prize_numb ul li{background: #f93d3c;border-color: #f93d3c}
+.result_3d .prize.no_more .prize_numb ul li{background: #fff;color: #000}
+
+.result_4d{padding: 15px}
+.result_4d p{padding: 0;}
+.result_4d .date{padding: 10px 0;display: flex;border-bottom: 1px solid #ccc;align-items: center;margin-bottom: 20px}
+.result_4d .date p{padding: 0;width: 50%;margin-bottom: 0}
+.result_4d .date .days{font-size: 14px;display: flex;justify-content: space-between;margin: 0;}
+.result_4d .date .alert{font-size: 12px;display: flex;justify-content: flex-end;margin: 0;color: #f93d3c;align-items: center}
+.result_4d .date .alert img{flex-shrink: 0;margin-right: 5px;}
+
+.result_4d .prize{display: flex;align-items: flex-start;margin-bottom: 20px;border-bottom: 1px solid #ccc;padding-bottom: 15px}
+.result_4d .prize p{width: 60px;}
+.result_4d .prize .prize_numb{width: calc(100% - 60px);display: flex;justify-content: flex-end;flex-direction: column;align-items: flex-end}
+.result_4d .prize .prize_numb ul{width: 100%;display: flex;justify-content: flex-end}
+.result_4d .prize .prize_numb ul li{width: 35px;height: 35px;border-radius: 50%;background: #974398;color: #fff;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 0 5px 5px;border:1px solid #974398;}
+.result_4d .prize .prize_numb ul li:nth-child(4n + 1){margin-left: 0}
+.result_4d .prize.no1 .prize_numb ul li{background: #f93d3c;border-color: #f93d3c}
+.result_4d .prize.no_more .prize_numb ul li{background: #fff;color: #000}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  */
