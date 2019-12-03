@@ -937,11 +937,11 @@ td{line-height: 1.75em;font-size: 14px;}
 #side_nav .nav_profile .nav_user .user_img{width: 50px;margin: 0 10px 0 0;position: relative;}
 #side_nav .nav_profile .nav_user .user_img::before{background: url('../images/ic_crown.png') center no-repeat;background-size: cover;width: 12px;height: 12px;position: absolute;bottom: 0;right: 5px;content: ''}
 #side_nav .nav_profile .nav_user .user_name{}
-#side_nav .nav_profile .nav_user .user_name p{margin-bottom: 0;font-size: 18px;font-weight: 400;color: #fff;line-height: 1em;letter-spacing: 0.025em}
+#side_nav .nav_profile .nav_user .user_name p{margin-bottom:0;font-size: 18px;font-weight: 400;color: #fff;line-height: 1em;letter-spacing: 0.025em}
 #side_nav .nav_profile .nav_user .user_name .big{font-size: 20px;text-transform: capitalize;margin-bottom: 10px}
 #side_nav .nav_profile .nav_user .user_name .tel{}
 
-#side_nav .nav_wallet{background: #1e3c94;display: flex;padding-bottom: 30px;}
+#side_nav .nav_wallet{background: #1e3c94;display: flex;padding-bottom: 15px;}
 #side_nav .nav_wallet p{width: 50%;color: #fff;text-align: center;display: flex;flex-direction: column;align-items: center;margin-bottom: 0;border-right: 1px dashed #fff;}
 #side_nav .nav_wallet p:last-child{border-right: none;}
 #side_nav .nav_wallet p img{}
