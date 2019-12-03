@@ -327,9 +327,9 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages #header{height:70px;background: #1e3d94;align-items: center;display: flex;justify-content: center;position: relative;width: 100%;padding-top: 20px}
 .game_pages #header .container{position: relative;}
 .game_pages #header h1{text-align: center;color: #fff;text-transform: uppercase;font-size: 20px;width: 100%;line-height: 1em}
-.game_pages #header p{margin-bottom: 0;position: absolute;top: -2px;left: 15px;line-height: 1em}
+.game_pages #header p{margin-bottom: 0;position: absolute;top: -2px;left: 10px;line-height: 1em}
 .game_pages #header .btn_arr{}
-.game_pages #header .btn_nav{width: 30px;height: 27px;background: url('../images/ic_gnavi.png') center no-repeat;background-size: cover;}
+.game_pages #header .btn_nav{width: 30px;height: 27px;background: url('../images/ic_gnavi.png') center no-repeat;background-size: cover;top: -5px;}
 .game_pages #header .btn_noti{left: inherit;right: 15px}
 .game_pages #header .btn_noti img{max-width: 18px}
 .game_pages #header .btn_noti span{width: 20px;height: 20px;border-radius: 50%;background: #f93e3d;color: #fff;display: flex;align-items: center;justify-content: center;font-size: 12px;position: absolute;top: -10px;right: -8px;}
@@ -855,9 +855,10 @@ td{line-height: 1.75em;font-size: 14px;}
 #reward .box_modal_ct{background: none;}
 .reward_content{}
 .reward_txt{display: flex;justify-content: space-between;align-items: center;}
-.reward_txt p{margin-bottom: 0;width: 50%}
-.reward_txt .btn{width: 100px;margin: 0}
-.reward_txt .btn a{width: 100px;}
+.reward_txt p{margin-bottom: 0;width: 50%;font-size: 14px;display: flex;align-items: center;}
+.reward_txt p span{font-size: 20px;margin-left: 10px}
+.reward_txt .btn{width: 120px;margin: 0}
+.reward_txt .btn a{width: 100%;height: 45px;background: #ffd201;border-color: #ffd201;color: #1b3a8e;border-radius: 5px}
 .reward_list{}
 .reward_list ul{flex-direction: column;display: flex;}
 .reward_list ul li{background: #fff;border-radius: 5px;margin-bottom: 15px;}
