@@ -172,6 +172,7 @@
     .ticket_btn .btn{width: 48%;}
     .ticket_btn .btn a{width: 100%;}
     
+    #side_nav{position: fixed}
 
 }
 
