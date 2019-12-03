@@ -928,10 +928,10 @@ td{line-height: 1.75em;font-size: 14px;}
 #result .rate_tab ul{width: 540px;}
 
 /* ===========   ASIDE NAV   =========== */
-#side_nav{position: absolute;top: 0;left: -100px;width: 100%;height: 100%;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
+#side_nav{position: absolute;top: 0;left: -100px;width: 100%;height: 100vh;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;overflow: auto;padding-bottom: 15px;}
 #side_nav.active{opacity: 1;z-index: 11;visibility: visible;left: 0}
-#side_nav .side_nav_bg{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: rgba(30, 60, 148, 0.5)}
-#side_nav .side_nav_ct{width: 90%;position: relative;z-index: 2;background: #fff;height: 100%;}
+#side_nav .side_nav_bg{width: 100%;height: 100vh;position: absolute;top: 0;left: 0;background: rgba(30, 60, 148, 0.5)}
+#side_nav .side_nav_ct{width: 90%;position: relative;z-index: 2;background: #fff;height: 100vh;}
 #side_nav .nav_profile{background: #1e3c94; display: flex;padding: 30px 15px;}
 #side_nav .nav_profile .nav_user{display: flex;align-items: center}
 #side_nav .nav_profile .nav_user .user_img{width: 50px;margin: 0 10px 0 0;position: relative;}
@@ -947,7 +947,6 @@ td{line-height: 1.75em;font-size: 14px;}
 #side_nav .nav_wallet p img{}
 #side_nav .nav_wallet p span{font-size: 24px;letter-spacing: 0.025em;margin: 10px 0}
 #side_nav .nav_wallet p  a{background: #ffd201;color: #1e3c94;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 auto;width: 70px;height: 30px;border-radius: 5px;font-weight: bold;}
-
 
 #side_nav .nav_list{background: #fff;margin-bottom: 15px;}
 #side_nav .nav_list ul{padding: 0 15px;}
