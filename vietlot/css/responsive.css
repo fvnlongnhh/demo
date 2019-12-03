@@ -37,6 +37,8 @@
     .box_pick_num_ct .box_body_r ul li.on:hover,
     .term_btn .btn a:hover,
     .payment_item:hover,
+    #side_nav .nav_list ul li a:hover,
+    #side_nav .nav_wallet p a:hover,
     .game_content .game_item .num span:hover{opacity: 0.7;cursor: pointer}
     
     .game_checkout .btn a:hover{color: #fff;}
@@ -161,15 +163,7 @@
 
     /* BOX PICK NUMB */
     .box_pick_num_ct{width: calc(100% - 30px);height: 90vh;left: 15px;top:5vh;overflow: auto;}
-    .box_pick_num_ct .box_body{flex-direction: column;}
-    .box_pick_num_ct .box_body_l{width: 100%}
-    .box_pick_num_ct .box_body_l ul{justify-content: center;}
-    .box_pick_num_ct .box_body_r{width: 100%;margin-top: 15px;padding-top: 15px;border-top: 1px solid #ededed}
-    .box_pick_num_ct .box_bot .btn a{width: 260px;}
     
-    .box_pick_num_ct .box_body_3d{flex-direction: column;}
-    .box_pick_num_ct .box_body_3d .box_body_l{width: 100%}
-    .box_pick_num_ct .box_body_3d .box_body_r{width: 100%;padding: 10px 20px;margin-top: 0}
 
     /* GUIDE PAGE */
     .guide_video iframe{width: 320px;height: calc(320px * 9 / 16)}
@@ -202,6 +196,17 @@
     .games_ct .games_item .date span,
     .games_ct .games_item .time span{margin-left: 0}
     .games_ct .games_item .money{font-size: 20px}
+
+    /* BOX PICK NUMB */
+    .box_pick_num_ct .box_body{flex-direction: column;}
+    .box_pick_num_ct .box_body_l{width: 100%}
+    .box_pick_num_ct .box_body_l ul{justify-content: center;}
+    .box_pick_num_ct .box_body_r{width: 100%;margin-top: 15px;padding-top: 15px;border-top: 1px solid #ededed;margin-left: 0}
+    .box_pick_num_ct .box_bot .btn a{width: 260px;}
+    
+    .box_pick_num_ct .box_body_3d{flex-direction: column;}
+    .box_pick_num_ct .box_body_3d .box_body_l{width: 100%}
+    .box_pick_num_ct .box_body_3d .box_body_r{width: 100%;padding: 10px 20px;margin-top: 0}
     
     /* BOX MODAL POPUP */
     .box_modal_ct{width: 90%;left: 5%}
@@ -264,6 +269,11 @@
     .result_power .numb span{margin: 0 3px}
     .result_power .numb span:first-child{margin-left: 0}
     .result_power .numb span:last-child{margin-right: 0}
+
+    /* =========== ASIDE NAV =========== */
+    #side_nav .nav_profile .nav_user .user_name .big{font-size: 18px;margin-bottom: 5px;}
+    #side_nav .nav_wallet p span{font-size: 20px;margin: 5px 0}
+    #side_nav .nav_wallet p img{width: 30px}
 }
 
 @media screen and (max-width: 380px) {

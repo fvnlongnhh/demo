@@ -111,6 +111,16 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
+    $('.side_nav_bg').click(function(){
+        $('#side_nav').removeClass('active')
+    });
+
+    $('.btn_nav').click(function(){
+        $('#side_nav').addClass('active')
+    });
+
+    
+
     if( $('.rate_content').length) {
         $('.rate_tab li').click(function(){
             var tab_id = $(this).attr('data-tab');
