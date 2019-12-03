@@ -60,7 +60,7 @@ td{line-height: 1.75em;font-size: 14px;}
 
 #gnavi{z-index: 6;position: fixed;top: 0;left: 0;width: 100%;}
 #gnavi .inner{display: flex;align-items: center;}
-#gnavi #logo{width: 150px;padding: 15px;}
+#gnavi #logo{width: 100px;padding: 10px 0;}
 #gnavi ul{display: flex;justify-content: space-between;width: calc(100% - 150px);padding-left: 20px;align-items: center;}
 #gnavi ul li{margin: 0 0 0 15px;}
 #gnavi ul li a{text-transform: uppercase;color: #fff;}
