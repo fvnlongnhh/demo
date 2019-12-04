@@ -55,7 +55,7 @@ $(document).ready(function() {
     });
 
 
-    $('.games_item, .guide_item, #payment .payment_item , .notifi_item').on('click', function() {
+    $('.games_item, .guide_item, #payment .payment_item , .notifi_item li').on('click', function() {
         var href = $(this).find('a').attr('href');
         location.href = href;
     });
