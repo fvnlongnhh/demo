@@ -328,6 +328,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages #header .container{position: relative;}
 .game_pages #header h1{text-align: center;color: #fff;text-transform: uppercase;font-size: 20px;width: 100%;line-height: 1em}
 .game_pages #header p{margin-bottom: 0;position: absolute;top: -2px;left: 10px;line-height: 1em}
+.game_pages #header p a{display: block;}
 .game_pages #header .btn_arr{}
 .game_pages #header .btn_nav{width: 30px;height: 27px;background: url('../images/ic_gnavi.png') center no-repeat;background-size: cover;top: -5px;}
 .game_pages #header .btn_noti{left: inherit;right: 15px}
@@ -928,33 +929,51 @@ td{line-height: 1.75em;font-size: 14px;}
 #result .rate_tab ul{width: 540px;}
 
 /* ===========   ASIDE NAV   =========== */
-#side_nav{position: absolute;top: 0;left: -100px;width: 100%;height: 100vh;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
+#side_nav{position: absolute;top: 0;left: -100px;width: 100%;height: 100%;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
 #side_nav.active{opacity: 1;z-index: 11;visibility: visible;left: 0}
-#side_nav .side_nav_bg{width: 100%;height: 100vh;position: absolute;top: 0;left: 0;background: rgba(30, 60, 148, 0.5)}
-#side_nav .side_nav_ct{width: 90%;position: relative;z-index: 2;background: #fff;height: 100vh;overflow: auto}
+#side_nav .side_nav_bg{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: rgba(30, 60, 148, 0.5)}
+#side_nav .side_nav_ct{width: 90%;position: relative;z-index: 2;background: #fff;height: 100%;}
 #side_nav .nav_profile{background: #1e3c94; display: flex;padding: 30px 15px;}
 #side_nav .nav_profile .nav_user{display: flex;align-items: center}
 #side_nav .nav_profile .nav_user .user_img{width: 50px;margin: 0 10px 0 0;position: relative;}
 #side_nav .nav_profile .nav_user .user_img::before{background: url('../images/ic_crown.png') center no-repeat;background-size: cover;width: 12px;height: 12px;position: absolute;bottom: 0;right: 5px;content: ''}
 #side_nav .nav_profile .nav_user .user_name{}
-#side_nav .nav_profile .nav_user .user_name p{margin-bottom:0;font-size: 18px;font-weight: 400;color: #fff;line-height: 1em;letter-spacing: 0.025em}
+#side_nav .nav_profile .nav_user .user_name p{margin-bottom: 0;font-size: 18px;font-weight: 400;color: #fff;line-height: 1em;letter-spacing: 0.025em}
 #side_nav .nav_profile .nav_user .user_name .big{font-size: 20px;text-transform: capitalize;margin-bottom: 10px}
 #side_nav .nav_profile .nav_user .user_name .tel{}
 
-#side_nav .nav_wallet{background: #1e3c94;display: flex;padding-bottom: 15px;}
+#side_nav .nav_wallet{background: #1e3c94;display: flex;padding-bottom: 30px;}
 #side_nav .nav_wallet p{width: 50%;color: #fff;text-align: center;display: flex;flex-direction: column;align-items: center;margin-bottom: 0;border-right: 1px dashed #fff;}
 #side_nav .nav_wallet p:last-child{border-right: none;}
 #side_nav .nav_wallet p img{}
 #side_nav .nav_wallet p span{font-size: 24px;letter-spacing: 0.025em;margin: 10px 0}
 #side_nav .nav_wallet p  a{background: #ffd201;color: #1e3c94;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 auto;width: 70px;height: 30px;border-radius: 5px;font-weight: bold;}
 
-#side_nav .nav_list{background: #fff;}
+#side_nav .nav_list{background: #fff;margin-bottom: 15px;}
 #side_nav .nav_list ul{padding: 0 15px;}
 #side_nav .nav_list ul li{}
 #side_nav .nav_list ul li a{display: flex;align-items: center;width: 100%;position: relative;background: url('../images/ic_side.png') no-repeat;background-size: 6px 11px;background-position: 100% 50%;height: 50px;border-bottom: 1px solid #ccc;padding: 0 20px 0 0 }
 #side_nav .nav_list ul li a img{width: 25px;margin-right: 5px}
 
-#side_nav .version{padding: 15px;background: #fff;}
+#side_nav .version{padding: 0 15px;}
+
+/* NOTIFI PAGE */
+.notifi_content{}
+.notifi_content .notifi_item{margin-bottom: 50px;}
+.notifi_content .notifi_item:last-child{margin-bottom: 30px;}
+.notifi_content .notifi_item p{margin-bottom: 0}
+.notifi_content .notifi_item .date{padding-bottom: 10px;border-bottom: 1px solid #ccc;font-weight: bold;font-size: 18px;}
+.notifi_content .notifi_item ul{}
+.notifi_content .notifi_item ul li{padding: 15px 0;border-bottom: 1px solid #ccc;display: flex;align-items: center;}
+.notifi_content .notifi_item ul li p{}
+.notifi_content .notifi_item ul li .icon{width: 80px;height: 80px;display: flex;align-items: center;justify-content: center;text-align: center;}
+.notifi_content .notifi_item ul li .notifi_alert{width: calc(100% - 80px);padding: 0 20px;background: url('../images/ic_side.png') no-repeat;background-size: 6px 11px;background-position: 100% 50%;}
+.notifi_content .notifi_item ul li .notifi_alert p{font-size: 12px;color: #999;display: block;width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.notifi_content .notifi_item ul li .notifi_alert .big{font-size: 16px;}
+
+.notifi_detail_ct{}
+.notifi_detail_ct .center img{width: 100px;}
+.notifi_detail_ct .big{font-size: 18px;color: #1e3d94;margin-bottom: 15px;}
 
 /* =========== FUNCTION BOTTOM =========== */
 .h_menu #wrapper{padding-bottom: 75px}

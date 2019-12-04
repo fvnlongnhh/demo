@@ -25,6 +25,7 @@
     .games_guide a:hover,
     .games_ct .games_item:hover,
     #btn_top:hover,
+    .game_pages #header .btn_noti:hover,
     .game_select .game_random p button:hover,
     .game_checkout .btn a:hover,
     .box_modal .btn_close:hover,
@@ -172,7 +173,6 @@
     .ticket_btn .btn{width: 48%;}
     .ticket_btn .btn a{width: 100%;}
     
-    #side_nav{position: fixed}
 
 }
 
@@ -239,6 +239,7 @@
     .game_content .game_item_power .num span:nth-child(6n + 6){margin-right: 0px}
 
     .game_3dplus .game_item .num span{width: 70px;height: 35px;}
+    .box_pick_num_ct .box_body_l ul li:nth-child(8n + 8){margin-right: 0}
     .game_select_2 .game_type ul{width: 140px}
     .game_pages #header h1{font-size: 18px}
     .payment_bank .payment_item .img{width: 60px;}
@@ -274,6 +275,10 @@
     #side_nav .nav_profile .nav_user .user_name .big{font-size: 18px;margin-bottom: 5px;}
     #side_nav .nav_wallet p span{font-size: 20px;margin: 5px 0}
     #side_nav .nav_wallet p img{width: 30px}
+
+    /* NOTIFI PAGE */
+    .notifi_content .notifi_item ul li .icon{width: 50px;height: 50px}
+    .notifi_content .notifi_item ul li .notifi_alert{width: calc(100% - 50px)}
 }
 
 @media screen and (max-width: 380px) {

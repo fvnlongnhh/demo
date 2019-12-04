@@ -112,12 +112,14 @@ $(document).ready(function() {
     });
 
     $('.side_nav_bg').click(function(){
-        $('#side_nav, body').removeClass('active')
+        $('#side_nav').removeClass('active')
     });
 
     $('.btn_nav').click(function(){
-        $('#side_nav, body').addClass('active')
+        $('#side_nav').addClass('active')
     });
+
+    
 
     if( $('.rate_content').length) {
         $('.rate_tab li').click(function(){
