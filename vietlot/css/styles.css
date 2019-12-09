@@ -743,20 +743,17 @@ td{line-height: 1.75em;font-size: 14px;}
 
 .result_keno{padding: 15px;}
 .result_keno ul{}
-.result_keno ul li{background: #ffda8c;margin-bottom: 30px}
+.result_keno ul li{margin-bottom: 30px}
 .result_keno ul li p{padding: 0;}
-.result_keno ul li .date{padding: 10px;display: flex;border-bottom: 1px solid #fff;align-items: center;margin-bottom: 10px}
+.result_keno ul li .date{padding: 10px;display: flex;border-bottom: 1px solid #000;align-items: center;margin-bottom: 10px}
 .result_keno ul li .date p{padding: 0;width: 50%;margin-bottom: 0}
 .result_keno ul li .date .days{font-size: 14px;display: flex;justify-content: space-between;margin: 0;}
 .result_keno ul li .date .random{display: flex;justify-content: flex-end}
-.result_keno ul li .date .random span{padding: 1px 0;border-radius: 5px;background: #fff;color: #000;text-align: center;display:flex;margin-left: 10px;width: 65px;text-align: center;align-items: center;justify-content: center;}
+.result_keno ul li .date .random span{padding: 3px 0;border-radius: 5px;background: #ffda8c;color: #000;text-align: center;display:flex;margin-left: 10px;width: 65px;text-align: center;align-items: center;justify-content: center;}
 .result_keno ul li .date .random span:first-child{margin-left: 0}
 .result_keno ul li .numb{display: flex;justify-content: center;flex-wrap: wrap;padding:0 0 5px 0}
-.result_keno ul li .numb span{width: 35px;height: 35px;border-radius: 50%;background: #fff;color: #000;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 5px 5px;border:1px solid #000;}
+.result_keno ul li .numb span{width: 35px;height: 35px;border-radius: 50%;background: #f93d3c;color: #fff;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 5px 5px;border:1px solid #f93d3c;}
 
-.result_keno ul li:nth-child(even){background: #f1f3f5}
-.result_keno ul li:nth-child(even) .date{border-color: #111}
-.result_keno ul li:nth-child(even) .random span{background: #ffda8c}
 
 .result_mega{padding: 15px}
 .result_mega p{padding: 0;}
