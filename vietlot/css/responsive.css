@@ -30,6 +30,7 @@
     .game_checkout .btn a:hover,
     .box_modal .btn_close:hover,
     .box04_ct ul li a:hover,
+    .btn_tel a:hover,
     .box_pick_num_ct .box_head p:hover,
     #footer .foot_col ul li a:hover,
     .notifi_item li:hover,
@@ -52,6 +53,8 @@
     .function_bot p a:hover{background: darkorange;}
     
     .box_pick_num_ct .box_body_r .select_price li:hover{background: #ccc;cursor: pointer;}
+
+    .btn_tel a:hover{background: #04a03c;color: #fff;}
     
 
 }

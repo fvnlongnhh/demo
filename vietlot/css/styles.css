@@ -99,23 +99,6 @@ td{line-height: 1.75em;font-size: 14px;}
 .fs12{font-size: 12px;}
 .fs16{font-size: 16px;}
 
-.btn{text-align: center;display: block;margin:0 auto;}
-.btn a{position: relative;text-align: center;color: #fff;width: 290px;height: 40px;background: #1b3a8e;font-size: 14px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 10px;text-transform: uppercase;}
-.btn:last-child a{margin-bottom: 0}
-.btn a span{font-weight: bold}
-.btn a img{}
-.btn_red a{background: #e30922;border-color: #e30922}
-.btn_white a{background: #fff;border-color: #323232;color: #323232}
-.btn_org a{background: #ec971f;border-color: #ec971f;color: #fff}
-.btn_yel a{background: #ffd201;border-color: #ffd201;color: #3d3d3d}
-
-.btn_buy{}
-.btn_buy a{display: flex;flex-direction: column;align-items: center;height: 60px}
-.btn_buy a span{font-size: 12px;font-weight: normal;text-transform: none;line-height: 1em;}
-
-.btn_disable{margin-top: 15px;}
-.btn_disable a{background: #d6d6d6;color: #9d9d9d;cursor: no-drop;border-color: #d6d6d6}
-.btn_disable.active a{background: #ffd201;color: #1b3a8e;border-color: #ffd201;cursor: pointer}
 
 /* SLICK ARROW */
 .slick-arrow{width: 40px;height: 40px;position: absolute;top: calc(50% - 20px);left: 15px;z-index: 1;background: none;border: none;transform: translateY(-20px);opacity: 0;transition: all ease-in-out 0.4s}
@@ -969,6 +952,31 @@ td{line-height: 1.75em;font-size: 14px;}
 .notifi_detail_ct{}
 .notifi_detail_ct .center img{width: 100px;}
 .notifi_detail_ct .big{font-size: 18px;color: #1e3d94;margin-bottom: 15px;}
+
+
+/* BUTTON ALL PAGES */
+.btn{text-align: center;display: block;margin:0 auto;}
+.btn a{position: relative;text-align: center;color: #fff;width: 290px;height: 40px;background: #1b3a8e;font-size: 14px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 10px;text-transform: uppercase;}
+.btn:last-child a{margin-bottom: 0}
+.btn a span{font-weight: bold}
+.btn a img{}
+.btn_red a{background: #e30922;border-color: #e30922}
+.btn_white a{background: #fff;border-color: #323232;color: #323232}
+.btn_org a{background: #ec971f;border-color: #ec971f;color: #fff}
+.btn_yel a{background: #ffd201;border-color: #ffd201;color: #3d3d3d}
+
+.btn_buy{}
+.btn_buy a{display: flex;flex-direction: column;align-items: center;height: 60px}
+.btn_buy a span{font-size: 12px;font-weight: normal;text-transform: none;line-height: 1em;}
+
+.btn_disable{margin-top: 15px;}
+.btn_disable a{background: #d6d6d6;color: #9d9d9d;cursor: no-drop;border-color: #d6d6d6}
+.btn_disable.active a{background: #ffd201;color: #1b3a8e;border-color: #ffd201;cursor: pointer}
+
+.btn_tel{}
+.game_pages .btn_tel a{background: #04a03c;font-weight: normal;text-transform: none;border-color: #04a03c}
+.game_pages .btn_tel a img{margin-right: 5px;}
+
 
 /* =========== FUNCTION BOTTOM =========== */
 .h_menu #wrapper{padding-bottom: 75px}
