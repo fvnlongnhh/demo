@@ -970,8 +970,8 @@ td{line-height: 1.75em;font-size: 14px;}
 .btn_buy a span{font-size: 12px;font-weight: normal;text-transform: none;line-height: 1em;}
 
 .btn_disable{margin-top: 15px;}
-.btn_disable a{background: #d6d6d6;color: #9d9d9d;cursor: no-drop;border-color: #d6d6d6}
-.btn_disable.active a{background: #ffd201;color: #1b3a8e;border-color: #ffd201;cursor: pointer}
+.btn_disable a{background: #d6d6d6;color: #9d9d9d;cursor: no-drop;border-color: #d6d6d6; pointer-events: none;}
+.btn_disable.active a{background: #ffd201;color: #1b3a8e;border-color: #ffd201;cursor: pointer; pointer-events: inherit}
 
 .btn_tel{}
 .game_pages .btn_tel a{background: #04a03c;font-weight: normal;text-transform: none;border-color: #04a03c}
