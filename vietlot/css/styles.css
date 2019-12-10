@@ -975,8 +975,7 @@ td{line-height: 1.75em;font-size: 14px;}
 
 .btn_tel{}
 .game_pages .btn_tel a{background: #04a03c;font-weight: normal;text-transform: none;border-color: #04a03c}
-.game_pages .btn_tel a img{margin-right: 5px;}
-
+.game_pages .btn_tel a img{margin:0 5px 3px 0;}
 
 /* =========== FUNCTION BOTTOM =========== */
 .h_menu #wrapper{padding-bottom: 75px}
