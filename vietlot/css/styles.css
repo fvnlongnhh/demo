@@ -674,7 +674,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .cart_content ul li td span{margin: 0;display: inline-block;}
 .cart_content ul li td.col4 span{width: calc((100% - 1em - 4px) / 4)}
 .cart_content ul li td.col5 span{width: calc((100% - 1em - 5px) / 5)}
-.cart_content ul li td.col6 span{width: calc((100% - 1em - 6px) / 6)}
+.cart_content ul li td.col6 span{width: calc((100% - 1em - 6px) / 6);text-align: center;}
 
 
 .cart_foot{padding: 10px 15px 0;background: #fff}
