@@ -361,6 +361,8 @@ td{line-height: 1.75em;font-size: 14px;}
 .games_ct .games_item.keno{background: #df5386}
 .games_ct .games_item.max3d{background: #ffbb5a}
 .games_ct .games_item.max3d::before{background: url('../images/ic_game_3d_bg.png')}
+.games_ct .games_item.max3d_plus{background: #743ba0}
+.games_ct .games_item.max3d_plus::before{background: url('../images/ic_game_3d_bg.png')}
 .games_ct .games_item.max4d{background: #974398}
 .games_ct .games_item.max4d::before{background: url('../images/ic_game_4d_bg.png')}
 .games_ct .games_item.mega645{background: #059bd1}
@@ -550,6 +552,19 @@ td{line-height: 1.75em;font-size: 14px;}
 .box_pick_num_ct .box_body_3d .box_body_l ul li:last-child{margin: 0}
 .box_pick_num_ct .box_body_3d .box_body_r{width: 120px;padding: 20px 20px 0 0}
 
+.box_pick_num_ct .box_body_3d_plus{display: flex;justify-content: space-between;padding-bottom: 10px}
+.box_pick_num_ct .box_body_3d_plus .box_body_l{display: flex;flex-wrap: wrap;border:none;padding: 20px 10px;width: 50%;border-right: 1px solid #743ba0}
+.box_pick_num_ct .box_body_3d_plus .box_body_l p{width: 100%;margin-bottom: 5px;text-transform: uppercase}
+.box_pick_num_ct .box_body_3d_plus .box_body_l ul{flex-direction: column;width: calc(100% / 3);align-items: center;}
+.box_pick_num_ct .box_body_3d_plus .box_body_l ul li{margin: 0 0 5px}
+.box_pick_num_ct .box_body_3d_plus .box_body_l ul li:last-child{margin: 0}
+.box_pick_num_ct .box_body_3d_plus .box_body_m{display: flex;flex-wrap: wrap;border:none;padding: 20px 10px;width: 50%;}
+.box_pick_num_ct .box_body_3d_plus .box_body_m p{width: 100%;margin-bottom: 5px;text-transform: uppercase}
+.box_pick_num_ct .box_body_3d_plus .box_body_m ul{flex-direction: column;width: calc(100% / 3);align-items: center;display: flex;}
+.box_pick_num_ct .box_body_3d_plus .box_body_m ul li{width: 30px;height: 30px;border-radius: 50%;border: 1px solid #743ba0;display: flex;justify-content: center;align-items: center;font-size: 14px;cursor: pointer;padding-top: 2px;margin: 0 0 5px}
+.box_pick_num_ct .box_body_3d_plus .box_body_m ul li.on{background: #743ba0;color: #fff;}
+.box_pick_num_ct .box_body_3d_plus .box_body_m ul li:last-child{margin: 0}
+
 .box_pick_num_ct .box_body_4d .box_body_l ul{width: 25%;}
  
 .box_pick_num_ct .box_body_auto{margin: 0 auto}
@@ -580,6 +595,30 @@ td{line-height: 1.75em;font-size: 14px;}
 #max3d .game_select_2 .game_date ul li.check span{background: url('../images/ic_3d_checked.png') center no-repeat;background-size: cover}
 #max3d .game_select_2 .game_date .select_box::before,
 #max3d .game_select_2 .game_type .select_type::before{background: url('../images/ic_3d_arr.png') center no-repeat;background-size: cover}
+
+#max3d_plus{}
+#max3d_plus #header{background: #743ba0}
+#max3d_plus .box_pick_num_ct .box_body_l ul li,
+#max3d_plus .game_content .game_item .num span.active{border-color: #743ba0}
+#max3d_plus .game_content .game_item .num span.no_numb{border-color: #d7d7d7}
+#max3d_plus .box_pick_num_ct .box_body_l ul li.on,
+#max3d_plus .game_select .game_random p button,
+#max3d_plus .box_pick_num_ct .box_head,
+#max3d_plus .game_content .game_item .num span.active{background: #743ba0}
+#max3d_plus .game_checkout .btn a,
+#max3d_plus .box_pick_num_ct .box_body_r ul li.on{background: #743ba0;border-color: #743ba0}
+#max3d_plus .game_content .game_item .name,
+#max3d_plus .game_checkout .wallet span{color: #743ba0}
+#max3d_plus .game_select_2 .game_type ul li span,
+#max3d_plus .game_select_2 .game_date ul li span{background: url('../images/ic_3dpl_check.png') center no-repeat;background-size: cover}
+#max3d_plus .game_select_2 .game_type ul li.check span,
+#max3d_plus .game_select_2 .game_date ul li.check span{background: url('../images/ic_3dpl_checked.png') center no-repeat;background-size: cover}
+#max3d_plus .game_select_2 .game_date .select_box::before,
+#max3d_plus .game_select_2 .game_type .select_type::before{background: url('../images/ic_3dpl_arr.png') center no-repeat;background-size: cover}
+
+#max3d_plus .game_content .game_item .num span{width: 100px;height: 35px;border-radius: 10px;font-size: 15px;background: #fff;color: #743ba0}
+#max3d_plus .game_content .game_item .num span.active{color: #fff}
+
 /* ------------ */
 #guide_4d #header,
 #max4d #header{background: #974398}
