@@ -362,7 +362,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .games_ct .games_item.max3d{background: #ffbb5a}
 .games_ct .games_item.max3d::before{background: url('../images/ic_game_3d_bg.png')}
 .games_ct .games_item.max3d_plus{background: #743ba0}
-.games_ct .games_item.max3d_plus::before{background: url('../images/ic_game_3d_bg.png')}
+.games_ct .games_item.max3d_plus::before{background: url('../images/ic_game_3dpl_bg.png')}
 .games_ct .games_item.max4d{background: #974398}
 .games_ct .games_item.max4d::before{background: url('../images/ic_game_4d_bg.png')}
 .games_ct .games_item.mega645{background: #059bd1}
@@ -729,6 +729,9 @@ td{line-height: 1.75em;font-size: 14px;}
 .cart_content ul li.max3d{border-color: #ffbb5a}
 .cart_content ul li.max3d .big{background: #ffbb5a}
 .cart_content ul li.max3d td.bold{color: #ffbb5a}
+.cart_content ul li.max3d_plus{border-color: #743ba0}
+.cart_content ul li.max3d_plus .big{background: #743ba0}
+.cart_content ul li.max3d_plus td.bold{color: #743ba0}
 .cart_content ul li.max4d{border-color: #974398}
 .cart_content ul li.max4d .big{background: #974398}
 .cart_content ul li.max4d td.bold{color: #974398}
@@ -948,7 +951,7 @@ td{line-height: 1.75em;font-size: 14px;}
 #side_nav{position: absolute;top: 0;left: -100px;width: 100%;height: 100%;transition: all ease 0.3s;opacity: 0;visibility: hidden;z-index: -1;}
 #side_nav.active{opacity: 1;z-index: 11;visibility: visible;left: 0}
 #side_nav .side_nav_bg{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: rgba(30, 60, 148, 0.5)}
-#side_nav .side_nav_ct{width: 90%;position: relative;z-index: 2;background: #fff;height: 100%;}
+#side_nav .side_nav_ct{width: 90%;position: relative;z-index: 2;background: #fff;height: 100%;overflow: auto;}
 #side_nav .nav_profile{background: #1e3c94; display: flex;padding: 30px 15px;}
 #side_nav .nav_profile .nav_user{display: flex;align-items: center}
 #side_nav .nav_profile .nav_user .user_img{width: 50px;margin: 0 10px 0 0;position: relative;}
