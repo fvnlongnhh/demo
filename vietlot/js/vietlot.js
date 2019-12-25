@@ -77,6 +77,11 @@ $(document).ready(function() {
         $(this).addClass('on');
     });
 
+    $('.box_body_3d_plus .select_num li').click(function(){
+        $(this).parent().find('li').removeClass('on');
+        $(this).addClass('on');
+    });
+
     $('.select_price li').click(function(){
         $('.select_price li').removeClass('on');
         $(this).toggleClass('on');
