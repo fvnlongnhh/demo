@@ -29,7 +29,6 @@ $(document).ready(function() {
     AOS.init({
         duration: 1000,
         once: true,
-        disable : 'mobile',
     });
 
     $(window).scroll(function() {
@@ -48,7 +47,7 @@ $(document).ready(function() {
 
     if($(window).width() < 769){
             // MENU MOBILE CLICK
-        $(".btn_side").click(function () {
+        $(".btn_open").click(function () {
             $(this).toggleClass('open');
             $("nav ul").toggleClass("active");
             return false;

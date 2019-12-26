@@ -34,21 +34,10 @@ footer .foot_info ul li:hover{opacity: 0.7;}
     .inner{width: 100% !important;min-width: inherit !important;}
     .inner {box-sizing: border-box;padding: 0 15px;}
 
-
-
-    .ttl{text-align: center;margin-bottom: 15px;padding: 0}
-    .ttl h3{width: 100%;left: 0;top: 100px;font-size: 20vw;line-height: 20vw;}
-    .ttl::before{left: calc(50% - 5px)}
-    .ttl::after{left: calc(50% - 28px)}
-
-
     .btn.slick-next,
     .btn.slick-prev{width: 60px;left: calc(50% - 145px)}
     .btn.slick-next{left: inherit;right: calc(50% - 145px)}
     .slick-prev::after{width: 100px;left: 100px}
-
-    footer .inner{padding: 50px 15px;}
-    footer .foot_link ul{margin-bottom: 0}
 
 }
 
@@ -87,22 +76,113 @@ footer .foot_info ul li:hover{opacity: 0.7;}
     nav ul li{margin: 0 auto;width: 100%;text-align: center;border-bottom: 1px solid #ededed}
     nav ul.active{top: 60px;opacity: 1;visibility: visible;z-index: 10;}
 
-    .btn a{font-size: 16px;}
+    .btn a{font-size: 16px;width: 290px;padding: 5px 10px;display: flex;align-items: center;justify-content: center;text-align: center;height: 50px;margin: 0 auto}
+
     
-    .ttl h3{top: 0}
+    .ttl{margin-bottom: 30px}
+    .ttl h3{}
     /*==========================================================================*/
     /*                               MAIN                                       */
     /*==========================================================================*/
-   
+    .box01{padding-top: 150px}
+    .box01 .box01_txt h2{font-size: 32px;}
+    .box01 .box01_link{margin: 30px auto;}
+    .box01 .box01_btn{width: 100%}
+    
+    .box02{padding: 15px 0 0}
+    .box02 ul{margin: 0 auto;flex-wrap: wrap;justify-content: center;}
+    .box02 ul li{width: 32%;margin:0 2% 15px 0}
+    .box02 ul li:nth-child(3n + 3),
+    .box02 ul li:last-child{margin-right: 0}
 
-    footer .inner{flex-direction: column;padding: 30px 15px;}
-    footer .foot_link{width: 100%}
-    footer .foot_info{width: 100%;justify-content: center;align-items: center;}
-    footer .foot_info address{text-align: center;}
-    footer .foot_link ul{display: none;}
-    footer .foot_link p{text-align: center;margin-bottom: 30px}
+    .box03{padding: 50px 0}
+    .box03 ul{}
+    .box03 ul li,
+    .box03 ul li.img_r{width: 490px;margin: 0 auto;flex-direction: column;}
+    .box03 ul li .box03_img{width: 100%;order:1;}
+    .box03 ul li .box03_txt{width: 100%;order:2;padding: 30px}
+    .box03 ul li .box03_txt .big{font-size: 24px}
+    .box03 ul li .box03_txt .light{font-size: 18px;}
 
-   
+    .box04{padding: 30px 0}
+    .box04 .box04_ct{width: 100%;flex-direction: column;align-items: center;justify-content: center;text-align: center;}
+    .box04 .box04_img{width: 150px;margin: 0 auto 15px;}
+    .box04 .box04_txt{width: 100%}
+
+    .box06{padding: 50px 0}
+
+    .box07{padding: 50px 0 300px}
+    .box07 .box07_txt .btn a{padding: 5px 10px}
+
+    .box08 .box08_item{padding: 40px 0 0;justify-content: center;align-items: center;flex-direction: column-reverse;}
+    .box08 .box08_item_l{border-bottom: none;}
+    .box08 .box08_img{width: 100%}
+    .box08 .box08_txt{width: 100%;padding: 0 15px 30px}
+    .box08 .box08_txt ul{margin-top: 30px}
+    .box08 .box08_txt ul li{margin-bottom: 20px}
+    .box08 .box08_txt ul li p span{margin-bottom: 0}
+
+    .box09{padding: 30px 0;text-align: center;}
+    .box10{padding: 90px 0 0}
+    .box10 ul{align-items: flex-start;justify-content: space-between;flex-wrap: wrap;}
+    .box10 ul li{width: 290px;margin-bottom: 50px}
+    .box10 ul li .box_price p{padding: 0 15px}
+    .box10 ul li .box_price .big{padding: 10px 0}
+    .box10 ul li .box_price .price{margin: 30px auto 20px;padding: 0 15px}
+    .box10 ul li .box_price .price span{font-size: 32px}
+    .box10 ul li .box_price .month{width: calc(100% - 30px);margin: 15px auto;}
+    .box10 ul li .box_data{margin-top: 15px}
+    
+    .box11{padding: 50px 0}
+    .box11 .box11_ct{flex-direction: column;}
+    .box11 .box11_ct .ttl{width: 100%}
+    .box11 .box11_ct .box11_form{width: 100%}
+    .box11 .box11_ct .box11_form_bg{padding: 30px;}
+    .box11 .box11_ct .box11_form .link{margin-top: 5px}
+
+    footer{padding-bottom: 10px}
+    footer .inner{padding: 0}
+    footer .foot_ct{padding: 30px 0 0;margin-bottom: 10px;flex-direction: column;}
+    footer .foot_info{width: 100%;text-align: center;}
+    footer .foot_info p{margin-bottom: 5px}
+    footer .foot_info ul{justify-content: center;}
+    footer .foot_link{width: 100%;padding: 0;margin-top: 30px;flex-direction: column;}
+    footer .foot_link ul{width: 100%;}
+    footer .foot_link ul li{width: 100%;border-top: 1px solid rgba(255,255,255,0.15);padding: 10px 15px}
+    footer .foot_link ul li a{display: block;}
+    footer address{padding: 0 15px;text-align: center;}
+
+    /* FONT SIZE ALL */
+    .ttl h3,
+    .box03 .ttl h3,
+    .box06 .ttl h3,
+    .box11 .box11_ct .ttl h3,
+    .box07 .box07_txt .big,
+    .box08 .box08_txt .big,
+    .box10 ul li .box_price .big{font-size: 24px}
+
+    .ttl p,
+    .box01 .box01_txt p,
+    .box01 .box01_link p a,
+    .box01 .box01_btn p a,
+    .box04 .box04_txt .name,
+    .box07 .box07_txt p,
+    .box08 .box08_txt .light,
+    .box08 .box08_txt ul li p span,
+    .box11 .box11_ct .box11_form .big{font-size: 18px;}
+
+    .box04 .box04_txt .class,
+    .box07 .box07_txt .btn a,
+    .box11 .box11_ct .ttl p,
+    footer .foot_info .big,
+    footer .foot_link ul li{font-size: 16px;}
+
+    .box03 ul li .box03_txt p,
+    .box10 ul li .box_price p,
+    .box10 ul li .box_data ol li,
+    .box11 .box11_ct .box11_form input,
+    .box11 .box11_ct .box11_form .link a,
+    footer .foot_info p{font-size: 14px}   
 }
 
 @media screen and (max-width: 560px) {
@@ -110,7 +190,10 @@ footer .foot_info ul li:hover{opacity: 0.7;}
 }
 
 @media screen and (max-width: 480px) {
-    
+    .box01 .box01_btn{flex-direction: column;margin-bottom: 30px}
+    .box01 .box01_btn p{margin-bottom: 20px;}
+    .box01 .box01_link{width: 100%;flex-direction: column;padding: 15px 15px 0}
+    .box01 .box01_link p{margin-bottom: 15px;}
 }
 
 @media screen and (max-width: 420px) {

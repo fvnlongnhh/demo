@@ -73,7 +73,7 @@ nav .nav_ct .btn_try a{background: #fa5a00;border:1px solid #fa5a00;color: #fff;
 
 .btn_open{width: 60px;height:60px;margin: 0;position: fixed;top: 0px;right: 0;z-index: 9;}
 .btn_side{display:block;cursor:pointer;width:100%;height:100%;text-align:center;z-index:9999;position:relative;margin:0 auto;position:absolute;border-radius:0}
-.btn_side span{display:block;position:absolute;height: 2px;width:15px;background:#000;opacity:1;transform:rotate(0deg);transition:.3s ease-in-out}
+.btn_side span{display:block;position:absolute;height: 2px;width:15px;background:#fff;opacity:1;transform:rotate(0deg);transition:.3s ease-in-out}
 .btn_side span:nth-child(even){left:calc(50% + 1px);}
 .btn_side span:nth-child(odd){left:calc(50% - 14px);}
 .btn_side span:nth-child(1),.btn_side span:nth-child(2){top:21px}
@@ -106,7 +106,6 @@ nav .nav_ct .btn_try a{background: #fa5a00;border:1px solid #fa5a00;color: #fff;
 .btn{position: relative;display: block;width: auto;text-align: center;}
 .btn a{width: auto;border: 2px solid #fff;font-size: 24px;position: relative;background: #fff;font-weight: bold;display: inline-block;padding: 15px 40px;border-radius: 50px;transition: all ease 0.3s;}
 
-
 /* SLICK ARROW */
 .slick-arrow{width: 60px;height: 60px;position: absolute;top:calc(50% - 30px);left: 0;z-index: 1;background: none;border: none;transition: all ease-in-out 0.4s;cursor: pointer;}
 .slick-next{left: inherit;right: 0;}
@@ -138,7 +137,7 @@ nav .nav_ct .btn_try a{background: #fa5a00;border:1px solid #fa5a00;color: #fff;
 
 .box01 .box01_btn{width: 660px;display: flex;align-items: center;justify-content: space-between;margin: 0 auto 50px;}
 .box01 .box01_btn p{margin-bottom: 0}
-.box01 .box01_btn p a{border:2px solid #fff;color: #fff;font-size: 28px;padding: 10px 40px;border-radius: 50px;background: none;font-weight: bold;transition: all ease 0.3s;}
+.box01 .box01_btn p a{border:2px solid #fff;color: #fff;font-size: 28px;padding: 15px 40px;border-radius: 50px;background: none;font-weight: bold;transition: all ease 0.3s;display: inline-block;}
 .box01 .box01_btn .btn_re a{background: #fff;color: #2d3345}
 
 .box02{background: #2d3345;padding: 40px 0}
@@ -237,7 +236,6 @@ nav .nav_ct .btn_try a{background: #fa5a00;border:1px solid #fa5a00;color: #fff;
 .box10 ul li.popular .box_price{border-color: #0095fb}
 .box10 ul li.popular .box_price .link a{background: #0095fb;color: #fff;}
 
-
 .box11{background: #f4f5f5;padding: 100px 0}
 .box11 .box11_ct{display: flex;justify-content: space-between;align-items: center;}
 .box11 .box11_ct .ttl{width: 40%;text-align: left;}
@@ -248,8 +246,8 @@ nav .nav_ct .btn_try a{background: #fa5a00;border:1px solid #fa5a00;color: #fff;
 .box11 .box11_ct .box11_form p{}
 .box11 .box11_ct .box11_form .sm{text-align: center;font-size: 12px;font-weight: 300}
 .box11 .box11_ct .box11_form .big{font-size: 24px;font-weight: bold;}
-.box11 .box11_ct .box11_form .link{text-align: center;margin: 30px auto 0;}
-.box11 .box11_ct .box11_form .link a{background: #2d3345;border-radius: 3px;padding: 10px 20px;font-size: 18px;font-weight: bold;color: #fff;border: 2px solid #2d3345}
+.box11 .box11_ct .box11_form .link{text-align: center;margin: 20px auto 0;}
+.box11 .box11_ct .box11_form .link a{background: #2d3345;border-radius: 3px;padding: 10px 20px;font-size: 18px;font-weight: bold;color: #fff;border: 2px solid #2d3345;display: inline-block}
 .box11 .box11_ct .box11_form input{font-size: 18px;padding: 15px 25px;border:1px solid #ccc;margin-bottom: 10px;width: 100%;height: auto;border-radius: 3px}
 .box11 .box11_ct .box11_form input::placeholder{color: #999;font-weight: 300}
 /*==========================================================================*/
