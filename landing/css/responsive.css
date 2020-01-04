@@ -70,11 +70,13 @@ footer .foot_info ul li:hover{opacity: 0.7;}
     /*==========================================================================*/
     /*                               ALL                                        */
     /*==========================================================================*/
-    header.active{background: rgba(0, 0, 0, 0.2)}
+    header.active{background: rgba(0, 0, 0, 0.5)}
+    header #logo{width: 150px}
     nav{height: 60px;display: flex;align-items: center;}
-    nav ul{position: fixed;top: 100px;left: 0;opacity: 0;visibility: hidden;width: 100%;height: calc(100vh - 60px);background: rgba(255,255,255,0.9);transition: all ease 0.5s;display: flex;flex-direction: column;z-index: -1;justify-content: flex-start}
-    nav ul li{margin: 0 auto;width: 100%;text-align: center;border-bottom: 1px solid #ededed}
+    nav .nav_ct ul{position: fixed;top: 100px;left: 0;opacity: 0;visibility: hidden;width: 100%;height: calc(100vh - 60px);background: #2d3345;transition: all ease 0.5s;display: flex;flex-direction: column;z-index: -1;justify-content: flex-start;align-items: flex-start;}
+    nav ul li{margin: 0 auto;width: 100%;text-align: center;border-bottom: 1px solid #0095fb}
     nav ul.active{top: 60px;opacity: 1;visibility: visible;z-index: 10;}
+    nav .nav_ct ul li a{color: #fff;padding: 15px;font-size: 16px;background: #2d3345;}
 
     .btn a{font-size: 16px;width: 290px;padding: 5px 10px;display: flex;align-items: center;justify-content: center;text-align: center;height: 50px;margin: 0 auto}
 
@@ -112,6 +114,8 @@ footer .foot_info ul li:hover{opacity: 0.7;}
     .box04 .box04_txt{width: 100%}
 
     .box06{padding: 50px 0}
+    .box06 .box06_list ul.slick-dots,
+    .box06 .btn{margin-top: 30px}
 
     .box07{padding: 50px 0 300px}
     .box07 .box07_txt .btn a{padding: 5px 10px}
@@ -142,7 +146,7 @@ footer .foot_info ul li:hover{opacity: 0.7;}
     .box11 .box11_ct .box11_form{width: 100%}
     .box11 .box11_ct .box11_form_bg{padding: 30px;}
     .box11 .box11_ct .box11_form .link{margin-top: 5px}
-
+    .box11 .box11_ct .box11_form input{padding: 10px 15px;}
     footer{padding-bottom: 10px}
     footer .inner{padding: 0}
     footer .foot_ct{padding: 30px 0 0;margin-bottom: 10px;flex-direction: column;}
@@ -162,7 +166,7 @@ footer .foot_info ul li:hover{opacity: 0.7;}
     .box11 .box11_ct .ttl h3,
     .box07 .box07_txt .big,
     .box08 .box08_txt .big,
-    .box10 ul li .box_price .big{font-size: 24px}
+    .box10 ul li .box_price .big{font-size: 24px;line-height: 1.5em}
 
     .ttl p,
     .box01 .box01_txt p,
@@ -199,6 +203,8 @@ footer .foot_info ul li:hover{opacity: 0.7;}
 }
 
 @media screen and (max-width: 480px) {
+    nav .nav_ct .btn_mail,
+    nav .nav_ct .btn_try{display: none}
     .box01 .box01_btn{flex-direction: column;margin-bottom: 30px}
     .box01 .box01_btn p{margin-bottom: 20px;}
     .box01 .box01_link{width: 100%;flex-direction: column;padding: 15px 15px 0}
@@ -208,7 +214,9 @@ footer .foot_info ul li:hover{opacity: 0.7;}
 }
 
 @media screen and (max-width: 420px) {
+    .box01 .box01_txt h2{font-size: 30px;}
     .box03 ul li .box03_txt{padding: 10px 15px 15px}
+    .box11 .box11_ct .box11_form_bg{padding:  15px}
 }
 
 @media screen and (max-width: 380px) {

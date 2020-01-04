@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('.box06_list ul').slick({
         dots: true,
         arrows: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         speed: 500,
         pauseOnHover: false,
         pauseOnFocuse: false,
@@ -13,14 +13,14 @@ $(document).ready(function() {
         centerPadding : '50px',
         autoplay: true,
         autoplaySpeed: 5000,
-        infinite: false,
+        infinite: true,
         responsive: [
             {
               breakpoint: 769,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
               }
-            }
+            },
         ],
         prevArrow: '<button type="button" class="slick-prev"><a><img src="./images/ic_prev.jpg"></a></button>',
         nextArrow: '<button type="button" class="slick-next"><a><img src="./images/ic_next.jpg"></a></button>'
@@ -47,22 +47,19 @@ $(document).ready(function() {
 
     if($(window).width() < 769){
             // MENU MOBILE CLICK
-        $(".btn_open").click(function () {
+        $(".btn_side").click(function () {
             $(this).toggleClass('open');
             $("nav ul").toggleClass("active");
             return false;
         });
+
+        $('nav .nav_ct ul li a').click(function(){
+            $('.btn_side').removeClass('.open')
+            $("nav ul").removeClass("active");
+        });
     }
 
-    $('.service_link ul li').click(function(){
-        var tab_id = $(this).attr('data-tab');
 
-        $('.service_link ul li').removeClass('current');
-        $('.tab-content').removeClass('current');
-
-        $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
-    })
 });
 
 $(window).bind('load',function(){
@@ -72,10 +69,10 @@ $(window).bind('load',function(){
       if ($($(this).attr('href') ).length ) {
         var p = $( $(this).attr('href') ).offset();
         if($(window).width() > 768){
-          $('html,body').animate({ scrollTop: p.top - 100}, 400);
+          $('html,body').animate({ scrollTop: p.top - 50}, 400);
         }
         else {
-          $('html,body').animate({ scrollTop: p.top - 100}, 400);
+          $('html,body').animate({ scrollTop: p.top - 60}, 400);
         }
       }
       return false;
