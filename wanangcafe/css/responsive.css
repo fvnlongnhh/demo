@@ -208,6 +208,9 @@ footer .foot_info .mail a{font-size: 14px;}
 
 @media screen and (max-width: 420px) {
 .ttl h3{font-size: 20px}
+footer .foot_ct{justify-content: center;}
+footer .foot_item{width: 100%}
+
 .coffee_txt .cf_name p{font-size: 16px;}
 .coffee_txt .cf_name .en{font-size: 24px;}
 .coffee_txt .cf_info .en{font-size: 18px}
