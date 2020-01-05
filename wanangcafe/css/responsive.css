@@ -4,15 +4,18 @@
 
 /* LAPTOP SCREEN */
 @media (min-width: 769px) and (max-width: 1441px){
-    .box01 .box01_ttl p{font-size: 48px;}
-    .box01 .box01_txt{width: 800px;}
+.box01 .box01_ttl p{font-size: 48px;}
+.box01 .box01_txt{width: 800px;}
 } 
 
 /* ALL SCREEN & NOT MOBILE */
 @media screen and (min-width: 769px) {
+a:hover{color: #000;}
 nav ul li:hover a,
 nav ul li a:hover,
 nav ul li.sub li a:hover{color: #c49a6c}
+nav ul li.sub:hover ul{top: 100%;opacity: 1;visibility: visible}
+nav ul li.sub:hover li a{color: #000}
 
 .btn:hover::before{right: -25px}
 .btn a:hover{background: #ffd200;color: #000}
@@ -22,6 +25,7 @@ nav ul li.sub li a:hover{color: #c49a6c}
 .slick-arrow:hover,
 .slick-dots li:hover,
 #btn_top:hover,
+.box03 .box03_form dt:hover,
 .farm_list dd a:hover{opacity: 0.7;cursor: pointer;}
 
 footer .foot_link ul li a:hover{color: #000}
@@ -31,103 +35,187 @@ footer .foot_mail .link a:hover{background: #fff;color: #000}
 
 .farm_list a:hover,
 .shop_list a:hover{text-decoration: none;}
+
+.coffee_txt .cf_info .link a:hover,
 .nuts_ct .nuts_item dd .link a:hover{background: #fff;color: #C49A6C}
 
 .btn_open{display: none}
 }
 
-@media screen and (max-width: 1200px) {
-    #wrapper,
-    header,
-    #main,
-    footer,
-    .inner{width: 100% !important;min-width: inherit !important;}
-    .inner {padding: 0 15px;}
-
-    .ttl{text-align: center;margin-bottom: 15px;padding: 0}
-    .ttl h3{width: 100%;left: 0;top: 100px;font-size: 20vw;line-height: 20vw;}
-    .ttl::before{left: calc(50% - 5px)}
-    .ttl::after{left: calc(50% - 28px)}
-
-    .btn.slick-next,
-    .btn.slick-prev{width: 60px;left: calc(50% - 145px)}
-    .btn.slick-next{left: inherit;right: calc(50% - 145px)}
-    .slick-prev::after{width: 100px;left: 100px}
-
-    footer .inner{padding: 50px 15px;}
-    footer .foot_link ul{margin-bottom: 0}
-}
-
+/* IPAD */
 @media screen and (max-width: 768px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    input,
-    button,
-    textarea,
-    select,
-    p,
-    blockquote,
-    th,
-    td,
-    pre,
-    address,
-    li,
-    dt,
-    dd{font-size: 14px;line-height: 1.75em;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td,
+pre,
+address,
+li,
+dt,
+dd{font-size: 14px;}
 
-    .sp {display: block;}
-    .pc {display: none;}
-    /*---*/
-    
-    #btn_top{width: 40px;bottom: 35px;height: 40px;}
-    /*==========================================================================*/
-    /*                               ALL                                        */
-    /*==========================================================================*/
-    header.active{background: rgba(0, 0, 0, 0.2)}
-    nav{height: 60px;display: flex;align-items: center;}
-    nav ul{position: fixed;top: 100px;left: 0;opacity: 0;visibility: hidden;width: 100%;height: calc(100vh - 60px);background: rgba(255,255,255,0.9);transition: all ease 0.5s;display: flex;flex-direction: column;z-index: -1;justify-content: flex-start}
-    nav ul li{margin: 0 auto;width: 100%;text-align: center;border-bottom: 1px solid #ededed}
-    nav ul.active{top: 60px;opacity: 1;visibility: visible;z-index: 10;}
+header,
+footer,
+#wrapper,
+#main,
+#content{width: 100% !important;min-width: inherit !important;}
+#content {padding: 0 15px;}
+.sp{display: block;}
+.pc{display: none;}
 
-    .btn a{font-size: 16px;}
-    
-    .ttl h3{top: 0}
-    /*==========================================================================*/
-    /*                               MAIN                                       */
-    /*==========================================================================*/
-    
-    footer .inner{flex-direction: column;padding: 30px 15px;}
-    footer .foot_link{width: 100%}
-    footer .foot_info{width: 100%;justify-content: center;align-items: center;}
-    footer .foot_info address{text-align: center;}
-    footer .foot_link ul{display: none;}
-    footer .foot_link p{text-align: center;margin-bottom: 30px}
+/*==========================================================================*/
+/*                               ALL                                        */
+/*==========================================================================*/
+header,
+header.active{height: auto;padding: 10px 15px}
+nav{}
+nav #logo{width: 120px}
+nav ul{position: absolute;top: 120px;left: 0;width: 100%;height: calc(100vh - 66px);background: #C49A6C;transition: all ease 0.3s;opacity: 0;visibility: hidden;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start}
+nav ul.active{top: 66px;opacity: 1;visibility: visible}
+nav ul li{width: 100%;margin: 0}
+nav ul li a{text-align: center;border-bottom: 1px solid #fff;color: #fff;}
+nav ul li.sub::before{right: 15px;transition: all ease 0.3s;background: url('../images/ic_nav_w.png') center no-repeat;background-size: cover;top: 20px}
+nav ul li.sub.active::before{transform: rotate(-90deg)}
+nav ul li.sub ul{position: relative;top: inherit;left: inherit;width: 100%;box-shadow: none;opacity: 1;visibility: visible;transition: none;background: none;}
+nav ul li.sub ul li a{background: #fff;border-bottom-color: #C49A6C;color: #C49A6C;font-size: 14px;}
 
-    
-    /*==========================================================================*/
-    /*                              CHILD PAGE                                  */
-    /*==========================================================================*/
-    
+.slick-arrow{width: 40px;height: 40px;top: calc(50% - 20px);left: 0}
+.slick-next{left: inherit;right: 0}
+.slick-dots{bottom: 15px}
+.slick-dots li{width: 10px;height: 10px}
+
+.btn a{font-size: 14px;}
+#btn_top{width: 40px;bottom: 35px;height: 40px;}
+
+/*==========================================================================*/
+/*                               MAIN                                       */
+/*==========================================================================*/
+#main{margin-top: 66px}
+.ttl{margin: 50px 0 30px}
+.ttl h3{font-size: 24px;padding: 0 15px}
+
+.box01{}
+.box01 .box01_ct{padding: 50px 15px;flex-direction: column;justify-content: center;align-items: center;}
+.box01 .box01_ttl p{font-size: 36px;text-align: center;}
+.box01 .box01_txt{width: 100%;margin-top: 30px}
+
+.box03{}
+.box03 .box03_form{flex-direction: column;padding: 0 15px 50px}
+.box03 .box03_form dl{width: 540px;margin: 0 auto}
+.box03 .box03_form dt a span{font-size: 36px}
+.box03 .box03_form dd .big{font-size: 20px;margin: 15px 0}
+
+footer{padding: 50px 15px 15px}
+footer .ttl h3{padding: 0}
+footer .ttl span{font-size: 42px;margin-bottom: 10px}
+footer .foot_ct{padding-top: 15px;margin-top: 15px;flex-wrap: wrap;justify-content: space-between;align-items: center;}
+footer .foot_item{width: 290px}
+footer .foot_item .en{font-size: 20px}
+footer .foot_mail{margin-bottom: 30px;}
+footer .foot_mail .mail{margin: 30px auto;}
+footer .foot_mail .mail a{font-size: 14px;padding-right: 0;width: 290px}
+footer .foot_mail .link a{margin: 0 auto}
+footer .foot_link{display: none;}
+footer .foot_info .mail a{font-size: 14px;}
+.sub footer{margin-top: 50px}
+/*==========================================================================*/
+/*                              CHILD PAGE                                  */
+/*==========================================================================*/
+/* ALL PAGES */
+#top_info{padding: 150px 15px 50px;height: calc(100vh - 66px);min-height: 500px}
+#top_info::before{width: 100%;height: 100%;top: 0;left: 0}
+#top_info h2{font-size: 42px;margin-bottom: 15px;}
+#top_info p{width: 100%;font-size: 18px}
+
+/* BACKGROUND TOP INFO */
+#farm #top_info::before{background: url('../images/farm_bg_sp.png') no-repeat;background-size: cover;}
+#shop #top_info::before{background: url('../images/shop_bg_sp.png') no-repeat;background-size: cover;}
+
+/* SHOP PAGE */
+.shop_list dl{padding: 0 15px 30px;flex-direction: column;}
+.shop_list dt{width: 100%;padding-top: 30px}
+.shop_list dt .en{font-size: 24px;margin-bottom: 15px;}
+.shop_list dd{width: 100%;height: calc((100vw - 30px) * 9 / 16)}
+
+/* FARM PAGE */
+.farm_list{}
+.farm_list dl{flex-direction: column;margin-bottom: 30px;padding-bottom: 30px}
+.farm_list dt{width: 100%}
+.farm_list dt p{font-size: 14px;}
+.farm_list dt .en{font-size: 18px;}
+.farm_list dd{width: 100%;}
+
+/* RAW FOOD PAGE */
+.rawfood_ct{margin-bottom: 50px}
+.rawfood_ct dl{flex-direction: column;padding: 0 15px 30px}
+.rawfood_ct dt{width: 100%;padding-top: 30px}
+.rawfood_ct dt .en{font-size: 32px;margin-bottom: 15px;}
+.rawfood_ct dd{width: 100%;height: calc((100vw - 30px) * 9 / 16)}
+
+.rawfood_list{padding: 0 15px;}
+.rawfood_list dl{flex-direction: column;margin-bottom: 30px;padding-bottom: 30px;}
+.rawfood_list dt{width: 100%}
+.rawfood_list dt p{font-size: 14px;}
+.rawfood_list dt .en{font-size: 20px}
+.rawfood_list dd{width: 100%;height: calc((100vw - 30px) * 9 / 16)}
+
+/* NUTS PAGE */
+.nuts_ct .nuts_item{}
+.nuts_ct .nuts_item .ttl{margin: 50px auto}
+.nuts_ct .nuts_item dl{}
+.nuts_ct .nuts_item dt{position: relative;height: 320px}
+.nuts_ct .nuts_item dt img{position: absolute;top: 0;left: calc(50% - 425px);max-width: inherit;width: 850px;height: 320px}
+.nuts_ct .nuts_item dd{padding: 0 15px;height: 100%;display: flex;justify-content: center;flex-direction: column;}
+.nuts_ct .nuts_item dd .en{font-size: 24px;margin-bottom: 15px;}
+.nuts_ct .nuts_item dd .link{margin-bottom: 0}
+
+/* COFFEE PAGE */
+.coffee_ct{flex-direction: column;}
+.coffee_img{width: 100%}
+.coffee_txt{width: 100%;height: auto;overflow: inherit;padding: 30px 15px 0;}
+.coffee_txt .cf_name{}
+.coffee_txt .cf_name p{font-size: 18px;}
+.coffee_txt .cf_name .en{font-size: 32px;}
+.coffee_txt .cf_name .sort{font-size: 14px;}
+.coffee_txt .cf_country{flex-direction: column;margin: 30px 0 0}
+.coffee_txt .cf_country p{font-size: 14px;margin-bottom: 30px;}
+.coffee_txt .cf_country span{font-size: 18px;}
+.coffee_txt .cf_info{}
+.coffee_txt .cf_info .en{font-size: 20px;}
+.coffee_txt .cf_info .link a{margin: 0 auto;}
+.coffee_video{padding: 0 15px;margin-top: 50px;width: 100%;height: calc((100vw - 30px) * 9 / 16)}
+.coffee_video iframe{width: 100%;height: 100%;}
+
 }
 
 @media screen and (max-width: 560px) {
-
+.box03 .box03_form dl{width: 100%;}
 }
 
 @media screen and (max-width: 480px) {
-   
+
 }
 
 @media screen and (max-width: 420px) {
-   
+.ttl h3{font-size: 20px}
+.coffee_txt .cf_name p{font-size: 16px;}
+.coffee_txt .cf_name .en{font-size: 24px;}
+.coffee_txt .cf_info .en{font-size: 18px}
+
 }
 
 @media screen and (max-width: 380px) {
-  
+
 }
 
 @media screen and (max-width: 360px) {

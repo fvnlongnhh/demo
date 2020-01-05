@@ -40,7 +40,6 @@ body.active{overflow: hidden}
 #wrapper{min-width:1280px;overflow: hidden;}
 .inner {width:1200px;margin: 0 auto;}
 a{text-decoration: none;color: #000;}
-a:hover{color: #000;}
 
 p,
 dd,
@@ -67,8 +66,6 @@ nav ul li a{text-transform: capitalize;padding: 15px 0;display: block;position: 
 nav ul li.sub{position: relative;}
 nav ul li.sub::before{width: 12px;height: 7px;background: url('../images/ic_nav.png') center no-repeat;background-size: cover;content: '';position: absolute;top: calc(50% - 3px);right: -15px;}
 nav ul li.sub ul{width: 300px;height: auto;background: #fff;box-shadow: 1px 0 8px #eee;position: absolute;top: 120%;left: 0;display: block;opacity: 0;visibility: hidden;transition: all ease 0.3s}
-nav ul li.sub:hover ul{top: 100%;opacity: 1;visibility: visible}
-nav ul li.sub:hover li a{color: #000}
 nav ul li.sub ul li{display: block;margin: 0;}
 nav ul li.sub ul li a{padding: 10px 15px;font-size: 16px;border-bottom: 1px solid #ededed;}
 
@@ -206,7 +203,8 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 #content{padding: 0 3%}
 #shop #content,
 #rawfood #content,
-#nuts #content{padding: 0}
+#nuts #content,
+.cafe_sub #content{padding: 0}
 
 /* TOP INFO */
 #top_info{padding: 100px 3% 0;height: 720px;position: relative;}
@@ -273,6 +271,32 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 .rawfood_list dd iframe{width: 100%;height: 100%;border:none;outline: none}
 .rawfood_list dl:last-child{margin-bottom: 0;padding-bottom: 0;border:none;}
 
+/* COFFEE PAGE */
+.coffee_ct{display: flex;align-items: center;}
+.coffee_img{width: 50%}
+.coffee_img ul{}
+.coffee_img ul li{}
+.coffee_img .slick-arrow{width: 56px;height: 56px;top: calc(50% - 28px)}
+.coffee_img .slick-dots{bottom: 50px}
+.coffee_txt{width: 50%;height: 50vw;overflow: auto;padding: 30px}
+.coffee_txt p{margin-bottom: 0}
+.coffee_txt .cf_name{}
+.coffee_txt .cf_name p{font-size: 20px}
+.coffee_txt .cf_name .en{font-size: 48px}
+.coffee_txt .cf_name .sort{font-size: 16px;font-weight: bold}
+
+.coffee_txt .cf_country{display: flex;justify-content: space-between;margin: 50px 0}
+.coffee_txt .cf_country p{font-size: 16px;color: #C49A6C;text-transform: uppercase;}
+.coffee_txt .cf_country span{color: #000;font-size: 20px;display: block;text-transform: capitalize}
+
+.coffee_txt .cf_info{}
+.coffee_txt .cf_info p{margin-bottom: 30px}
+.coffee_txt .cf_info .en{font-size: 24px;color: #C49A6C;margin-bottom: 10px}
+.coffee_txt .cf_info .link{margin-bottom: 0}
+.coffee_txt .cf_info .link a{width: 200px;height: 50px;border:1px solid #C49A6C;border-radius: 5px;color: #fff;transition: all ease 0.3s;display: flex;align-items: center;justify-content: center;text-align: center;background: #C49A6C}
+
+.coffee_video{padding: 0 3%;background: #C49A6C;margin-top: 100px;display: flex;justify-content: center;}
+.coffee_video iframe{width: 800px;height: 450px;border:none;outline: none;}
 
 /* FIREFOX CSS */
 @supports (-moz-appearance:none) and (-webkit-appearance:none)
@@ -282,7 +306,7 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 
 /* IE STUPID CSS */
 @media screen\0 {
-	
+.slick-slide img{flex-shrink: 0}
 }
 
 /* EDGE 12+ CSS */
