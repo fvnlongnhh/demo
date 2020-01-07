@@ -197,6 +197,9 @@ footer .foot_info .mail a{font-size: 14px;}
 .coffee_img{width: 100vw;height: 100vw;overflow: hidden;}
 .coffee_img li{display: flex;width: 100vw;height: 100vw;justify-content: center;align-items: center;text-align: center;}
 .coffee_img li img{max-width: 100%;max-height: 100%;width: auto;height: auto;flex-shrink: 0;}
+.coffee_img .slick-dots li{width: 18px;height: 18px;}
+
+
 .coffee_txt{width: 100%;height: auto;overflow: inherit;padding: 30px 15px 0;}
 .coffee_txt .cf_name{}
 .coffee_txt .cf_name p{font-size: 18px;}
