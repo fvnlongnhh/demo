@@ -273,7 +273,8 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 
 /* COFFEE PAGE */
 .coffee_ct{display: flex;align-items: center;height: calc(100vh - 120px);overflow: hidden}
-
+.coffee_img{width: 50%}
+.coffee_img ul{}
 .coffee_txt{width: 50%;height: 100%;overflow: auto;padding: 30px}
 .coffee_txt p{margin-bottom: 0}
 .coffee_txt .cf_name{}
@@ -310,5 +311,11 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 	
 }
 
+
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+		.coffee_img ul li img{max-height: 100%;}
+    }
+}
 
 
