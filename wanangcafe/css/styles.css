@@ -311,11 +311,3 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 	
 }
 
-
-@media not all and (min-resolution:.001dpcm) {
-    @media {
-		.coffee_img ul li img{max-height: 100%;}
-    }
-}
-
-
