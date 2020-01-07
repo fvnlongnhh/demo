@@ -194,7 +194,7 @@ footer .foot_info .mail a{font-size: 14px;}
 
 /* COFFEE PAGE */
 .coffee_ct{flex-direction: column;height: auto;overflow: inherit;}
-.coffee_img{width: 100%}
+.coffee_img{width: 100vw;height: 100vw;overflow: hidden;}
 .coffee_img li img{max-width: 100vw;max-height: 100vw;}
 .coffee_txt{width: 100%;height: auto;overflow: inherit;padding: 30px 15px 0;}
 .coffee_txt .cf_name{}

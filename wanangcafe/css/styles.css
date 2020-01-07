@@ -272,7 +272,7 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 .rawfood_list dl:last-child{margin-bottom: 0;padding-bottom: 0;border:none;}
 
 /* COFFEE PAGE */
-.coffee_ct{display: flex;align-items: center;height: calc(100vh - 120px);overflow: hidden}
+.coffee_ct{display: flex;align-items: center;height: calc(100vh - 120px);overflow: hidden;width: 100vw;}
 .coffee_img{width: 50%}
 .coffee_img ul{}
 .coffee_txt{width: 50%;height: 100%;overflow: auto;padding: 30px}
