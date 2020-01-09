@@ -37,7 +37,7 @@ select{height: 35px;border:1px solid #999;padding: 5px;font-size: 14px;backgroun
 html {background: none;}
 body {color: #000;font-family: 'Montserrat', sans-serif;}
 body.active{overflow: hidden}
-#wrapper{min-width:1280px;overflow: hidden;}
+#wrapper{min-width:1260px;overflow: hidden;}
 .inner {width:1200px;margin: 0 auto;}
 a{text-decoration: none;color: #000;}
 
@@ -150,7 +150,7 @@ nav ul li.sub ul li a{font-family: 'Montserrat', sans-serif;}
 .box02 h3{}
 .box02 .box02_video{}
 .box02 .box02_video iframe,
-.box02 .box02_video video{border:none;outline: none;width: 100vw;height: calc(100vw * 16 / 9)}
+.box02 .box02_video video{border:none;outline: none;width: 100vw;height: calc(100vw * 9 / 16)}
 
 .box03{}
 .box03 .box03_form{display: flex;justify-content: space-between;padding: 0 3% 50px}
@@ -186,11 +186,11 @@ footer .foot_link ul li{margin-bottom: 10px}
 footer .foot_link ul li a{color: #fff;}
 
 footer .foot_info{}
-footer .foot_info p{}
-footer .foot_info .mail{}
+footer .foot_info p{margin-bottom: 15px;font-size: 16px;}
+footer .foot_info .mail{margin: 30px 0;}
 footer .foot_info .mail a{font-size: 16px;font-weight: bold}
-footer .foot_info .tel{}
-footer .foot_info .tel a{background: url('../images/ic_tel.png') center left no-repeat;background-size: 25px 25px;padding-left: 35px;display: block;font-weight: bold;font-size: 22px}
+footer .foot_info .tel{margin-bottom: 30px}
+footer .foot_info .tel a{background: url('../images/ic_tel.png') center left no-repeat;background-size: 25px 25px;padding-left: 35px;display: block;font-size: 18px}
 footer .foot_info .social{}
 footer .foot_info .social a{margin-right: 10px}
 footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
@@ -201,7 +201,7 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 /*                                SUB PAGE                                  */
 /*==========================================================================*/
 #content{padding: 0 3%}
-#shop #content,
+#partner #content,
 #rawfood #content,
 #nuts #content,
 .cafe_sub #content{padding: 0}
@@ -214,7 +214,7 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 
 /* BACKGROUND TOP INFO */
 #farm #top_info::before{background: url('../images/farm_bg.png') no-repeat;}
-#shop #top_info::before{background: url('../images/shop_bg.png') no-repeat;}
+#partner #top_info::before{background: url('../images/shop_bg.png') no-repeat;}
 
 /* FARM PAGE */
 .farm_list{}
@@ -272,13 +272,10 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 .rawfood_list dl:last-child{margin-bottom: 0;padding-bottom: 0;border:none;}
 
 /* COFFEE PAGE */
-.coffee_ct{display: flex;align-items: center;}
+.coffee_ct{display: flex;align-items: center;height: calc(100vh - 120px);overflow: hidden;width: 100vw;}
 .coffee_img{width: 50%}
 .coffee_img ul{}
-.coffee_img ul li{}
-.coffee_img .slick-arrow{width: 56px;height: 56px;top: calc(50% - 28px)}
-.coffee_img .slick-dots{bottom: 50px}
-.coffee_txt{width: 50%;height: 50vw;overflow: auto;padding: 30px}
+.coffee_txt{width: 50%;height: 100%;overflow: auto;padding: 30px}
 .coffee_txt p{margin-bottom: 0}
 .coffee_txt .cf_name{}
 .coffee_txt .cf_name p{font-size: 20px}
@@ -313,6 +310,4 @@ footer address{text-align: center;font-size: 12px;color: #fff;margin-top: 15px;}
 @supports (-ms-ime-align:auto) {
 	
 }
-
-
 

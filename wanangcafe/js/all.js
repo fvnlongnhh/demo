@@ -37,16 +37,3 @@ $(document).ready(function() {
         offset : 200,
     });
 });
-
-if( $('.coffee_img').length){
-    $('.coffee_img ul').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: true,
-        fade: true,
-        prevArrow: '<button type="button" class="slick-prev"><a></a></button>',
-        nextArrow: '<button type="button" class="slick-next"><a></a></button>'
-    });
-}
-
