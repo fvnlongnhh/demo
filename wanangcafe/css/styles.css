@@ -150,7 +150,7 @@ nav ul li.sub ul li a{font-family: 'Montserrat', sans-serif;}
 .box02 h3{}
 .box02 .box02_video{}
 .box02 .box02_video iframe,
-.box02 .box02_video video{border:none;outline: none;width: 100vw;height: calc(100vw * 16 / 9)}
+.box02 .box02_video video{border:none;outline: none;width: 100vw;height: calc(100vw * 9 / 16)}
 
 .box03{}
 .box03 .box03_form{display: flex;justify-content: space-between;padding: 0 3% 50px}
