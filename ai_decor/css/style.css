@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=vietnamese');
 
 /*** Reset CSS ***/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,table,tr,th,td { margin: 0; padding: 0; }
@@ -21,7 +22,7 @@ html {background: none;}
 a{text-decoration: none;color: #da5d24;}
 a:hover,
 a:active,
-a:focus{outline: 0;text-decoration: underline;}
+a:focus{outline: 0;}
 img {vertical-align: middle;max-width:100%;}
 input::-moz-focus-inner {border: 0;}
 ul{list-style: none;}
@@ -55,25 +56,34 @@ header .head_fct p a{color: #fff;}
 header .head_fct p a img{vertical-align: middle;margin:0 5px 2px 0;}
 header .head_fct p a:hover{color: #f8b15c;}
 
-header .head_ct{background: #fff;position: relative;z-index: 9;box-shadow: 0px 5px 10px #ccc;}
+header .head_ct{background: #fff;position: relative;z-index: 9;height: 120px;display: flex;align-items: center;}
 header .head_ct.fixed{position: fixed;top: -100px;left: 0;width: 100%;opacity: 0;transition: all ease 0.3s}
 header .head_ct.active{top: 0;opacity: 1;}
 header .head_ct .container{display: flex;justify-content: space-between;align-items: center;}
 header .head_ct #logo{width: 250px;}
 header .head_ct #logo a{display: block;line-height: 0}
+
 header .head_ct nav{width: calc(100% - 300px);display: flex;align-items: center;justify-content: flex-end}
 header .head_ct nav ul{display: flex;justify-content: flex-end}
-header .head_ct nav ul li{padding: 26px 20px;position: relative;}
-header .head_ct nav ul li::before{background: #aaa;width: 1px;height: 20px;position: absolute;top: calc(50% - 10px);right: 0;content: ''}
-header .head_ct nav ul li a{text-transform: uppercase;cursor: pointer;}
+header .head_ct nav ul li{position: relative;padding: 20px 0;margin-left: 40px;}
+header .head_ct nav ul li a{text-transform: uppercase;cursor: pointer;font-size: 16px;}
 header .head_ct nav ul li.sub{position: relative;}
-header .head_ct nav ul li.sub ul{justify-content: center;flex-direction: column;position: absolute;top: 120%;left: 0;opacity: 0;visibility: hidden;transition: all ease 0.3s;width: 200px;background: rgba(255,255,255,0.9);border-radius: 0 0 5px 5px;}
-header .head_ct nav ul li.sub ul li{width: 100%;border:none;border-bottom: 1px dashed #f8b15c;margin-left: 0;padding: 0}
+header .head_ct nav ul li.sub ul{justify-content: center;flex-direction: column;position: absolute;top: 120%;left: 0;opacity: 0;visibility: hidden;transition: all ease 0.3s;width: 200px;background: rgba(218,93,36,0.9);border-radius: 0 0 5px 5px;}
+header .head_ct nav ul li.sub ul li{width: 100%;border:none;border-bottom: 1px dashed #fff;margin-left: 0;padding: 0;}
 header .head_ct nav ul li.sub ul li::before{display: none;}
 header .head_ct nav ul li.sub ul li:last-child{border-bottom: none;}
-header .head_ct nav ul li.sub ul li a{padding: 16px 15px;display: block;}
+header .head_ct nav ul li.sub ul li a{padding: 16px 15px;display: block;color: #fff;}
 
 /* ================= CONTAINER ================= */
+/* FONT PAGE */
+.os{font-family: 'Oswald', sans-serif;font-weight: 500}
+
+/* BUTTON SITE */
+.btn{}
+.btn a{width: 200px;height: 50px;border:1px solid #fff;color: #fff;display: flex;align-items: center;justify-content: center;text-align: center;margin: 0 auto;position: relative;transition: all ease 0.3s}
+.btn a::before,
+.btn a::after{width: 22px;height: 1px;background: #fff;content: '';position: absolute;top: 50%;left: -11px;transition: all ease 0.3s}
+.btn a::after{left: inherit;right: -11px;}
 
 /* BACK TO TOP */
 .btn_top{position:fixed;right: 15px;bottom: 50px;z-index: 9;cursor: pointer;box-sizing: border-box;margin-bottom: 0;display: none;}
@@ -105,13 +115,37 @@ header .head_ct nav ul li.sub ul li a{padding: 16px 15px;display: block;}
 .slick-next{left: inherit;right: 15px}
 
 /* BANNER */
-#banner{margin: 50px 0 0}
-#banner .slide{}
-#banner .slide ul li{line-height: 0}
+#banner{}
+#banner .nav_2{background: #da5d24;}
+#banner .nav_2 ul{display: flex;justify-content: center;align-items: center;height: 50px}
+#banner .nav_2 ul li{margin: 0 20px}
+#banner .nav_2 ul li a{color: #fff;text-transform: uppercase;font-size: 16px;}
+
+#banner .slide{position: relative;}
+#banner .slide .slide_txt{display: flex;align-items: center;justify-content: center;flex-direction: column;position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 2}
+#banner .slide .slide_txt .des{color: #fff;font-weight: 300;letter-spacing: 0.1em;text-transform: capitalize;font-size: 18px;margin-bottom: 15px}
+#banner .slide .slide_txt .title{color: #fff;text-transform: capitalize;font-size: 54px;font-weight: bold;letter-spacing: 0.05em;margin-bottom: 50px;}
+
+#banner .slide ul{}
+#banner .slide ul li{height: calc(100vh - 204px);background-size: cover;background-position: center}
+
+/* TITLE ALL */
+.ttl_decor{text-transform: uppercase;}
+.ttl_decor h3{font-size: 48px;font-weight: bold;line-height: 1.25em}
+.ttl_decor h3 span{color: #da5d24}
+.ttl_decor p{font-size: 36px;font-weight: 300;margin-bottom: 0}
 
 
+/* ================= CONTENT ================= */
+.box01{background: #f6f7f8;padding: 100px 0}
+.box01 .box01_ct{display: flex;justify-content: space-between;position: relative;}
+.box01 .box01_txt{width: 48%}
+.box01 .box01_txt .txt{margin-top: 15px;}
+.box01 .box01_img{width: 48%}
 
-
+.box01 .box01_year{padding-right: 15px;border-right: 10px solid #da5d24;padding: 10px 0;position: absolute;bottom: 0;right: 0}
+.box01 .box01_year p{margin-bottom: 0;line-height: 1em;text-transform: uppercase;}
+.box01 .box01_year .big{font-size: 60px;font-weight: bold;color: #e6e6e7;}
 
 
 /* ================= FOOTER ================= */
@@ -275,16 +309,17 @@ footer h3{font-size: 35px;z-index: 1;position: relative;text-transform: capitali
 .modal_price_ct .modal_r .modal_item ul li:hover span{border-bottom-color: #f4b35e}
 
 .modal_price_ct .modal_r .modal_item ul li select,
-.modal_price_ct .modal_r .modal_item ul li input {border:none;outline: none;box-shadow: none;width: 100%;display: block;position: relative;z-index: 1;font-family:'Roboto Condensed', sans-serif;font-size: 15px;}
-.ddllaykhach {border:none;outline: none;box-shadow: none;width: 100%;display: block;position: relative;z-index: 1;font-family:'Roboto Condensed', sans-serif;font-size: 15px; margin-bottom:15px; float:left;}
+.modal_price_ct .modal_r .modal_item ul li input {border:none;outline: none;box-shadow: none;width: 100%;display: block;position: relative;z-index: 1;font-size: 15px;}
+.ddllaykhach {border:none;outline: none;box-shadow: none;width: 100%;display: block;position: relative;z-index: 1;font-size: 15px; margin-bottom:15px; float:left;}
 
 .modal_price_ct .modal_r .modal_item ul li input::placeholder{color:#ccc;}
 .modal_price_ct .modal_confirm{display: flex;justify-content: space-between;width: 100%;align-items: center;    }
 .modal_price_ct .modal_confirm p{width: 48%;}
 .modal_price_ct .modal_confirm p img{max-width: 100%;}
 .modal_price_ct .modal_confirm p a {background: #f4b35e;width: 100%;height: 40px;display: flex;justify-content: center;align-items: center;color: #fff;text-align: center;}
+.modal_price_ct .modal_confirm p a:hover,
+.btn-guilaykhach:hover{opacity: 0.8;text-decoration: none;}
 .btn-guilaykhach {background: #0047cb;width: 50%;height: 40px;display: flex;justify-content: center;align-items: center;color: #fff;text-align: center;}
-.modal_price_ct .modal_confirm p a:hover , .btn-guilaykhach:hover{opacity: 0.8;text-decoration: none;}
 
 
 /* FUNCTION ASIDE */
