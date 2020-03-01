@@ -15,6 +15,8 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0&appId=463698824031803&autoLogAppEvents=1"></script>
 <div class="wrapper">
     <!-- HEADER -->
     <header>
@@ -26,7 +28,7 @@
 
                 <div class="head_fct">
                     <p class="tel"><a href="tel:0938936887"><img src="./images/ic_tel_w.png" alt="Tel Icon">0938936887</a></p>
-                    <p class="mail"><a href="mailto:aidecor.info@gmai.com."><img src="./images/ic_mail_w.png" alt="Mail Icon" width="18">aidecor.info@gmai.com.</a></p>
+                    <p class="mail"><a href="mailto:aidecor.info@gmai.com"><img src="./images/ic_mail_w.png" alt="Mail Icon" width="18">aidecor.info@gmai.com</a></p>
                 </div>
             </div>
         </div>
@@ -57,58 +59,6 @@
         </div>
     </header>
 
-    <!-- SLIDER -->
-    <div id="banner">
-        <div class="nav_2">
-            <ul>
-                <li><a href="#">Công trình thiết kế</a></li>
-                <li><a href="#">Công trình thực tế</a></li>
-                <li><a href="#">SHOP ai living</a></li>
-            </ul>
-        </div>
-        <div class="slide">
-            <div class="slide_txt">
-                <p class="des">Lorem ipsum dolor sit amet</p>
-                <h2 class="title">impedit temporibus neque.</h2>
-                <p class="btn"><a href="#">Chi tiết</a></p>
-            </div>
-            <ul>
-                <li style="background-image: url('./images/slide_1.jpg');"></li>
-                <li style="background-image: url('./images/slide_2.jpg');"></li>
-                <li style="background-image: url('./images/slide_3.jpg');"></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- CONTENT VNXK -->
-    <main>
-        <div class="box01">
-            <div class="container">
-                <div class="box01_ct">
-                    <div class="box01_txt">
-                        <div class="ttl_decor">
-                            <p>Welcome</p>
-                            <h3>GIỚI THIỆU SƠ LƯỢC<br>VỀ <span>AI-DECOR</span></h3>
-                        </div>
-                        <div class="txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque beatae, eum odio ab! Officiis dignissimos hic reiciendis quibusdam expedita tenetur. Dolorum nobis ad eveniet sint deleniti, praesentium, laudantium ipsum.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum neque adipisci fugit debitis eaque. Voluptate incidunt deleniti tenetur reprehenderit culpa distinctio placeat ipsa nobis, et consectetur eaque fugit ab officia!</p>
-                        </div>
-                    </div>
-
-                    <div class="box01_img">
-                        <p><img src="./images/box01_img.png" alt="Giới thiệu Ai Decor"></p>
-                    </div>
-
-                    <div class="box01_year">
-                        <p class="big">18 Year</p>
-                        <p>experience working</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
     <!-- POPUP BOX PRICE -->
     <section class="modal_price">
         <div class="modal_close"></div>
@@ -191,27 +141,459 @@
             </div>
         </div>
     </section>
-    <!--///////////// END MODAL PRICE   ////////////////// -->
+    <!-- //END POPUP BOX PRICE -->
     
     <!-- FUNCTION ASIDE -->
     <div class="function_aside">
         <ul>
-            <li class="fb"><a href="#"><img src="./images/icon_fbmes.png" alt="Messenger"></a></li>
-            <li class="zalo"><a href="#"><img src="./images/ic_zalo.png" alt="Zalo"></a></li>
-            <li class="money"><a><span>Yêu cầu báo giá <img src="./images/icon-usd_w.png" width="30"></span></a></li>
+            <li class="fb"><a href="#"><img src="./images/icon_fbmes.png" width="50" alt="Messenger"></a></li>
+            <li class="zalo"><a href="#"><img src="./images/ic_zalo.png" width="50" alt="Zalo"></a></li>
+            <li class="money"><a><span></span><img src="./images/icon-usd.png" width="50"></a></li>
         </ul>
     </div>
 
+    <!-- SLIDER -->
+    <div id="banner">
+        <div class="nav_2">
+            <ul>
+                <li><a href="#">Công trình thiết kế</a></li>
+                <li><a href="#">Công trình thực tế</a></li>
+                <li><a href="#">SHOP ai living</a></li>
+            </ul>
+        </div>
+        <div class="slide">
+            <div class="slide_txt">
+                <p class="des">Lorem ipsum dolor sit amet</p>
+                <h2 class="title">impedit temporibus neque.</h2>
+                <p class="btn"><a href="#">Chi tiết</a></p>
+            </div>
+            <ul>
+                <li style="background-image: url('./images/slide_1.jpg');"></li>
+                <li style="background-image: url('./images/slide_4.jpg');"></li>
+                <li style="background-image: url('./images/slide_3.jpg');"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CONTENT AI DECOR -->
+    <main>
+        <section class="box01">
+            <div class="container">
+                <div class="box01_ct">
+                    <div class="box01_txt">
+                        <div class="title">
+                            <h3>GIỚI THIỆU SƠ LƯỢC<br>VỀ <span>AI-DECOR</span></h3>
+                        </div>
+                        <div class="txt">
+                            <p>A.I Décor là công ty thiết kế thi công kiến trúc nội thất chuyên nghiệp, uy tín trên cả nước. Chúng tôi có kinh nghiệm triển khai thiết kế và thi công thành công cho nhiều công trình, dự án và được nhiều khách hàng tín nhiệm. Sản phẩm do AIDECOR thiết kế và thi công là sự phối hợp giữa tính mỹ thuật độc đáo giúp khẳng định dấu ấn riêng, đáp ứng tối đa công năng sử dụng. Vì thế, chúng tôi cam kết mang đến thành công cho công trình của bạn</p>
+                            <p>Bên cạnh đó, chúng tôi tự hào sở hữu đội ngũ tư vấn thiết kế và kỹ sư chuyên nghiệp, có kiến thức sâu rộng trong lĩnh vực nội thất. Tập thể nhân viên tại AIDECOR cam kết nỗ lực tư vấn và trợ giúp khách hàng lựa chọn sản phẩm ưng ý nhất. Dịch vụ tư vấn thiết kế của chúng tôi sẽ giúp khách hàng kiến tạo một không gian sống như ý thông qua sự phối hợp điêu luyện giữa ý thích chủ nhà và sự am hiểu chuyên môn của aidecor.</p>
+                            <p>A.I Décor luôn ước mơ cùng chung tay với Bạn, xây dựng tổ ấm cho Bạn, tạo ra phần hồn cho ngôi nhà – giá trị cuộc sống bên trong. Đó là cốt lõi của TỔ ẤM GIA ĐÌNH VIỆT.</p>
+                            <p class="btn"><a href="./about.html">Chi tiết</a></p>
+                        </div>
+                    </div>
+
+                    <div class="box01_img">
+                        <p><img src="./images/box01_img.png" alt="Giới thiệu Ai Decor"></p>
+                    </div>
+                </div>
+
+                <div class="box01_year">
+                    <p class="big os">18 Year</p>
+                    <p>experience working</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="box02">
+            <ul>
+                <li>
+                    <div class="box02_img">
+                        <p><img src="./images/box02_img_1.jpg"></p>
+                    </div>
+                    <div class="box02_txt os">
+                        <p class="link"><a href="./product_detail.html"><img src="./images/ic_plus.png"></a></p>
+                        <p class="name">Lorem ipsum dolor<span>reiciendis veniam!</span></p>
+                        <p class="serv">Công trình dịch vụ</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box02_img">
+                        <p><img src="./images/box02_img_2.jpg"></p>
+                    </div>
+                    <div class="box02_txt os">
+                        <p class="link"><a href="./product_detail.html"><img src="./images/ic_plus.png"></a></p>
+                        <p class="name">Tên công trình <span>Địa điểm công trình</span></p>
+                        <p class="serv">Công trình thiết kế</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box02_img">
+                        <p><img src="./images/box02_img_3.jpg"></p>
+                    </div>
+                    <div class="box02_txt os">
+                        <p class="link"><a href="./product_detail.html"><img src="./images/ic_plus.png"></a></p>
+                        <p class="name">Tên công trình <span>Địa điểm công trình</span></p>
+                        <p class="serv">Ai Living</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box02_img">
+                        <p><img src="./images/box02_img_4.jpg"></p>
+                    </div>
+                    <div class="box02_txt os">
+                        <p class="link"><a href="./product_detail.html"><img src="./images/ic_plus.png"></a></p>
+                        <p class="name">Lorem ipsum dolor<span>reiciendis veniam!</span></p>
+                        <p class="serv">Công trình dịch vụ</p>
+                    </div>
+                </li>
+
+                <!-- <li>
+                    <div class="box02_img">
+                        <p><img src="./images/box02_img_5.jpg"></p>
+                    </div>
+                    <div class="box02_txt os">
+                        <p class="name">Lorem ipsum dolor<span>reiciendis veniam!</span></p>
+                        <p class="serv">Công trình thiết kế</p>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+
+        <section class="box03">
+            <div class="container">
+                <div class="box03_title">
+                    <p class="big os">Sản phẩm</p>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <ul>
+                        <li class="active"><a href="#">Mẫu mới</a></li>
+                        <li><a href="#">Bán chạy</a></li>
+                        <li><a href="#">Mẫu thiết kế</a></li>
+                    </ul>
+                </div>
+
+                <div class="box03_list">
+                    <ul>
+                        <li>
+                            <div class="box03_img">
+                                <p><a href="./product_detail.html"><img src="./images/box03_img_1.jpg"></a></p>
+                            </div>
+                            <div class="box03_txt">
+                                <p class="name"><a href="./product_detail.html">molestias obcaecati aperiam explicabo dignissimos</a></p>
+                                <p>
+                                    <span class="ask">Giá liên hệ</span>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box03_img">
+                                <p><a href="./product_detail.html"><img src="./images/box03_img_2.jpg"></a></p>
+                            </div>
+                            <div class="box03_txt">
+                                <p class="name"><a href="./product_detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></p>
+                                <p>
+                                    <span class="price">1.000.000.000đ</span>
+                                    <span class="low">999.999.000</span>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box03_img">
+                                <p><a href="./product_detail.html"><img src="./images/box03_img_3.jpg"></a></p>
+                            </div>
+                            <div class="box03_txt">
+                                <p class="name"><a href="./product_detail.html">omnis assumenda porro autem blanditiis?</a></p>
+                                <p>
+                                    <span class="price">1.000.000.000đ</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="box03">
+            <div class="container">
+                <div class="box03_title">
+                    <p class="big os">Sản phẩm</p>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <ul>
+                        <li class="active"><a href="#">Mẫu mới</a></li>
+                        <li><a href="#">Bán chạy</a></li>
+                        <li><a href="#">Mẫu thiết kế</a></li>
+                    </ul>
+                </div>
+
+                <div class="box03_list">
+                    <ul>
+                        <li>
+                            <p class="sale">-30%</p>
+                            <div class="box03_img">
+                                <p><a href="./product_detail.html"><img src="./images/box03_img_4.jpg"></a></p>
+                            </div>
+                            <div class="box03_txt">
+                                <p class="name"><a href="./product_detail.html">molestias obcaecati aperiam explicabo dignissimos</a></p>
+                                <p>
+                                    <span class="price">1.000.000.000đ</span>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p class="sale">-15%</p>
+                            <div class="box03_img">
+                                <p><a href="./product_detail.html"><img src="./images/box03_img_5.jpg"></a></p>
+                            </div>
+                            <div class="box03_txt">
+                                <p class="name"><a href="./product_detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></p>
+                                <p>
+                                    <span class="price">1.000.000.000đ</span>
+                                    <span class="low">999.999.000</span>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box03_img">
+                                <p><a href="./product_detail.html"><img src="./images/box03_img_6.jpg"></a></p>
+                            </div>
+                            <div class="box03_txt">
+                                <p class="name"><a href="./product_detail.html">omnis assumenda porro autem blanditiis?</a></p>
+                                <p>
+                                    <span class="price">1.000.000.000đ</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="box_banner">
+            <p><img src="./images/banner_img_1.jpg"></p>
+            <p><img src="./images/banner_img_2.jpg"></p>
+        </section>
+
+        <section class="box04">
+            <div class="container">
+                <div class="box04_ct">
+                    <dl>
+                        <dt><img src="./images/box04_img_1.jpg"></dt>
+                        <dd>
+                            <p class="big">quy trình <span>thiết kế</span></p>
+                            <p>Hai bên sẽ gặp nhau để trao đổi về yêu cầu thiết kế căn hộ ( phong cách, kinh phí đầu tư, thời gian thực hiện..)</p>
+                            <p>Ký HĐ thiết kế với A.I.DECOR để lên bản vẽ 3d và chỉnh sửa đến khi khách hàng duyệt. Đặt cọc 50% giá trị HĐ thiết kế ngay khi ký HĐ.</p>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt><img src="./images/box04_img_2.jpg"></dt>
+                        <dd>
+                            <p class="big">Báo giá <span>thi công</span></p>
+                            <p>Dựa vào 3d final, A.I.DECOR báo giá thi công chi tiết theo bản vẽ và vật liệu đã chọn.</p>
+                            <p>Khách hàng đồng ý ký HĐ thi công , A.I.DECOR sẽ hoàn trả lại phí thiết kế đã nhận.</p>
+                            <p>Nếu khách không thi công mà chỉ lấy bản vẽ 3d thì thanh toán 50% phí thiết kế còn lại.</p>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt><img src="./images/box04_img_3.jpg"></dt>
+                        <dd>
+                            <p class="big"><span>Thời gian</span> thực hiện</p>
+                            <p>Thời gian thiết kế 15 -20 ngày bao gồm chỉnh sửa</p>
+                            <p>Thời gian thi công 3-4 tuần tùy mức độ và khối lượng thi công.</p>
+                            <p>Để lên bản vẽ 3d cần bản vẽ cad, hoặc khảo sát thực tế căn hộ, hoặc bản vẽ bố trí Sẽ có sai số so với thực tế giao nhà nhưng không đáng kể.</p>
+                            <p>Chi phí thi công tùy thuộc vào thiết kế và vật liệu thi công, ngoài ra còn phụ thuộc vào ngân sách đầu tư của quý khách mà A.I.DECOR sẽ tư vấn gói thiết kế hợp lý nhất.</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="box05">
+            <div class="container">
+                <h3 class="title">nhận xét khách hàng</h3>
+                <div class="box05_list">
+                    <ul>
+                        <li>
+                            <div class="box05_txt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ad provident odit, totam fugiat tempore, aut iste. Et temporibus consectetur magni obcaecati ut incidunt voluptatibus possimus accusantium aspernatur! Repellat, distinctio! Commodi animi, ipsam sunt. Vero error vitae natus velit quam perspiciatis ducimus porro dolores voluptate consequatur et amet placeat aperiam ratione repudiandae, nobis veritatis tenetur eveniet ad autem culpa voluptatibus!</p>
+                            </div>
+                            <div class="box05_user">
+                                <dl>
+                                    <dt><img src="./images/box05_img_3.jpg"></dt>
+                                    <dd>
+                                        <p class="name">Bill Gate</p>
+                                        <p class="staff">Billionaire</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box05_txt">
+                                <p>Commodi animi, ipsam sunt. Vero error vitae natus velit quam perspiciatis ducimus porro dolores voluptate consequatur et amet placeat aperiam ratione repudiandae, nobis veritatis tenetur eveniet ad autem culpa voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ad provident odit, totam fugiat tempore, aut iste. Et temporibus consectetur magni obcaecati ut incidunt voluptatibus possimus accusantium aspernatur! Repellat, distinctio!</p>
+                            </div>
+                            <div class="box05_user">
+                                <dl>
+                                    <dt><img src="./images/box05_img_1.jpg"></dt>
+                                    <dd>
+                                        <p class="name">Load name</p>
+                                        <p class="staff">Chức vụ</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="box06">
+            <div class="container">
+                <div class="box06_ct">
+                    <div class="title">
+                        <h3>Tin tức</h3>
+                        <p>A.I Décor luôn cập nhật những tin tức mới nhất, nhằm giúp khách hàng có tầm nhìn trực quan hơn về phong cách thiết kế thay đổi theo từng khu vực, thời gian, sở thích v..v.v.</p>
+                    </div>
+
+                    <div class="box06_list">
+                        <dl>
+                            <dt><a href="./news_detail.html"><img src="./images/box06_img_1.jpg"></a></dt>
+                            <dd>
+                                <p class="date">30/02/2020</p>
+                                <p class="ttl"><a href="./news_detail.html">Marvel End Game</a></p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui molestiae saepe assumenda facere doloremque, aspernatur, nisi officiis dolorum quaerat maxime eos harum iusto, consequuntur necessitatibus voluptas unde voluptatem! Quae.Vero temporibus incidunt soluta tempora officia quaerat tenetur dolor perspiciatis nisi quis! Aspernatur recusandae magni, cumque quibusdam laboriosam, fugiat nostrum dignissimos quod, quisquam facilis placeat ab possimus repellat eligendi necessitatibus.</p>
+                                <p class="link"><a href="./news_detail.html">Chi tiết</a></p>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><a href="./news_detail.html"><img src="./images/box06_img_2.jpg"></a></dt>
+                            <dd>
+                                <p class="date">30/02/2020</p>
+                                <p class="ttl"><a href="./news_detail.html">cumque quibusdam </a></p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui molestiae saepe assumenda facere doloremque, aspernatur, nisi officiis dolorum quaerat maxime eos harum iusto, consequuntur necessitatibus voluptas unde voluptatem! Quae.Vero temporibus incidunt soluta tempora officia quaerat tenetur dolor perspiciatis nisi quis! Aspernatur recusandae magni, cumque quibusdam laboriosam, fugiat nostrum dignissimos quod, quisquam facilis placeat ab possimus repellat eligendi necessitatibus.</p>
+                                <p class="link"><a href="./news_detail.html">Chi tiết</a></p>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><a href="./news_detail.html"><img src="./images/box06_img_3.jpg"></a></dt>
+                            <dd>
+                                <p class="date">30/02/2020</p>
+                                <p class="ttl"><a href="./news_detail.html">tempora officia quaerat</a></p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui molestiae saepe assumenda facere doloremque, aspernatur, nisi officiis dolorum quaerat maxime eos harum iusto, consequuntur necessitatibus voluptas unde voluptatem! Quae.Vero temporibus incidunt soluta tempora officia quaerat tenetur dolor perspiciatis nisi quis! Aspernatur recusandae magni, cumque quibusdam laboriosam, fugiat nostrum dignissimos quod, quisquam facilis placeat ab possimus repellat eligendi necessitatibus.</p>
+                                <p class="link"><a href="./news_detail.html">Chi tiết</a></p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <!-- FOOTER -->
     <footer>
-        
+        <section class="foot_top">
+            <div class="container">
+                <div class="foot_partner">
+                    <ul>
+                        <li><img src="./images/partner_img_1.png"></li>
+                        <li><img src="./images/partner_img_2.png"></li>
+                        <li><img src="./images/partner_img_3.png"></li>
+                        <li><img src="./images/partner_img_4.png"></li>
+                        <li><img src="./images/partner_img_5.png"></li>
+                    </ul>
+                </div>
+
+                <div class="title">
+                    <p class="center"><img src="./images/ic_foot.png" width="70" alt="Ai Decor Logo"></p>
+                    <h3>A.I Decor</h3>
+                    <p>A.I Decor - Thiết kế - Thi công nội thất chuyên nghiệp<br>Lorem ipsum dolor sit amet, consectetur adipisicing elitllo eius fuga quam beatae !</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="foot_mid">
+            <div class="foot_mid_box">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <p class="icon"><img src="./images/ic_map.png"></p>
+                            <p class="name">Địa chỉ Văn Phòng</p>
+                            <p class="txt">Tọa lạc tại địa chỉ 122/4 Khu Biệt Thự Phổ Quang, Phường 9, Q.Phú Nhuận, TP. HCM</p>
+                        </li>
+
+                        <li>
+                            <p class="icon"><img src="./images/ic_fmail.png"></p>
+                            <p class="name">Cách thức liên hệ</p>
+                            <p class="txt">Khách hàng có nhu cầu về tư vấn thiết kế vui lòng gửi mail về địa chỉ : <a href="mailto:aidecor.info@gmai.com">aidecor.info@gmai.com</a></p>
+                        </li>
+
+                        <li>
+                            <p class="icon"><img src="./images/ic_support.png"></p>
+                            <p class="name">Hỗ trợ</p>
+                            <p class="txt">Quý khách có thắc mắc muốn được tư vấn hãy liên hệ với A.I.DECOR. Đội ngũ nhân viên của chúng tôi sẽ hỗ trợ miễn phí cho quý khách.<a href="tel:0938936887">0938936887</a> - <a href="tel:083999634">(08) 3999 1634</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot_mid_txt">
+                <div class="container">
+                    <p class="big">Similique aliquam velit quasi, odio</p>
+                    <p>A.I Décor là công ty thiết kế thi công kiến trúc nội thất chuyên nghiệp, uy tín trên cả nước.<br>Chúng tôi có kinh nghiệm triển khai thiết kế và thi công thành công cho nhiều công trình, dự án và được nhiều khách hàng tín nhiệm.</p>
+                    <p class="btn"><a href="./about.html">Chi tiết</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="foot_bot">
+            <div class="container">
+                 <div class="foot_bot_it desc">
+                     <p><a href="http://aidecor.vn/"><img src="./images/logo.png" width="150" alt="AI Decor Logo"></a></p>
+                     <p>A.I Décor là công ty thiết kế thi công kiến trúc nội thất chuyên nghiệp, uy tín trên cả nước. Chúng tôi có kinh nghiệm triển khai thiết kế và thi công thành công cho nhiều công trình, dự án và được nhiều khách hàng tín nhiệm.</p>
+                     <ul>
+                         <li><a href="https://www.facebook.com/aidecor.hcm/" target="_blank"><img src="./images/ic_fb.png" width="24" alt="Facebook"></a></li>
+                         <li><a href="#" target="_blank"><img src="./images/ic_insta.png" width="24" alt="Instagram"></a></li>
+                         <li><a href="#" target="_blank"><img src="./images/ic_tw.png" width="24" alt="Twitter"></a></li>
+                         <li><a href="#"><img src="./images/ic_zalo.png" width="24" alt="Zalo"></a></li>
+                     </ul>
+                 </div>
+                 <div class="foot_bot_it info">
+                     <p class="big">Thông tin liên hệ</p>
+                     <p>122/4 Khu Biệt Thự Phổ Quang, Phường 9, <br>Q.Phú Nhuận, TP. HCM.</p>
+                     <p>Hotline : <a href="tel:0938936887">0938936887</a> - <a href="tel:083999634">(08) 3999 1634</a></p>
+                     <p>Email : <a href="mailto:aidecor.info@gmai.com">aidecor.info@gmai.com</a></p></p>
+                 </div>
+                 <div class="foot_bot_it link">
+                    <p>Sitemap</p>
+                     <ul>
+                        <li><a href="./product.html">Sản phẩm</a></li>
+                        <li><a href="./news.html">Tin Tức</a></li>
+                        <li><a href="./service.html">Dịch vụ</a></li>
+                        <li><a href="./about.html">Giới thiệu</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                     </ul>
+                 </div>
+                 <div class="foot_bot_it social">
+                     <div class="fb-page" data-href="https://www.facebook.com/aidecor.hcm/" data-tabs="timeline" data-width="360" data-height="250" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/aidecor.hcm/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/aidecor.hcm/">A.I Decor  - Thiết kế Thi công Nội Thất chuyên nghiệp</a></blockquote></div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="copyright">
+            <p>&copy; Copyright 2017 A.I.DECOR . All Rights reserved</p>
+        </section>
     </footer>
 
-    <section class="copyright">
-        <p>© 2018 VIỆT HUỲNH DESIGN. All Rights Reserved.</p>
-    </section>
-    
-    <p class="btn_top"><img src="./images/to_top.webp" alt="Back to top"></p>
+    <p class="btn_top"><img src="./images/btn_top.png" width="30" alt="Back to top"></p>
 
 </div>
 

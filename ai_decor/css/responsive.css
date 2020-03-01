@@ -20,6 +20,25 @@
     .btn a:hover{background: #000;color: #fff;border:1px solid #000;}
     .btn a:hover::before,
     .btn a:hover::after{background: #fff;}
+    
+    .box02 .box02_txt:hover .serv,
+    .box02 .box02_txt:hover .name{opacity: 0;}
+    .box02 .box02_txt:hover .link a{opacity: 1;visibility: visible;}
+    
+    .box01 .box01_txt .btn a:hover{background: #fff;color: #000}
+    
+    .function_aside ul li a:hover,
+    .function_aside ul li a:hover span,
+    .box03 .box03_list ul li .box03_img p a:hover,
+    .box06 .box06_list dt a:hover,
+    footer .foot_bot_it.desc ul li a:hover{opacity: 0.7;cursor: pointer}
+
+    .box03 .box03_list ul li .box03_txt .name a:hover,
+    .box06 .box06_list dd .ttl a:hover,
+    .box06 .box06_list dd .link a:hover,
+    footer .foot_mid_box ul li .txt a:hover,
+    footer .foot_bot_it.info p a:hover,
+    footer .foot_bot_it.link ul li a:hover{color: #da5d24;text-decoration: underline;}
 
 }
 
