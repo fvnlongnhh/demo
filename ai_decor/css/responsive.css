@@ -11,10 +11,16 @@
 }
 
 @media screen and (min-width: 769px){
-    header .head_ct nav ul li.sub:hover ul{opacity: 1;visibility: visible;top: 100%;}
-    header .head_ct nav ul li a:hover{color: #000}
-    header .head_ct nav ul li.sub ul li:hover{opacity: 0.7;}
-    header .head_ct nav ul li.sub ul li:hover a{color: #fff}
+    header .head_ct nav ul li.sub:hover ul.nav_sub{opacity: 1;visibility: visible;top: 100%;}
+    header .head_ct nav ul li.sub_lv2:hover ul.nav_sub_lv2{opacity: 1;visibility: visible;top: 0%;}
+    header .head_fct p a:hover,
+    header .head_ct nav ul li a:hover{color: #f8b15c;}
+
+    header .head_ct nav ul li.sub ul.nav_sub li:hover,
+    header .head_ct nav ul li.sub ul.nav_sub li.sub_lv2:hover ul.nav_sub_lv2 li:hover{background: #de5f24}
+    header .head_ct nav ul li.sub ul.nav_sub li.sub_lv2:hover,
+    header .head_ct nav ul li.sub ul.nav_sub li.sub_lv2:hover ul.nav_sub_lv2 li{opacity: 1;}
+    header .head_ct nav ul li.sub ul.nav_sub li:hover a{color: #fff}
     #banner .nav_2 ul li a:hover{text-decoration: underline;}
 
     .btn a:hover{background: #000;color: #fff;border:1px solid #000;}
@@ -30,8 +36,10 @@
     .function_aside ul li a:hover,
     .function_aside ul li a:hover span,
     .box03 .box03_list ul li .box03_img p a:hover,
+    .box04 .box04_txt dt:hover,
     .box06 .box06_list dt a:hover,
-    footer .foot_bot_it.desc ul li a:hover{opacity: 0.7;cursor: pointer}
+    footer .foot_bot_it.desc ul li a:hover,
+    .slick-arrow:hover{opacity: 0.7;cursor: pointer}
 
     .box03 .box03_list ul li .box03_txt .name a:hover,
     .box06 .box06_list dd .ttl a:hover,

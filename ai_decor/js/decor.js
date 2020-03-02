@@ -1,18 +1,5 @@
 $(document).ready(function () {
     "use strict";
-    $('.slide ul').slick({
-        dots: false,
-        arrows: true,
-        slidesToShow: 1,
-        speed: 500,
-        pauseOnHover: false,
-        pauseOnFocuse : false,
-        margin: 0,
-        fade: true,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 4000
-    });
     
     $(".function_aside span").click(function() {
         $('.modal_price').addClass('open');
