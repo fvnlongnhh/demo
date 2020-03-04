@@ -35,15 +35,44 @@ $(document).ready(function () {
 
     $(".btn_side").click(function () {
         $(this).toggleClass('open');
-        $(".gnavi").toggleClass("active");
+        $("nav").toggleClass("active");
         $(".sub a").removeClass("disable");
-        $('ul.gnavi_sub').stop().slideUp();
-        $('.cart_form , .search_form, .user_form').removeClass('active');
+        $('ul.nav_sub').stop().slideUp();
         return false;
     });
 
     $("li.sub span").click(function(){
-        $(this).parent().find('.gnavi_sub').slideToggle(400);
+        $(this).parent().find('.nav_sub').slideToggle(400);
+    });
+
+    $("li.sub_lv2 span").click(function(){
+        $(this).parent().find('.nav_sub_lv2').slideToggle(400);
+    });
+
+    $('.foot_partner ul').slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 5,
+        speed: 500,
+        pauseOnHover: false,
+        pauseOnFocuse : false,
+        margin: 0,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 3,
+          }
+        }
+        ]
     });
 
 });
