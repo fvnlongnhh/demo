@@ -75,6 +75,23 @@ $(document).ready(function () {
         ]
     });
 
+
+    if( $('.prd_detail_img').length){
+         $('.slide_big').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slide_thumb'
+        });
+        $('.slide_thumb').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: '.slide_big',
+          dots: false,
+          focusOnSelect: true
+        });
+    }
 });
 
 
