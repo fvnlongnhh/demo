@@ -25,6 +25,7 @@
     header .head_ct nav ul li.sub ul.nav_sub li.sub_lv2:hover,
     header .head_ct nav ul li.sub ul.nav_sub li.sub_lv2:hover ul.nav_sub_lv2 li{opacity: 1;}
     header .head_ct nav ul li.sub ul.nav_sub li:hover a{color: #fff}
+    header .head_ct .search_btn:hover{background: url('../images/ic_search_org.png') center no-repeat;background-size: cover;}
 
     .nav_2 ul li.sub:hover ul.nav_sub{opacity: 1;visibility: visible;top: 100%;}
     .nav_2 ul li.sub_lv2:hover ul.nav_sub_lv2{opacity: 1;visibility: visible;top: 0%;}
@@ -45,7 +46,9 @@
     .box02 .box02_txt:hover .name{opacity: 0;}
     .box02 .box02_txt:hover .link a{opacity: 1;visibility: visible;}
     
-    .box01 .box01_txt .btn a:hover{background: #fff;color: #000}
+    .box01 .box01_txt .btn a:hover,
+    .contact_form .contact_file .btn a:hover{background: #fff;color: #000}
+    .contact_form .contact_file .btn a:hover input{color: #000}
     
     .function_aside ul li a:hover,
     .function_aside ul li a:hover span,
@@ -63,7 +66,19 @@
     footer .foot_bot_it.info p a:hover,
     footer .foot_bot_it.link ul li a:hover,
     .main_news_2 .news_recent ul li a:hover{color: #fbaa39;text-decoration: underline;}
+    .nav_2 ul li.sub:hover span::before{transform: rotate(0)}
 
+    .function_aside ul li a span{
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: sideways;
+    -moz-text-orientation: sideways;
+    -ms-text-orientation: sideways;
+    text-orientation: sideways;
+    transform: rotate(180deg)
+    }
 
     /* ================= SUB PAGE  ================= */
     .breadcrumbs li a:hover{text-decoration: underline;}
@@ -132,7 +147,10 @@
     header .head_ct nav ul li.sub ul.nav_sub li.sub_lv2 ul.nav_sub_lv2 li{background: #fff;border-color: #fbaa39}
     header .head_ct nav ul li.sub ul.nav_sub li.sub_lv2 ul.nav_sub_lv2 li:last-child{border-bottom: none;}
     header .head_ct nav ul li.sub ul.nav_sub li.sub_lv2 ul.nav_sub_lv2 li a{color: #fbaa39;}
-    
+        
+    header .head_ct .search_btn{margin: 0;width: 50px;height: 50px;background-size: 20px 20px;border:1px solid #ccc;position: absolute;top: 15px;right: 70px;}
+
+
     .nav_2{overflow: hidden;background: #fff;}
     .nav_2 p{font-size: 18px;color: #fff;text-transform: uppercase;padding: 0 15px;height: 50px;display: flex;align-items: center;margin-bottom: 0;background: #da5d24;position: relative;}
     .nav_2 p::before{width: 0;height:0;border-style: solid;border-width: 5px 0 5px 10px;border-color: transparent transparent transparent #fff;position: absolute;top: calc(50% - 5px);right: 15px;content: '';transform: rotate(90deg);transition: all ease 0.3s;}
@@ -182,7 +200,8 @@
     .box01 .box01_year .big{font-size: 54px;}
 
     .box02 ul{flex-wrap: wrap;}
-    .box02 ul li{width: 50vw}
+    .box02 ul li,
+    .sub_page .box02 ul li{width: 50vw}
 
     .box03 .box03_list ul li{padding-bottom: 15px;}
     .box03 .box03_list ul li .box03_img{width: calc((100vw - 90px) / 2);height: calc((100vw - 90px) / 2)}
@@ -248,9 +267,23 @@
     .function_aside ul li a{width: 35px;height: 35px;}
     .btn_top img{width: 16px}
     
+    /* BÁO GIÁ */
+    .function_aside{bottom: -100px;right: 0;width: 100%;background: #fff;padding: 5px 0;opacity: 0;transition: all ease 0.3s}
+    .function_aside.active{bottom: 0;opacity: 1;}
+    .function_aside ul{display: flex;}
+    .function_aside ul li{margin-bottom: 0}
+    .function_aside ul li a{display: flex;width: 100%}
+    .function_aside ul li.fb,
+    .function_aside ul li.zalo{margin: 0 10px;width: 40px}
+    .function_aside ul li.money{width: calc(100% - 130px);height: 0px}
+    .function_aside ul li.money span{height: 35px;width: 100%;padding: 0 15px;display: flex;align-items: center;justify-content: center}
+    .function_aside ul li.money a span img{margin:0 0 0 10px;}
+    .function_aside ul li.money a{height: 35px}
+
+    
 
     /* ================= SUB PAGES ================= */
-    .sub_head .title{font-size: 36px;letter-spacing: 0.05em;height: 200px;line-height: 1.5em}
+    .sub_head .title{font-size: 28px;letter-spacing: 0.05em;height: 200px;line-height: 1.5em}
     .sub_page main{margin: 0px 0 100px}
 
     #product_detail .sub_head p{min-height: 200px;background: #dedede;}
@@ -311,6 +344,21 @@
     /* PAGE CHI TIẾT SẢN PHẨM */
     .prd_detail_img .slide_big li{width: 100%;height: calc((100vw - 30px) * 11 / 15)}
     .product_recent .ttl{font-size: 24px;margin-bottom: 15px}
+
+    /* PAGE CHI TIẾT */
+    .main_contact .title{font-size: 24px;}
+    .main_contact .contact_info{width: 100%;padding: 15px;margin: 30px auto 50px}
+    .main_contact .contact_info p{font-size: 14px;}
+    .main_contact .contact_info .big{font-size: 18px;}
+
+    .contact_map{height: 199px}
+    .contact_form{padding: 0;width: 100%;margin-bottom: 0;flex-direction: column;justify-content: center;align-items: center;}
+    .contact_form p{width: 290px}
+    .contact_form .contact_area{width: 290px;}
+    .contact_form .contact_file{width: 290px;flex-direction: column;}
+    .contact_form .contact_file p{width: 100%;margin-bottom: 15px;}
+    .contact_info .title p{font-size: 20px;}
+    .contact_info p{font-size: 16px;}
 }   
 
 
@@ -329,7 +377,8 @@
 }
 
 @media screen and (max-width: 480px){
-    .box02 ul li{width: 100%}
+    .box02 ul li,
+    .sub_page .box02 ul li{width: 100%}
     .box04 .box04_img{width: 100%;}
     .box03 .box03_title{padding: 0}
     .box03 .box03_list ul li{margin: 0}

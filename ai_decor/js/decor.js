@@ -12,6 +12,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(window).width() > 769) {
             var h_head = $('.head_ct').outerHeight();
+
             if ($(this).scrollTop() > 200) {
                 $('.head_ct').addClass('fixed')
                 $('.head_top').css({ 'margin-bottom': 120 });
@@ -25,6 +26,12 @@ $(document).ready(function() {
                 $('.head_ct').addClass('active')
             } else {
                 $('.head_ct').removeClass('active')
+            }
+        }else{
+            if ($(this).scrollTop() > 0) {
+                $('.function_aside').addClass('active');
+            }else{
+                $('.function_aside').removeClass('active');
             }
         }
     });
@@ -42,7 +49,6 @@ $(document).ready(function() {
     });
 
     if ($(window).width() < 769) {
-
         $('.nav_2 ul').hide();
         $(".nav_2 p").click(function() {
             $(this).toggleClass('active');
@@ -59,6 +65,34 @@ $(document).ready(function() {
             $(this).parent().find('.nav_sub_lv2').slideToggle(400);
         });
 
+    }
+
+    if ($('.box04').length) {
+        $('.box04_txt dt').click(function(){
+            if ($(this).hasClass('active')){
+                $(".box04_txt dd, .box04_txt dt").removeClass('active');
+            } else {
+                $(".box04_txt dd, .box04_txt dt").removeClass('active');
+                $(this).addClass('active');
+                $(this).next('dd').addClass('active');
+            }
+        });
+
+        $('.box04_txt .num1').click(function(){
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_1').addClass('active');
+        });
+
+        $('.box04_txt .num2').click(function(){
+            console.log('aaaaa');
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_2').addClass('active');
+        });
+
+        $('.box04_txt .num3').click(function(){
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_3').addClass('active');
+        });
     }
 
     $("nav li.sub span").click(function() {
@@ -112,4 +146,12 @@ $(document).ready(function() {
             focusOnSelect: true
         });
     }
+
+     $('.search_btn').click(function(){
+        $('.search_form, body').addClass('active');
+    });
+
+    $('.close_search').click(function(){
+        $('.search_form, body').removeClass('active');
+    });
 });

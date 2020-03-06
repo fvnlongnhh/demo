@@ -62,32 +62,6 @@ $(document).ready(function () {
         }
         ]
     });
-
-    $('.box04_txt dt').click(function(){
-        if ($(this).hasClass('active')){
-            $(".box04_txt dd, .box04_txt dt").removeClass('active');
-        } else {
-            $(".box04_txt dd, .box04_txt dt").removeClass('active');
-            $(this).addClass('active');
-            $(this).next('dd').addClass('active');
-        }
-    });
-
-    $('.box04_txt .num1').click(function(){
-        $('.box04_img li').removeClass('active');
-        $('.box04_img .img_1').addClass('active');
-    });
-
-    $('.box04_txt .num2').click(function(){
-        console.log('aaaaa');
-        $('.box04_img li').removeClass('active');
-        $('.box04_img .img_2').addClass('active');
-    });
-
-    $('.box04_txt .num3').click(function(){
-        $('.box04_img li').removeClass('active');
-        $('.box04_img .img_3').addClass('active');
-    });
 });
 
 
