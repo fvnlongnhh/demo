@@ -34,7 +34,7 @@ div > p:last-child{margin-bottom: 0}
 .clearfix{display: block;}
 .clearfix::after{content: ".";display: block;height: 0;clear: both;visibility: hidden;font-size: 0;}
 
-#wrapper {min-width:1260px;overflow: hidden;margin-top: 220px}
+#wrapper{min-width:1260px;overflow: hidden;margin-top: 220px}
 p,
 dd,
 dt,
@@ -98,7 +98,7 @@ header .head_ct nav ul li.sub_lv2 ul.nav_sub_lv2 li a{padding: 16px 15px;display
 
 /* ================= CONTAINER ================= */
 /* FONT PAGE */
-.os{font-family: 'Oswald', sans-serif;font-weight: 500}
+.os{font-family: 'Oswald', sans-serif;}
 
 /* BUTTON SITE */
 .btn{}
@@ -118,7 +118,7 @@ header .head_ct nav ul li.sub_lv2 ul.nav_sub_lv2 li a{padding: 16px 15px;display
 }
 
 /* BUTTON OPEN NAV */
-.btn_open{width: 50px;height:50px;margin: 0;position: absolute;top: 0px;right: 0;display: none;background: #f8b15c}
+.btn_open{width: 50px;height:50px;margin: 0;position: absolute;top: 15px;right: 15px;display: none;background: #f8b15c}
 .btn_side{display:block;cursor:pointer;width:100%;height:100%;text-align:center;z-index:9999;position:relative;margin:0 auto;position:absolute;border-radius:0}
 .btn_side span{display:block;position:absolute;height: 2px;width:15px;background:#fff;opacity:1;transform:rotate(0deg);transition:.3s ease-in-out}
 .btn_side span:nth-child(even){left:calc(50% + 1px);}
@@ -359,6 +359,8 @@ footer .copyright{height: 60px;display: flex;justify-content: center;align-items
 #news .box06{background: none;padding: 0}
 #news .box06_list{flex-wrap: wrap;}
 #news .box06_list dl{background: #eee;margin-bottom: 50px}
+.news_pages .box06 .box06_list dd .link{text-align: right;font-weight: bold;}
+.news_pages .box06 .box06_list dd .link a{color: #000}
 
 /* PAGE CHI TIẾT TIN TỨC*/
 .news_detail .news_share{display:block;padding-top: 30px;border-top:dotted 1px #d3d3d3;}
@@ -379,12 +381,35 @@ footer .copyright{height: 60px;display: flex;justify-content: center;align-items
 .main_news_2 .news_detail .center{margin: 0 auto 30px;text-align: center;}
 
 .main_news_2 .news_recent{width: 300px;padding-left: 30px;border-left: 1px solid #ccc;}
-.main_news_2 .news_recent .ttl{font-size: 20px;text-align: center;margin: 0 auto;margin-bottom: 30px;text-transform: uppercase}
+.main_news_2 .news_recent .ttl{font-size: 24px;text-align: center;margin: 0 auto;margin-bottom: 30px;text-transform: uppercase}
+.main_news_2 .news_recent ul{margin-bottom: 30px;}
+.main_news_2 .news_recent ul li{position: relative;padding-left: 20px;margin-bottom: 10px;}
+.main_news_2 .news_recent ul li::before{width: 0;height: 0;border-style: solid;border-width: 5px 0 5px 10px;border-color: transparent transparent transparent #fbaa39;content: '';position: absolute;top: 6px;left: 0;}
+.main_news_2 .news_recent ul li a{color: #000;font-size: 16px;}
+
+.main_news_2 .news_recent .profile{margin-bottom: 50px;}
+.main_news_2 .news_recent .profile p{}
+.main_news_2 .news_recent .profile p a{font-weight: bold;text-transform: uppercase;font-size: 24px;color: #fff;font-weight: 400;flex-direction: column;display: flex;align-items: center;justify-content: center;text-align: center;width: 100%;height: 100%;padding: 20px 0;border:1px solid #fbaa39;border-radius: 5px;background: #fbaa39}
+.main_news_2 .news_recent .profile p span{background: #fff;width: 120px;height: 40px;display: flex;align-items: center;justify-content: center;color: #fbaa39;border-radius: 5px;line-height: 1em;font-size: 18px;margin-top: 20px;}
+
 .main_news_2 .news_recent_item{margin-bottom: 25px;padding-bottom: 25px;border-bottom: 1px dashed #ccc;}
 .main_news_2 .news_recent_item:last-child{margin-bottom: 0;padding-bottom: 0;border: none;}
 .main_news_2 .news_recent_item .date{color: #fbaa39;margin-bottom: 0}
 .main_news_2 .news_recent_item .img{margin-bottom: 5px;text-align: center;}
 .main_news_2 .news_recent_item .big a{font-size: 16px;color: #000}
+
+/* NEWS RELATED */
+.main_news_2 .news_related .ttl{font-size:24px;text-align:left;text-transform:uppercase;line-height: 1.5em;margin-bottom: 20px;}
+.main_news_2 .news_related ul{margin-bottom: 30px;}
+.main_news_2 .news_related ul li{position: relative;padding-left: 20px;margin-bottom: 10px;}
+.main_news_2 .news_related ul li::before{width: 0;height: 0;border-style: solid;border-width: 5px 0 5px 10px;border-color: transparent transparent transparent #fbaa39;content: '';position: absolute;top: 6px;left: 0;}
+.main_news_2 .news_related ul li a{color: #000;font-size: 16px;}
+
+/* NEWS TAG */
+.main_news_2 .news_tags{margin: 30px 0;padding: 30px 0 15px;border-bottom: 1px dashed #ccc;border-top: 1px dashed #ccc}
+.main_news_2 .news_tags ul{display: flex;flex-wrap: wrap}
+.main_news_2 .news_tags ul li{height: 40px;margin: 0 15px 15px 0;}
+.main_news_2 .news_tags ul li a{width: 100%;height: 100%;padding: 0 30px;border-radius: 30px;background: #fbaa39;color: #fff;display: flex;align-items: center;justify-content: center;text-align: center;border:1px solid #fbaa39;}
 
 /* PAGE CHI TIẾT TIN TỨC 2 */
 .main_news{display: flex;margin-bottom: 50px;}
@@ -404,8 +429,6 @@ footer .copyright{height: 60px;display: flex;justify-content: center;align-items
 .main_news .news_recent_item .link{display: flex;justify-content: flex-start;margin-bottom: 0}
 .main_news .news_recent_item .link a{width: 100px;height: 40px;background: #fbaa39;border:1px solid #fbaa39;color: #fff;border-radius: 3px;display: flex;align-items: center;justify-content: center;text-align: center;transition: all ease 0.3s}
 
-
-
 /* PAGE SẢN PHẨM */
 #product main{margin-bottom: 0}
 .sub_page .box03{padding: 0 0 180px}
@@ -418,6 +441,11 @@ footer .copyright{height: 60px;display: flex;justify-content: center;align-items
 
 /* PAGE CHI TIẾT SẢN PHẨM*/
 .main_prd_detail{display: flex;justify-content: space-between;margin-bottom: 50px;}
+
+#product_detail .sub_head{background: none;position: relative;}
+#product_detail .sub_head p{margin-bottom: 0}
+#product_detail .sub_head .title{height: 100%;position: absolute;top: 0;left: 0;width: 100%;}
+
 
 .prd_detail_img{width: 580px;}
 .prd_detail_img .slide_big{margin-bottom: 20px;}
@@ -434,14 +462,21 @@ footer .copyright{height: 60px;display: flex;justify-content: center;align-items
 .prd_detail_img .slide_thumb .slick-next::before{background: url('../images/btn_next.png') center /cover no-repeat;right: 0}
 
 .prd_detail_txt{width: 580px;}
-.prd_detail_txt .ttl{font-size: 32px;margin-bottom: 15px;padding-bottom: 15px;border-bottom: 1px dashed #ccc;line-height: 1.5em;}
+.prd_detail_txt .ttl{font-size: 32px;margin-bottom: 15px;padding-bottom: 15px;border-bottom: 1px dashed #ccc;line-height: 1.5em;font-weight: bold;}
 .prd_detail_txt p{font-size: 16px}
+.prd_detail_txt .price{}
+.prd_detail_txt .price span{display: block;text-align: left;}
+.prd_detail_txt .price span.ask{color: #fbaa39;font-size: 18px;font-weight: bold;}
+.prd_detail_txt .price span.real{font-weight: bold}
+.prd_detail_txt .price span.low{color: #ccc;text-decoration: line-through;font-size: 14px;}
+
+.prd_detail_txt .bold{font-weight: bold;border-top: 1px dashed #ccc;padding-top: 25px;}
 .prd_detail_txt .form_ct{}
 .prd_detail_txt .form_ct p{position: relative;height: 40px;width: 100%;font-size: 14px;}
 .prd_detail_txt .form_ct p span{background: #f9f9f9;border:1px solid #e8e8e8;border-radius: 30px;width: 100%;height: 100%;position: relative;z-index: 1;display: flex;align-items: center;justify-content: center;}
 .prd_detail_txt .form_ct p input{background: none;border:none;width: 100%;height: 100%;position: absolute;top: 0;left: 0;padding: 10px 20px;z-index: 2}
 .prd_detail_txt .form_ct textarea{background: #f9f9f9;border:1px solid #e8e8e8;padding: 20px;min-width: 100%;width: 100%;max-width: 100%;min-height: 150px;max-height: 150px;height: 150px;border-radius: 15px}
-
+.prd_detail_txt .form_ct .note{color: red}
 .prd_detail_txt .form_ct .submit{width: 120px;margin-top: 15px;}
 .prd_detail_txt .form_ct .submit span{background: #fbaa39;border-color: #fbaa39;}
 .prd_detail_txt .form_ct .submit input{color: #fff;}
@@ -451,8 +486,10 @@ footer .copyright{height: 60px;display: flex;justify-content: center;align-items
 .prd_detail_txt .prd_share p a{margin:0 10px;}
 .prd_detail_txt .prd_share p a:hover{opacity: 0.7;}
 
-.product_des{}
+.product_des{position: relative;}
 .product_des .ttl{border-bottom: 1px solid #000;font-size: 24px;font-weight: 300;width: 100%;display: block;margin-bottom: 30px;color: #2b2b2b;padding-bottom: 15px;text-transform: uppercase;}
+.product_des .profile{position: absolute;top: 0;right: 0}
+.product_des .profile a{width: auto;height: 40px;background: #fbaa39;border-radius: 30px;color: #fff;border:1px solid #fbaa39;display: flex;align-items: center;justify-content: center;text-align: center;padding: 0 20px;font-weight: normal;text-transform: uppercase;font-size: 14px;}
 .product_des p{font-size: 16px;}
 
 .product_tags{margin: 30px 0;padding: 30px 0 15px;border-bottom: 1px dashed #ccc;border-top: 1px dashed #ccc}

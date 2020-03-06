@@ -161,10 +161,11 @@
     </div>
     
     <div class="nav_2">
+        <p class="sp os">Danh mục</p>
         <ul>
-            <li class="sub"><a href="#">Công trình thiết kế</a>
+            <li class="sub"><span></span><a href="#">Công trình thiết kế</a>
                 <ul class="nav_sub">
-                    <li class="sub_lv2"><a href="./product.html">Dự Án ABC</a>
+                    <li class="sub_lv2"><span></span><a href="./product.html">Dự Án ABC</a>
                         <ul class="nav_sub_lv2">
                             <li><a href="#">Lorem ipsum</a></li>
                             <li><a href="#">perferendis</a></li>
@@ -188,9 +189,8 @@
     <!-- CONTENT AI DECOR -->
     <main>
         <div class="sub_head">
-            <div class="container">
-                <h2 class="title">Load tên sản phẩm</h2>
-            </div>
+            <p class="bg_head"><img src="./images/sub_head.jpg" alt=""></p>
+            <h2 class="title">Load tên sản phẩm</h2>
         </div>
 
         <div class="sub_content">
@@ -203,12 +203,12 @@
                 <div class="main_prd_detail">
                     <div class="prd_detail_img">
                         <ul class="slide_big">
-                            <li><img src="./images/news_img_1.jpg" alt=""></li>
-                            <li><img src="./images/news_img_2.jpg" alt=""></li>
-                            <li><img src="./images/news_img_3.jpg" alt=""></li>
-                            <li><img src="./images/news_img_4.jpg" alt=""></li>
-                            <li><img src="./images/news_img_5.jpg" alt=""></li>
-                            <li><img src="./images/news_img_6.jpg" alt=""></li>
+                            <li><a href="./images/news_img_1.jpg" data-lightbox="img_product"><img src="./images/news_img_1.jpg" alt=""></a></li>
+                            <li><a href="./images/news_img_2.jpg" data-lightbox="img_product"><img src="./images/news_img_2.jpg" alt=""></a></li>
+                            <li><a href="./images/news_img_3.jpg" data-lightbox="img_product"><img src="./images/news_img_3.jpg" alt=""></a></li>
+                            <li><a href="./images/news_img_4.jpg" data-lightbox="img_product"><img src="./images/news_img_4.jpg" alt=""></a></li>
+                            <li><a href="./images/news_img_5.jpg" data-lightbox="img_product"><img src="./images/news_img_5.jpg" alt=""></a></li>
+                            <li><a href="./images/news_img_6.jpg" data-lightbox="img_product"><img src="./images/news_img_6.jpg" alt=""></a></li>
                         </ul>
 
                         <ul class="slide_thumb">
@@ -222,13 +222,20 @@
                     </div>
                     <div class="prd_detail_txt">
                         <h3 class="ttl">Dự án Thiết kế – Thi công showroom FPT Mỹ Phước, Bình Dương</h3>
+                        <p>Mô tả ngắn : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nam, quam rerum odit esse, pariatur dicta in. Quae velit consectetur illo iste! Id magni animi ad vitae, ea placeat nesciunt.</p>
                         <p>Hạng mục : Thiết kế – Xây dựng hoàn thiện – ME<br>Địa điểm : Lô 6.7, Đường D1, Phường Mỹ Phước, Thị xã Bến Cát, Tỉnh Bình Dương<br>Chủ đầu tư: FPT<br>Đơn vị thiết kế – thi công: Công ty Cổ phần Lê Bảo Hân</p>
+                        <p class="price">
+                            <span class="ask">Giá liên hệ</span>
+                            <span class="real">1.000.000.000đ</span>
+                            <span class="low">999.999.000đ</span>
+                        </p>
                         <p class="bold">Liên hệ tư vấn</p>
                         <div class="form_ct">
                             <p><span></span><input type="text" placeholder="Tên của bạn"></p>
                             <p><span></span><input type="text" placeholder="Số điện thoại"></p>
                             <p><span></span><input type="text" placeholder="Email"></p>
                             <div><textarea placeholder="Nội dung"></textarea></div>
+                            <p class="note">Ghi chú : quý khách điền diện tích , số luông , hiện trang , vốn đầu tư …vv</p>
                             <p class="submit"><span></span><input type="submit"></p>
                         </div>
                     </div>
@@ -236,6 +243,7 @@
 
                 <div class="product_des">
                     <p class="ttl">Chi tiết</p>
+                    <p class="profile os"><a href="#">Tải hồ sơ năng lực</a></p>
                     <p>Hạng mục : Thiết kế – Xây dựng hoàn thiện – ME</p>
                     <p>Địa điểm : Lô 6.7, Đường D1, Phường Mỹ Phước, Thị xã Bến Cát, Tỉnh Bình Dương</p>
                     <p>Chủ đầu tư: FPT</p>
@@ -444,6 +452,7 @@
 </div>
 
 <script src="./js/jquery.min.js"></script>
+<script src="./js/lightbox.min.js"></script>
 <script src="./js/slick.min.js"></script>
 <script src="./js/decor.js"></script>
 </body>
