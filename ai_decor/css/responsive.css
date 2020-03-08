@@ -80,6 +80,8 @@
     transform: rotate(180deg)
     }
 
+    .box_banner{max-width: 1920px;margin: 0 auto}
+
     /* ================= SUB PAGE  ================= */
     .breadcrumbs li a:hover{text-decoration: underline;}
     .main_news_2 .news_recent_item p a:hover,
@@ -88,9 +90,11 @@
     .prd_detail_txt .form_ct .submit input:hover{opacity: 0.7;cursor: pointer;}
     .main_news_2 .news_recent_item .big a:hover{color: #de5f24}
     .main_news_2 .news_tags ul li a:hover,
+    .taglink_ct dd ul li a:hover,
     .product_des .profile a:hover,
     .main_news_2 .news_recent .profile p a:hover{background: #fff;color: #fbaa39}
     .main_news_2 .news_recent .profile p a:hover span{background: #fbaa39;color: #fff;}
+    .taglink_ct dd .big a:hover,
     .main_news_2 .news_related ul li a:hover{color: #fbaa39}
 
 
@@ -359,6 +363,17 @@
     .contact_form .contact_file p{width: 100%;margin-bottom: 15px;}
     .contact_info .title p{font-size: 20px;}
     .contact_info p{font-size: 16px;}
+
+    /* PAGE TAGLINK */
+    .taglink_ct{display: flex;flex-wrap: wrap;justify-content: space-between;}
+    .taglink_ct .title{width: 100%;}
+    .taglink_ct dl{flex-direction: column;width: calc((100vw - 60px) / 2);margin-top: 30px}
+    .taglink_ct dt{width: 100%;text-align: center;}
+    .taglink_ct dd{width: 100%;padding: 0;margin-top: 15px;}
+    .taglink_ct dd .big a{font-size: 16px}
+    .taglink_ct dd ul li{height: 35px}
+    .taglink_ct dd ul li a{padding: 0 15px}
+
 }   
 
 
@@ -367,6 +382,7 @@
 @media screen and (max-width: 640px){
     
 }
+
 @media screen and (max-width: 580px){
     .modal_price_ct .modal_r .modal_r_list{flex-wrap: wrap;}
     .modal_price_ct .modal_r .modal_item{width: 100%;margin-bottom: 15px}
@@ -374,6 +390,7 @@
     .modal_price_ct .modal_confirm{flex-wrap: wrap}
     .modal_price_ct .modal_confirm p{width: 100%;margin-bottom: 15px;}
     .modal_price_ct .modal_confirm p:last-child{margin-bottom: 0}
+
 }
 
 @media screen and (max-width: 480px){
@@ -406,6 +423,8 @@
     .sub_page .box03 .box03_list ul li{width: calc(100vw - 30px)}
     .sub_page .box03 .box03_list ul li .box03_img,
     .sub_page .box03 .box03_list ul li .box03_img p a{width: calc(100vw - 30px);height: calc(100vw - 30px)}
+
+    .taglink_ct dl{width: 100%;}
 }
 
 /* IPHONE 5/6 */
