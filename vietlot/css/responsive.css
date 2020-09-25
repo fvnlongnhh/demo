@@ -12,9 +12,6 @@
     
     .slick-arrow:hover::before{cursor: pointer;opacity: 0.8;}
     .slick-slider:hover .slick-arrow{transform: translateY(0);opacity: 1;}
-
-    .login_txt p a:hover,
-    .contact_content .contact_list p a:hover,
     .control_ct .center a:hover{text-decoration: none;}
 
     .box01_ct ul li:hover{box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15), 0px 4px 7px 0px rgba(0, 0, 0, 0.15)}
@@ -33,10 +30,8 @@
     .game_checkout .btn a:hover,
     .box_modal .btn_close:hover,
     .box04_ct ul li a:hover,
-    .btn_tel a:hover,
     .box_pick_num_ct .box_head p:hover,
     #footer .foot_col ul li a:hover,
-    .notifi_item li:hover,
     .box_pick_num_ct .box_body_r .list_btn li:hover,
     .game_content .game_item .icon:hover,
     .game_pages.bg2 #logo a:hover,
@@ -56,8 +51,6 @@
     .function_bot p a:hover{background: darkorange;}
     
     .box_pick_num_ct .box_body_r .select_price li:hover{background: #ccc;cursor: pointer;}
-
-    .btn_tel a:hover{background: #04a03c;color: #fff;}
     
 
 }
@@ -286,8 +279,6 @@
     /* NOTIFI PAGE */
     .notifi_content .notifi_item ul li .icon{width: 50px;height: 50px}
     .notifi_content .notifi_item ul li .notifi_alert{width: calc(100% - 50px)}
-
-    #max3d_plus .game_content .game_item .num span{width: 70px;font-size: 14px;}
 }
 
 @media screen and (max-width: 380px) {

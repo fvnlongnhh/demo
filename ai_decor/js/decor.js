@@ -84,7 +84,6 @@ $(document).ready(function() {
         });
 
         $('.box04_txt .num2').click(function(){
-            console.log('aaaaa');
             $('.box04_img li').removeClass('active');
             $('.box04_img .img_2').addClass('active');
         });
@@ -92,6 +91,37 @@ $(document).ready(function() {
         $('.box04_txt .num3').click(function(){
             $('.box04_img li').removeClass('active');
             $('.box04_img .img_3').addClass('active');
+        });
+
+        $('.box04_txt .num4').click(function(){
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_4').addClass('active');
+        });
+
+        $('.box04_txt .num5').click(function(){
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_5').addClass('active');
+        });
+
+        $('.box04_txt .num6').click(function(){
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_6').addClass('active');
+        });
+
+        $('.box04_txt .num7').click(function(){
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_7').addClass('active');
+        });
+
+        $('.box04_txt .num8').click(function(){
+            console.log('aaaaa');
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_8').addClass('active');
+        });
+
+        $('.box04_txt .num9').click(function(){
+            $('.box04_img li').removeClass('active');
+            $('.box04_img .img_9').addClass('active');
         });
     }
 

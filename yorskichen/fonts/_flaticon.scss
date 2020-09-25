@@ -1,0 +1,187 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 07/03/2017 08:57
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-001-ball:before { content: "\f100"; }
+.flaticon-002-sports:before { content: "\f101"; }
+.flaticon-003-target:before { content: "\f102"; }
+.flaticon-004-soccer-player-running-behind-the-ball:before { content: "\f103"; }
+.flaticon-005-transport-2:before { content: "\f104"; }
+.flaticon-006-buildings:before { content: "\f105"; }
+.flaticon-007-shopping:before { content: "\f106"; }
+.flaticon-008-sign-1:before { content: "\f107"; }
+.flaticon-009-square:before { content: "\f108"; }
+.flaticon-010-close-1:before { content: "\f109"; }
+.flaticon-011-close:before { content: "\f10a"; }
+.flaticon-012-technology-1:before { content: "\f10b"; }
+.flaticon-013-symbol-1:before { content: "\f10c"; }
+.flaticon-014-sign:before { content: "\f10d"; }
+.flaticon-015-business-3:before { content: "\f10e"; }
+.flaticon-016-man-1:before { content: "\f10f"; }
+.flaticon-017-search:before { content: "\f110"; }
+.flaticon-018-transport-1:before { content: "\f111"; }
+.flaticon-019-tool-2:before { content: "\f112"; }
+.flaticon-020-technology:before { content: "\f113"; }
+.flaticon-021-telephone:before { content: "\f114"; }
+.flaticon-022-tool-1:before { content: "\f115"; }
+.flaticon-023-tool:before { content: "\f116"; }
+.flaticon-024-business-2:before { content: "\f117"; }
+.flaticon-025-line:before { content: "\f118"; }
+.flaticon-026-shop-1:before { content: "\f119"; }
+.flaticon-027-clock:before { content: "\f11a"; }
+.flaticon-028-symbol:before { content: "\f11b"; }
+.flaticon-029-music:before { content: "\f11c"; }
+.flaticon-030-thumb:before { content: "\f11d"; }
+.flaticon-031-internet:before { content: "\f11e"; }
+.flaticon-032-add:before { content: "\f11f"; }
+.flaticon-033-shapes:before { content: "\f120"; }
+.flaticon-034-business-1:before { content: "\f121"; }
+.flaticon-035-bag:before { content: "\f122"; }
+.flaticon-036-food-1:before { content: "\f123"; }
+.flaticon-037-business:before { content: "\f124"; }
+.flaticon-038-money-3:before { content: "\f125"; }
+.flaticon-039-money-2:before { content: "\f126"; }
+.flaticon-040-commerce:before { content: "\f127"; }
+.flaticon-041-shop:before { content: "\f128"; }
+.flaticon-042-money-1:before { content: "\f129"; }
+.flaticon-043-computer:before { content: "\f12a"; }
+.flaticon-044-fashion-10:before { content: "\f12b"; }
+.flaticon-045-fashion-9:before { content: "\f12c"; }
+.flaticon-046-travel:before { content: "\f12d"; }
+.flaticon-047-transport:before { content: "\f12e"; }
+.flaticon-048-fashion-8:before { content: "\f12f"; }
+.flaticon-049-christmas:before { content: "\f130"; }
+.flaticon-050-clothes-6:before { content: "\f131"; }
+.flaticon-051-clothes-5:before { content: "\f132"; }
+.flaticon-052-fashion-7:before { content: "\f133"; }
+.flaticon-053-fashion-6:before { content: "\f134"; }
+.flaticon-054-food:before { content: "\f135"; }
+.flaticon-055-clothes-4:before { content: "\f136"; }
+.flaticon-056-fashion-5:before { content: "\f137"; }
+.flaticon-057-fashion-4:before { content: "\f138"; }
+.flaticon-058-clothes-3:before { content: "\f139"; }
+.flaticon-059-clothes-2:before { content: "\f13a"; }
+.flaticon-060-clothes-1:before { content: "\f13b"; }
+.flaticon-061-man:before { content: "\f13c"; }
+.flaticon-062-hand:before { content: "\f13d"; }
+.flaticon-063-stripes:before { content: "\f13e"; }
+.flaticon-064-women:before { content: "\f13f"; }
+.flaticon-065-fashion-3:before { content: "\f140"; }
+.flaticon-066-fashion-2:before { content: "\f141"; }
+.flaticon-067-clothes:before { content: "\f142"; }
+.flaticon-068-fashion-1:before { content: "\f143"; }
+.flaticon-069-trainers:before { content: "\f144"; }
+.flaticon-070-suitcase:before { content: "\f145"; }
+.flaticon-071-fashion:before { content: "\f146"; }
+.flaticon-072-money:before { content: "\f147"; }
+.flaticon-073-vintage:before { content: "\f148"; }
+.flaticon-074-luxury:before { content: "\f149"; }
+    
+    $font-Flaticon-001-ball: "\f100";
+    $font-Flaticon-002-sports: "\f101";
+    $font-Flaticon-003-target: "\f102";
+    $font-Flaticon-004-soccer-player-running-behind-the-ball: "\f103";
+    $font-Flaticon-005-transport-2: "\f104";
+    $font-Flaticon-006-buildings: "\f105";
+    $font-Flaticon-007-shopping: "\f106";
+    $font-Flaticon-008-sign-1: "\f107";
+    $font-Flaticon-009-square: "\f108";
+    $font-Flaticon-010-close-1: "\f109";
+    $font-Flaticon-011-close: "\f10a";
+    $font-Flaticon-012-technology-1: "\f10b";
+    $font-Flaticon-013-symbol-1: "\f10c";
+    $font-Flaticon-014-sign: "\f10d";
+    $font-Flaticon-015-business-3: "\f10e";
+    $font-Flaticon-016-man-1: "\f10f";
+    $font-Flaticon-017-search: "\f110";
+    $font-Flaticon-018-transport-1: "\f111";
+    $font-Flaticon-019-tool-2: "\f112";
+    $font-Flaticon-020-technology: "\f113";
+    $font-Flaticon-021-telephone: "\f114";
+    $font-Flaticon-022-tool-1: "\f115";
+    $font-Flaticon-023-tool: "\f116";
+    $font-Flaticon-024-business-2: "\f117";
+    $font-Flaticon-025-line: "\f118";
+    $font-Flaticon-026-shop-1: "\f119";
+    $font-Flaticon-027-clock: "\f11a";
+    $font-Flaticon-028-symbol: "\f11b";
+    $font-Flaticon-029-music: "\f11c";
+    $font-Flaticon-030-thumb: "\f11d";
+    $font-Flaticon-031-internet: "\f11e";
+    $font-Flaticon-032-add: "\f11f";
+    $font-Flaticon-033-shapes: "\f120";
+    $font-Flaticon-034-business-1: "\f121";
+    $font-Flaticon-035-bag: "\f122";
+    $font-Flaticon-036-food-1: "\f123";
+    $font-Flaticon-037-business: "\f124";
+    $font-Flaticon-038-money-3: "\f125";
+    $font-Flaticon-039-money-2: "\f126";
+    $font-Flaticon-040-commerce: "\f127";
+    $font-Flaticon-041-shop: "\f128";
+    $font-Flaticon-042-money-1: "\f129";
+    $font-Flaticon-043-computer: "\f12a";
+    $font-Flaticon-044-fashion-10: "\f12b";
+    $font-Flaticon-045-fashion-9: "\f12c";
+    $font-Flaticon-046-travel: "\f12d";
+    $font-Flaticon-047-transport: "\f12e";
+    $font-Flaticon-048-fashion-8: "\f12f";
+    $font-Flaticon-049-christmas: "\f130";
+    $font-Flaticon-050-clothes-6: "\f131";
+    $font-Flaticon-051-clothes-5: "\f132";
+    $font-Flaticon-052-fashion-7: "\f133";
+    $font-Flaticon-053-fashion-6: "\f134";
+    $font-Flaticon-054-food: "\f135";
+    $font-Flaticon-055-clothes-4: "\f136";
+    $font-Flaticon-056-fashion-5: "\f137";
+    $font-Flaticon-057-fashion-4: "\f138";
+    $font-Flaticon-058-clothes-3: "\f139";
+    $font-Flaticon-059-clothes-2: "\f13a";
+    $font-Flaticon-060-clothes-1: "\f13b";
+    $font-Flaticon-061-man: "\f13c";
+    $font-Flaticon-062-hand: "\f13d";
+    $font-Flaticon-063-stripes: "\f13e";
+    $font-Flaticon-064-women: "\f13f";
+    $font-Flaticon-065-fashion-3: "\f140";
+    $font-Flaticon-066-fashion-2: "\f141";
+    $font-Flaticon-067-clothes: "\f142";
+    $font-Flaticon-068-fashion-1: "\f143";
+    $font-Flaticon-069-trainers: "\f144";
+    $font-Flaticon-070-suitcase: "\f145";
+    $font-Flaticon-071-fashion: "\f146";
+    $font-Flaticon-072-money: "\f147";
+    $font-Flaticon-073-vintage: "\f148";
+    $font-Flaticon-074-luxury: "\f149";
