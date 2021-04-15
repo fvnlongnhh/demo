@@ -32,7 +32,7 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
 .box_ticket_list>li .number .amount:hover{opacity: 1;}
 }
 
-@media screen and (min-width: 751px) and (max-width: 1440px) {
+@media screen and (min-width: 751px) and (max-width: 1561px) {
     header{padding: 60px 15px 0}
     header.active{padding: 30px 15px}
 
