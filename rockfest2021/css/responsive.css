@@ -1,0 +1,108 @@
+/* responsive */
+.sp640,
+.sp420,
+.sp360,
+.sp{display: none;}
+.pc {}
+@media screen and (min-width: 751px) and (max-width: 1440px) {
+    header{padding: 60px 15px 0}
+    header.active{padding: 30px 15px}
+
+}
+@media screen and (min-width: 751px) {
+
+.box_ticket{height: 740px}
+.box_faq{height: 655px}
+.box_artist_list ul:nth-child(2){margin:0 0 0 245px;}
+
+
+/* HOVER */
+nav ul li a:hover,
+nav ul li.button span a:hover,
+footer .foot_tel p a:hover{color: #fff;}
+
+.box_faq_ct dd a:hover,
+footer .foot_info_comp p a:hover,
+footer .foot_tel ul li a:hover{color: #f00}
+
+
+nav ul li.button>a:hover,
+.box_intro_btn p a:hover,
+.box_ticket_list>li .number span:hover,
+footer .foot_info_list dd a:hover{opacity: 0.7}
+
+.box_intro_btn .btn_bd a:hover{opacity: 1;background: #f00;}
+.box_ticket_list>li .number .amount:hover{opacity: 1;}
+}
+
+@media screen and (max-width: 750px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    input,
+    button,
+    textarea,
+    select,
+    p,
+    blockquote,
+    th,
+    td,
+    pre,
+    address,
+    li,
+    dt,
+    dd{font-size: 14px;line-height: 1.6em;}
+
+
+
+    #wrapper,
+    header,
+    #main,
+    footer,
+    .inner {width: 100% !important;min-width: inherit !important;}
+    .inner {box-sizing: border-box;padding: 0 15px;}
+    .sp {display: block;}
+    .pc {display: none;}
+    /*---*/
+
+
+    /*==========================================================================*/
+    /*                               ALL                                        */
+    /*==========================================================================*/
+    header{padding-bottom: 0}
+    header h1{display: none}
+
+    #gnavi{display: none;}
+    
+    .ttl h3{font-size: 24px;}
+
+    .btn a{width: 290px;}
+    /*==========================================================================*/
+    /*                               MAIN                                       */
+    /*==========================================================================*/
+    
+}
+
+@media screen and (max-width: 560px) {
+   
+    
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}
+
+@media screen and (max-width: 380px) {
+    .btn{padding: 0;width: 100%;box-sizing: border-box}
+}
+
+@media screen and (max-width: 360px) {
+
+}
