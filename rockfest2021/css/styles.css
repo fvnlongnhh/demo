@@ -125,7 +125,7 @@ nav ul li.button span a{color: #960000;font-size: 12px;letter-spacing: 0.025em}
 .box_artist_timeline h3{color: #6b0000;font-size: 120px;text-shadow: #f00 1px 0px 0px, #f00 0.540302px 0.841471px 0px, #f00 -0.416147px 0.909297px 0px, #f00 -0.989992px 0.14112px 0px, #f00 -0.653644px -0.756802px 0px, #f00 0.283662px -0.958924px 0px, #f00 0.96017px -0.279415px 0px;font-weight: bold;letter-spacing: 0.05em;}
 .box_artist_timeline p{font-size: 110px;color: #fff;position: absolute;top: 30px;left: -150px}
 .box_artist_timeline ul{position: relative;margin-right: 15px;}
-.box_artist_timeline ul::before{background: url('../images/artist_timeline.png') center /cover no-repeat;width: 43px;height: 359px;content: '';position: absolute;top: 0;left: -65px;content: '';}
+.box_artist_timeline ul::before{background: url('../images/artist_timeline.png') center /cover no-repeat;width: 43px;height: 359px;content: '';position: absolute;top: 7px;left: -65px;content: '';}
 .box_artist_timeline ul li{color: #fff;font-weight: 300;font-size: 24px;margin-bottom: 1px;}
 .box_artist_timeline ul li span{font-weight: bold;color: #000;font-size: 32px;margin-right: 15px;line-height: 1em;width: 75px;display: inline-block;}
 .box_artist_timeline ul li .white{color: #fff;font-size: 24px;margin-right: 0;font-family: 'Kanit', sans-serif;font-weight: 500;margin-left: 5px;width: auto;}

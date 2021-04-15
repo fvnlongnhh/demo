@@ -57,12 +57,16 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     .box_ticket_list > li .price{width: calc(100% - 230px)}
     .box_ticket_list > li .price p .discount{font-size: 42px}
     .box_ticket_list > li .price p .real{font-size: 62px}
+    .box_ticket_ct .btn{padding-right: 30px;}
 
     .box_faq{background-position: -30%;padding: 0 30px 0 35%}
+    .box_faq_ct h3{font-size: 42px}
     .box_faq_ct dt{padding-right: 20px}
     .box_faq_ct dt::before{width: 7px;height: 10px;top: 10px}
 
     footer{padding: 35px 15px 10px}
+
+
 
 }
 
