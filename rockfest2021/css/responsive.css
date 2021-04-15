@@ -181,7 +181,7 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     .box_faq_ct h3{font-size: 6vw;text-align: center}
     .box_faq_ct dt{color: #000;text-shadow: #fff 1px 0px 0px, #fff 0.540302px 0.841471px 0px, #fff -0.416147px 0.909297px 0px, #fff -0.989992px 0.14112px 0px, #fff -0.653644px -0.756802px 0px, #fff 0.283662px -0.958924px 0px, #fff 0.96017px -0.279415px 0px;}
     .box_faq_ct dt::before{background: url('../images/faq_arr_b.png') center /cover no-repeat;}
-    .box_faq_ct dd{text-shadow: 0px 2px 5px #fff, 0 0px 5px #fff}
+    .box_faq_ct dd{}
     .box_faq_l{width: 100%;padding: 0;margin-bottom: 15px;}
     .box_faq_r{width: 100%;}
 
@@ -205,6 +205,9 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     .box_intro_btn{flex-direction: column;align-items: center;}
     .box_intro_btn p{margin: 0 0 15px}
     .box_intro_btn p:last-child{margin-bottom: 0}
+
+    .box_intro_txt .box_intro_info .time p{font-size: 24px;}
+    .box_intro_txt .box_intro_info p span{font-size: }
 
     .box_artist{padding-bottom: 380px}
     .box_artist_list{width: 100%;}
