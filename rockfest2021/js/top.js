@@ -16,10 +16,10 @@ $(document).ready(function() {
         $('.box_ticket_ct .btn').addClass('active');
     });
 
-    $('.amount input').blur(function(){
-        if( $(this).val() < 1 ) {
-            $('.box_ticket_ct .btn').removeClass('active');
-        }
+
+    $('.box_ticket_ct .btn a, .close').click(function(){
+        $('.popup').toggleClass('open');
+        $('body').toggleClass('active');
     });
 
     $(window).scroll(function() {
@@ -40,9 +40,12 @@ $(document).ready(function() {
         $('.btn_side').removeClass('open');
         $('nav').removeClass('active');
     });
+
+    $('.btn_accept').click(function(){
+        $('.step_1').slideUp(500)
+        $('.step_2').slideDown(500);
+    });
 });
-
-
 
 
 $(window).load(function() {

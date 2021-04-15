@@ -23,7 +23,8 @@ footer .foot_tel p a:hover{color: #fff;}
 footer .foot_info_comp p a:hover,
 footer .foot_tel ul li a:hover{color: #f00}
 
-
+.popup_ct .close:hover,
+.popup_ct .btn_accept:hover,
 nav ul li.button>a:hover,
 .box_intro_btn p a:hover,
 .box_ticket_list>li .number span:hover,
@@ -66,6 +67,8 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     .box_faq_ct dt::before{width: 7px;height: 10px;top: 10px}
 
     footer{padding: 35px 15px 10px}
+
+    .popup_ct{padding: 50px 30px;}
 }
 
 @media screen and (max-width: 768px) {
@@ -192,10 +195,23 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     footer .foot_tel{margin:30px 0 0;text-align: center;width: 100%;}
     footer .foot_tel p{text-align: center}
     footer .foot_tel ul{justify-content: center;}
+
+    .popup_ct{padding: 50px 30px;max-height: 90%;overflow: auto;}
+    .popup_logo{width: 160px;margin: 0 auto 15px}
+    .popup_ct .popup_form p{margin-bottom: 10px;padding-bottom: 10px;}
+    .popup_ct::after{display: none;}
+
+    .popup_ct .step_2 p{font-size: 14px;}
+    .popup_ct .step_2 .big{font-size: 20px}
+
 }
 
-@media screen and (max-width: 560px) {
-   
+@media screen and (max-width: 640px) {
+   .popup_ct{width: 90%;padding: 30px 15px;}
+   .popup_ct .popup_form p{justify-content: flex-start;margin-bottom: 5px;padding-bottom: 5px}
+   .popup_ct .popup_form p span{width: 120px;text-align: left;font-size: 14px;padding-right: 0;margin-right: 15px;}
+   .popup_ct .popup_form input{width: calc(100% - 135px)}
+   .popup_ct .btn_accept{height: 45px;}
     
 }
 
@@ -226,10 +242,13 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     footer .foot_info_list dd{width: 100%;margin-top: 20px;flex-wrap: wrap;}
     footer .foot_info_list dd a:last-child{margin-right: 0}
 
+    .popup_ct::before{width: 60px;height: 98px}
+
+
 }
 
 @media screen and (max-width: 420px) {
-
+    .sp420{display: block}
 }
 
 @media screen and (max-width: 380px) {

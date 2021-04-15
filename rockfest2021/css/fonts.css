@@ -16,7 +16,7 @@ version: 2.7.0
  * x-small is for IE6/7 quirks mode.
  */
 body {
-	font: 62.5% Meiryo, arial, clean, verdana, 'Hiragino Kaku Gothic Pro', "ＭＳ Ｐゴシック", Osaka, sans-serif;
+	font: 62.5% arial, clean, verdana, sans-serif;
 	color: #333;
 	line-height: 1.4;
 }
@@ -26,7 +26,7 @@ html>/**/body { font-size: 10px; font-size /*\**/: 62.5%\9; } /* Except IE & Add
  * Nudge down to get to 10px equivalent for these form elements
  */ 
 select,input,button,textarea {
-	font: 100% Meiryo, arial, clean, verdana, 'Hiragino Kaku Gothic Pro', "ＭＳ Ｐゴシック", Osaka, sans-serif;
+	font: 100% arial, clean, verdana, sans-serif;
 	color: #333;
 	line-height: 1.4;
 }

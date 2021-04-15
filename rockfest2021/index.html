@@ -120,7 +120,7 @@
 
                             <div class="number">
                                 <span class="minus" onclick="stepDown()">-</span>    
-                                <span class="amount"><input type="text" min="1" max="20" value="0"></span>
+                                <span class="amount"><input type="number" min="1" max="20" value="0"></span>
                                 <span class="plus" onclick="stepUp()">+</span>    
                             </div>
                         </div>
@@ -142,7 +142,7 @@
 
                             <div class="number">
                                 <span class="minus" onclick="stepDown()">-</span>    
-                                <span class="amount"><input type="text" min="1" max="20" value="0"></span>
+                                <span class="amount"><input type="number" min="1" max="20" value="0"></span>
                                 <span class="plus" onclick="stepUp()">+</span>    
                             </div>
                         </div>
@@ -224,6 +224,34 @@
             </div>
         </div>
     </footer>
+
+    <!-- POPUP -->
+    <div class="popup">
+        <div class="popup_ct">
+            <p class="close"><img src="./images/ic_rock_on.png" alt="Close Popup"></p>
+            <p class="popup_logo"><img src="./images/logo.png" width="320" alt="ROCKFEST Logo"></p>
+            <div class="step_1">
+                <div class="popup_form">
+                    <p><span>Họ Và Tên*</span><input type="text" placeholder="Ví dụ : Nguyễn Văn Tèo"></p>
+                    <p><span>Số điện thoại*</span><input type="number" placeholder="Ví dụ : 028.9999.44.88"></p>
+                    <p><span>Email*</span><input type="text" placeholder="Ví dụ : rockfestvietnam@gmail.com"></p>
+                    <p><span>Xác nhận Email*</span><input type="text" placeholder="Nhập lại địa chỉ email ở trên"></p>
+                </div>
+                <p class="note">*** Lưu ý: Vui lòng cung cấp <span>chính xác email</span> của bạn <br class="pc">để được nhận thông tin chi tiết về vé tham dự chương trình</p>
+                <p class="accept"><input type="checkbox" name="accept" id="ok" value="ok"><label for="ok"></label> Tôi đã đọc và đồng ý với điều khoản của chương trình</p>
+                <p class="btn_accept">Xác nhận</p>
+            </div>
+
+            <div class="step_2">
+                <p class="big"><img src="./images/ic_rock_on.png" alt="Done">BẠN ĐÃ ĐĂNG KÝ THÀNH CÔNG!</p>
+                <p>Vui lòng kiểm tra thông tin vé tại email bạn đã đăng ký.</p>
+                <p>Địa chỉ nhận vé và thanh toán:<br>35 Nguyễn Thông, P.7, Q.3, Tp. HCM.</p>
+
+                <!-- <p class="big"><img src="./images/ic_rock_on.png" alt="Done">GIAO DỊCH CỦA BẠN ĐÃ THÀNH CÔNG!</p>
+                <p>Vui lòng kiểm tra Email (Hoặc Spam mail) <br class="pc">để nhận vé điện tử tham gia chương trình <br class="pc">ROCKFEST vào ngày 08/05/2021.</p> -->
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="./js/aos.js"></script>
