@@ -54,7 +54,7 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     .box_ticket{padding: 100px 15px 100px 10%}
     .box_ticket_list > li{width: 45%;margin-right: 80px;padding: 30px 30px 30px 40px}
     .box_ticket_list > li .info{width: 230px;}
-    .box_ticket_list > li .price{width: auto}
+    .box_ticket_list > li .price{width: calc(100% - 230px)}
     .box_ticket_list > li .price p .discount{font-size: 42px}
     .box_ticket_list > li .price p .real{font-size: 62px}
 
