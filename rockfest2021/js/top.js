@@ -63,7 +63,7 @@ $(window).bind('load', function() {
                 if ($(window).width() > 640) {
                     $('html,body').animate({ scrollTop: p.top - 100 }, 400);
                 } else {
-                    $('html,body').animate({ scrollTop: p.top - 0}, 400);
+                    $('html,body').animate({ scrollTop: p.top - 60}, 400);
                 }
             }
             return false;
