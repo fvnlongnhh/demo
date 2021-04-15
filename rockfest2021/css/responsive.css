@@ -36,7 +36,7 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     header{padding: 60px 15px 0}
     header.active{padding: 30px 15px}
 
-    .box_intro_ct{padding: 260px 15px 0}
+    .box_intro_ct{padding: 0 15px}
 
     .box_intro_logo {width: 37%}
     .box_intro_txt{width: 57%;margin-left: 2%}
