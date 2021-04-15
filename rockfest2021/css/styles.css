@@ -109,10 +109,8 @@ nav ul li.button span a{color: #960000;font-size: 12px;letter-spacing: 0.025em}
 .box_intro_logo{}
 .box_intro_logo p{}
 
-
-
 /* BOX ARTIST */
-.box_artist{background: url('../images/artirst_bg.png') center /cover no-repeat;padding: 85px 6.5% 75px}
+.box_artist{background: url('../images/artirst_bg.png') center /cover no-repeat;padding: 85px 6.5%}
 .box_artist_ct{display: flex;justify-content: space-between;}
 .box_artist_list{margin-top: 25px}
 .box_artist_list ul{display: flex;flex-wrap: wrap;width: 100%;margin-bottom: 55px;}
