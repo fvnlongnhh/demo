@@ -87,7 +87,7 @@ nav ul li.button span a{color: #960000;font-size: 12px;letter-spacing: 0.025em}
 .ttl p{font-size: 16px;font-weight: bold;letter-spacing: 0.075em}
 
 /* BOX INTRO */
-.box_intro{background: url('../images/intro_bg.png') center /cover no-repeat #000;height: 100vh}
+.box_intro{background: url('../images/intro_bg.png') center /cover no-repeat #000;height: 100vh;min-height: 700px}
 .box_intro_ct{padding: 0 9.5% ;display: flex;justify-content: space-between;height: 100%;align-items: center;}
 .box_intro_txt{text-align: center;text-transform: uppercase;width: 710px;}
 .box_intro_txt p{margin-bottom: 0;}
