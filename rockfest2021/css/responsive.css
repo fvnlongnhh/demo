@@ -5,8 +5,9 @@
 .sp{display: none;}
 .pc {}
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 769px) {
 
+.box_intro_txt .box_intro_info .location_txt{position: absolute;top: -5px;left: -100px;}
 .box_ticket{height: 744px}
 .box_faq{height: 655px}
 .box_artist_list ul:nth-child(2){margin:0 0 0 245px;}
@@ -32,7 +33,7 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
 .box_ticket_list>li .number .amount:hover{opacity: 1;}
 }
 
-@media screen and (min-width: 751px) and (max-width: 1661px) {
+@media screen and (min-width: 769px) and (max-width: 1661px) {
     header{padding: 60px 15px 0}
     header.active{padding: 30px 15px}
 
@@ -65,12 +66,9 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     .box_faq_ct dt::before{width: 7px;height: 10px;top: 10px}
 
     footer{padding: 35px 15px 10px}
-
-
-
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     h1,
     h2,
     h3,
@@ -97,28 +95,103 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     header,
     #main,
     footer,
-    .inner {width: 100% !important;min-width: inherit !important;}
-    .inner {box-sizing: border-box;padding: 0 15px;}
-    .sp {display: block;}
-    .pc {display: none;}
+    .inner{width: 100% !important;min-width: inherit !important;}
+    .inner{box-sizing: border-box;padding: 0 15px;}
+    .sp{display: block;}
+    .pc{display: none;}
     /*---*/
 
 
     /*==========================================================================*/
     /*                               ALL                                        */
     /*==========================================================================*/
-    header{padding-bottom: 0}
-    header h1{display: none}
+    header{height: 60px;padding: 0 15px;display: flex;align-items: center;justify-content: center;}
+    header.active{padding: 0}
+    header h1{}
 
-    #gnavi{display: none;}
+
+    nav{opacity: 0;visibility: hidden;pointer-events: none;width: 100%;height: calc(100vh - 60px);position: fixed;top: 60px;right: -300px;transition: all ease 0.3s;background: rgba(0, 0, 0, 0.8)}
+    nav.active{opacity: 1;visibility: visible;pointer-events: inherit;right: 0;}
+    nav ul{flex-direction: column;justify-content: center;align-items: center;height: 100%;}
+    nav ul li{margin: 0 0 30px;}
+    nav ul li:last-child{margin-bottom: 0}
+    nav ul li>a{font-size: 18px;color: #fff;}
+    nav ul li.button>a{width: 200px;}
+    nav ul li.button span{position: relative;bottom: inherit;left: inherit;}
+    nav ul li.button span a{font-size: 16px;}
     
-    .ttl h3{font-size: 24px;}
-
-    .btn a{width: 290px;}
+    .btn_open{display: flex;}
+    .btn a{font-size: 24px;}
+    .aos-init{transition-delay: 0s !important}
     /*==========================================================================*/
     /*                               MAIN                                       */
     /*==========================================================================*/
-    
+    /* BOX INTRO */
+    .box_intro{height: auto;padding: 100px 0}
+    .box_intro_ct{padding: 0 15px;flex-direction: column-reverse;justify-content: center;}
+    .box_intro_logo{width: 160px;margin: 0 auto 30px;}
+    .box_intro_txt{width: 100%;}
+    .box_intro_txt p{width: 341px;margin: 0 auto}
+    .box_intro_txt .box_intro_info{padding: 15px;margin: 30px auto;}
+    .box_intro_txt .box_intro_info .time{justify-content: center;padding: 0}
+    .box_intro_txt .box_intro_info .time p{width: auto;font-size: 32px}
+    .box_intro_txt .box_intro_info .time .time_name{margin: 0 15px 0 0}
+    .box_intro_txt .box_intro_info .time .time_date{margin: 0;letter-spacing: 0.15em;}
+    .box_intro_txt .box_intro_info .location{flex-direction: column;justify-content: center;align-items: center;width: 100%;margin-top: 15px}
+    .box_intro_txt .box_intro_info p{width: 100%;text-align: center;letter-spacing: 0.05em;}
+    .box_intro_txt .box_intro_info p span{letter-spacing: 0.075em;font-size: 20px;}
+    .box_intro_txt .box_intro_info .location_txt{margin-bottom: 20px;}
+    .box_intro_btn{width: 100%;}
+    .box_intro_btn p{width: auto;margin: 0 10px}
+
+    /* BOX ARTIST */
+    .box_artist{padding: 50px 15px 30px;}
+    .box_artist_ct{flex-direction: column-reverse;}
+    .box_artist_timeline{position: relative}
+    .box_artist_timeline ul{position: absolute;top: 115px;right: 0;margin-right: 0}
+    .box_artist_timeline ul::before{width: 34px;height: 280px;left: -40px;}
+    .box_artist_timeline ul li{font-size: 18px;}
+    .box_artist_timeline ul li span{font-size: 18px;width: 40px;margin-right: 10px;}
+    .box_artist_timeline ul li .white{font-size: 18px;}
+    .box_artist_timeline .title{margin-bottom: 50px;}
+    .box_artist_timeline h3{font-size: 72px;line-height: 1em}
+    .box_artist_timeline p{font-size: 60px;line-height: 1em;left: -50px;top: 40px;}
+
+    .box_artist_list{margin: 0;width: calc(100% - 240px)}
+    .box_artist_list ul{width: 100%;margin-bottom: 0;justify-content: space-between;flex-wrap: wrap;}
+    .box_artist_list ul li{width: calc(50% - 10px);margin: 0 0 20px}
+    .box_artist_list ul li span{font-size: 18px;}
+    .box_artist_list ul li img{margin-bottom: 10px}
+
+    /* BOX TICKET */
+    .box_ticket{padding: 50px 15px}
+    .box_ticket_ct h3{text-align: center;margin-bottom: 30px;}
+    .box_ticket_ct h3 span{font-size: 54px;}
+    .box_ticket_list{margin-bottom: 0}
+    .box_ticket_list>li{width: 100%;height: auto;margin: 0 0 30px;padding: 30px}
+    .box_ticket_list>li .info{display: flex;flex-direction: column;justify-content: center;width: 50%;}
+    .box_ticket_list>li .info .name{padding: 0;margin-bottom: 10px;}
+    .box_ticket_list>li .price{width: 50%;}
+    .box_ticket_list>li .price p .discount{font-size: 36px;margin-bottom: 10px}
+    .box_ticket_list>li .price p .real{font-size: 54px}
+
+    /* BOX FAQ */
+    .box_faq{padding: 50px 15px;background: url('../images/faq_bg.png') center /cover no-repeat;}
+    .box_faq_ct{flex-direction: column;}
+    .box_faq_ct h3{font-size: 6vw;text-align: center}
+    .box_faq_ct dt{color: #000;text-shadow: #fff 1px 0px 0px, #fff 0.540302px 0.841471px 0px, #fff -0.416147px 0.909297px 0px, #fff -0.989992px 0.14112px 0px, #fff -0.653644px -0.756802px 0px, #fff 0.283662px -0.958924px 0px, #fff 0.96017px -0.279415px 0px;}
+    .box_faq_ct dt::before{background: url('../images/faq_arr_b.png') center /cover no-repeat;}
+    .box_faq_ct dd{text-shadow: 0px 2px 5px #fff, 0 0px 5px #fff}
+    .box_faq_l{width: 100%;padding: 0;margin-bottom: 15px;}
+    .box_faq_r{width: 100%;}
+
+    /* FOOTER */
+    footer .foot_ct{flex-wrap: wrap;}
+    footer .foot_info{width: 100%;}
+    footer .foot_info_comp{padding: 0;text-align: center}
+    footer .foot_tel{margin:30px 0 0;text-align: center;width: 100%;}
+    footer .foot_tel p{text-align: center}
+    footer .foot_tel ul{justify-content: center;}
 }
 
 @media screen and (max-width: 560px) {
@@ -127,6 +200,28 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
 }
 
 @media screen and (max-width: 480px) {
+    header h1{width: 160px}
+    .box_intro{padding-bottom: 50px}
+    .box_intro_btn{flex-direction: column;align-items: center;}
+    .box_intro_btn p{margin: 0 0 15px}
+    .box_intro_btn p:last-child{margin-bottom: 0}
+
+    .box_artist{padding-bottom: 380px}
+    .box_artist_list{width: 100%;}
+    .box_artist_timeline{position: unset;}
+    .box_artist_timeline ul{top: inherit;bottom: 30px;width: 100%;right: 0;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+    .box_artist_timeline ul::before{transform: rotate(270deg);left: calc(50% - 17px);top: -170px}
+    .box_artist_timeline ul li{width: 180px}
+
+    .box_ticket_list>li{flex-wrap: wrap;justify-content: center;flex-direction: column;padding: 30px 15px;}
+    .box_ticket_list>li .info{width: 100%;height: auto;border:none;border-bottom: 1px solid #fff;margin-bottom: 30px;padding-bottom: 15px;}
+    .box_ticket_list>li .price{width: 100%;height: auto;padding: 0}
+
+    .box_faq_ct h3{font-size: 7vw;}
+
+    footer .foot_info_list dl{flex-direction: column}
+    footer .foot_info_list dd{width: 100%;margin-top: 20px;flex-wrap: wrap;}
+    footer .foot_info_list dd a:last-child{margin-right: 0}
 
 }
 
@@ -139,5 +234,6 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
 }
 
 @media screen and (max-width: 360px) {
+    .box_intro_txt{width: 100%}
 
 }

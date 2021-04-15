@@ -29,6 +29,17 @@ $(document).ready(function() {
             $('header').removeClass('active');
         }
     });
+
+    $(".btn_side").click(function () {
+        $(this).toggleClass('open');
+        $("nav").toggleClass("active");
+        return false;
+    });
+
+    $("nav ul li a").click(function(){
+        $('.btn_side').removeClass('open');
+        $('nav').removeClass('active');
+    });
 });
 
 
@@ -39,7 +50,6 @@ $(window).load(function() {
         easing: 'ease',
         once: true,
         duration: 1000,
-        disable: 'mobile',
     });
 });
 
@@ -53,7 +63,7 @@ $(window).bind('load', function() {
                 if ($(window).width() > 640) {
                     $('html,body').animate({ scrollTop: p.top - 100 }, 400);
                 } else {
-                    $('html,body').animate({ scrollTop: p.top - 60 }, 400);
+                    $('html,body').animate({ scrollTop: p.top - 0}, 400);
                 }
             }
             return false;

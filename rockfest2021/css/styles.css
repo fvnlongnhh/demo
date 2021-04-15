@@ -25,7 +25,6 @@ body {color: #000;font-family: 'Kanit', sans-serif;}
 .inner {width:1200px;margin: 0 auto;}
 #wrapper {min-width:1220px;overflow: hidden}
 a{text-decoration: none;color: #000;}
-a:hover{color: #000;}
 
 p,
 dd,
@@ -48,6 +47,25 @@ nav ul li.button{position: relative;}
 nav ul li.button>a{width: 150px;height: 40px;display: flex;align-items: center;justify-content: center;text-align: center;background: #f00;color: #fff;border-radius: 3px;}
 nav ul li.button span{position: absolute;bottom: -25px;left: 0;width: 100%;text-align: center;display: block;font-weight: 500}
 nav ul li.button span a{color: #960000;font-size: 12px;letter-spacing: 0.025em}
+
+.btn_open{width: 60px;height:60px;margin: 0;position: absolute;top: 0px;right: 0;display: none;}
+.btn_side{display:block;cursor:pointer;width:100%;height:100%;text-align:center;z-index:9999;position:relative;margin:0 auto;position:absolute;border-radius:0}
+.btn_side span{display:block;position:absolute;height: 2px;width:15px;background:#fff;opacity:1;transform:rotate(0deg);transition:.3s ease-in-out}
+.btn_side span:nth-child(even){left:calc(50% + 1px);}
+.btn_side span:nth-child(odd){left:calc(50% - 14px);}
+.btn_side span:nth-child(1),.btn_side span:nth-child(2){top:21px}
+.btn_side span:nth-child(3),.btn_side span:nth-child(4){top:30px}
+.btn_side span:nth-child(5),.btn_side span:nth-child(6){top:39px}
+
+.btn_side.open span{background: #fff}
+.btn_side.open span:nth-child(1),.btn_side.open span:nth-child(6){transform:rotate(45deg)}
+.btn_side.open span:nth-child(2),.btn_side.open span:nth-child(5){transform:rotate(-45deg)}
+.btn_side.open span:nth-child(1){left:calc(50% - 12px);top:25px}
+.btn_side.open span:nth-child(2){left:calc(50% - 2px);top:25px}
+.btn_side.open span:nth-child(3){left:-50%;opacity:0}
+.btn_side.open span:nth-child(4){left:100%;opacity:0}
+.btn_side.open span:nth-child(5){left:calc(50% - 12px);top:36px}
+.btn_side.open span:nth-child(6){left:calc(50% - 2px);top:36px}
 
 /*==========================================================================*/
 /*                               ALL                                        */
@@ -97,7 +115,6 @@ nav ul li.button span a{color: #960000;font-size: 12px;letter-spacing: 0.025em}
 .box_intro_txt .box_intro_info .time .time_name{text-align: right;color: #000;font-weight: bold;text-shadow: #f00 1px 0px 0px, #f00 0.540302px 0.841471px 0px, #f00 -0.416147px 0.909297px 0px, #f00 -0.989992px 0.14112px 0px, #f00 -0.653644px -0.756802px 0px, #f00 0.283662px -0.958924px 0px, #f00 0.96017px -0.279415px 0px;margin-right: 20px;letter-spacing: 0.05em;}
 .box_intro_txt .box_intro_info .time .time_date{color: #fff;letter-spacing: 0.3em;text-align: left;}
 .box_intro_txt .box_intro_info .location{position: relative;display: flex;justify-content: flex-end;margin-top: 25px;}
-.box_intro_txt .box_intro_info .location_txt{position: absolute;top: -5px;left: -100px;}
 .box_intro_txt .box_intro_info p{color: #fff;text-align: left;letter-spacing: 0.1em;font-weight: 300}
 .box_intro_txt .box_intro_info p span{font-size: 24px;letter-spacing: 0.15em;color: #f00;font-weight: bold;display: block;margin-bottom: 5px;}
 
@@ -125,7 +142,7 @@ nav ul li.button span a{color: #960000;font-size: 12px;letter-spacing: 0.025em}
 .box_artist_timeline h3{color: #6b0000;font-size: 120px;text-shadow: #f00 1px 0px 0px, #f00 0.540302px 0.841471px 0px, #f00 -0.416147px 0.909297px 0px, #f00 -0.989992px 0.14112px 0px, #f00 -0.653644px -0.756802px 0px, #f00 0.283662px -0.958924px 0px, #f00 0.96017px -0.279415px 0px;font-weight: bold;letter-spacing: 0.05em;}
 .box_artist_timeline p{font-size: 110px;color: #fff;position: absolute;top: 30px;left: -150px}
 .box_artist_timeline ul{position: relative;margin-right: 15px;}
-.box_artist_timeline ul::before{background: url('../images/artist_timeline.png') center /cover no-repeat;width: 43px;height: 359px;content: '';position: absolute;top: 7px;left: -65px;content: '';}
+.box_artist_timeline ul::before{background: url('../images/artist_timeline.png') center /cover no-repeat;width: 44px;height: 360px;content: '';position: absolute;top: 7px;left: -65px;content: '';}
 .box_artist_timeline ul li{color: #fff;font-weight: 300;font-size: 24px;margin-bottom: 1px;}
 .box_artist_timeline ul li span{font-weight: bold;color: #000;font-size: 32px;margin-right: 15px;line-height: 1em;width: 75px;display: inline-block;}
 .box_artist_timeline ul li .white{color: #fff;font-size: 24px;margin-right: 0;font-family: 'Kanit', sans-serif;font-weight: 500;margin-left: 5px;width: auto;}
