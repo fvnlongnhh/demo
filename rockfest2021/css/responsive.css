@@ -201,10 +201,12 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
     .popup_ct{padding: 50px 30px;max-height: 90%;overflow: auto;}
     .popup_logo{width: 160px;margin: 0 auto 15px}
     .popup_ct .popup_form p{margin-bottom: 10px;padding-bottom: 10px;}
+    .popup_ct .popup_form p input{font-size: 12px;}
     .popup_ct::after{display: none;}
 
     .popup_ct .step_2 p{font-size: 14px;}
     .popup_ct .step_2 .big{font-size: 20px}
+
 
 }
 
@@ -212,8 +214,10 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
    .popup_ct{width: 90%;padding: 30px 15px;}
    .popup_ct .popup_form p{justify-content: flex-start;margin-bottom: 5px;padding-bottom: 5px}
    .popup_ct .popup_form p span{width: 120px;text-align: left;font-size: 14px;padding-right: 0;margin-right: 15px;}
-   .popup_ct .popup_form input{width: calc(100% - 135px)}
+   .popup_ct .popup_form input,
+   .popup_ct .popup_form p select{width: calc(100% - 135px)}
    .popup_ct .btn_accept{height: 45px;}
+
     
 }
 
@@ -253,6 +257,8 @@ footer .foot_info_list dd a:hover{opacity: 0.7}
 }
 
 @media screen and (max-width: 420px) {
+    .popup_ct .popup_form p span{width: 110px;margin-right: 10px;}
+    .popup_ct .popup_form p select{padding: 10px 5px;font-size: 12px;}
     .sp420{display: block}
 }
 
