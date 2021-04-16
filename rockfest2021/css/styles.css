@@ -280,3 +280,17 @@ footer .foot_tel ul li a{color: #fff;font-size: 14px;}
 
 
 
+@media screen and (min-width: 1336px) {
+  .box_ticket_list{
+    flex-wrap: unset;
+  }
+}
+
+.error{
+  color: red;
+  font-size: 13px;
+}
+
+.Toastify__toast{
+  font-size: 15px !important;
+}
