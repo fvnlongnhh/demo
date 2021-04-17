@@ -72,27 +72,30 @@ nav ul li.button span a{color: #960000;font-size: 12px;letter-spacing: 0.025em}
 
 /* POPUP */
 .popup{position: fixed;top:-50%;left: 0;background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;z-index: 10;display: flex;align-items: center;justify-content: center;transition: all ease 0.5s;pointer-events: none;visibility: hidden;opacity: 0;}
+.popup_bg{position: absolute;top: 0;left: 0;z-index: 0;width: 100%;height: 100%;cursor: pointer;}
 .popup.open{opacity: 1;visibility: visible;pointer-events: inherit;top: 0;}
-.popup_ct{width: 600px;height: auto;position: relative;background: url('../images/popup_bg.png') center /cover no-repeat;padding: 100px 30px}
+.popup_ct{width: 600px;height: 96%;margin: 2% auto;position: relative;background: url('../images/popup_bg.png') center /cover no-repeat;padding: 50px 30px;cursor: default;z-index: 2}
 .popup_ct::before{position: absolute;top: 0;left: 0;content: '';background: url('../images/popup_ic_t.png') center /cover no-repeat;width: 120px;height: 195px;content: '';opacity: 0.8}
 .popup_ct::after{position: absolute;bottom: -30px;right: -30px;content: '';background: url('../images/popup_ic_b.png') center /cover no-repeat;width: 100px;height: 110px;content: '';}
 .popup_ct .close{position: absolute;top: 15px;right: 15px;cursor: pointer}
 .popup_ct p{text-align: center;color: #fff;}
 
-.popup_ct .popup_form{background: none;margin-bottom: 30px;}
-.popup_ct .popup_form p{display: flex;justify-content: center;align-items: center;margin-bottom: 15px;border-bottom: 1px solid #fff;padding-bottom: 15px;}
-.popup_ct .popup_form p span{width: 200px;padding-right: 20px;border-right: 1px solid #f00;margin-right: 20px;color: #fff;display: inline-block;font-size: 18px;text-align: right;font-weight: 300;flex-shrink: 0;}
+.popup_ct .popup_form{background: none;margin-bottom: 15px;}
+.popup_ct .popup_form p{display: flow-root;justify-content: center;align-items: center;margin-bottom: 10px;border-bottom: 1px solid #fff;padding-bottom: 10px;}
+.popup_ct .popup_form p span{width: 200px;padding-right: 20px;border-right: 1px solid #f00;margin-right: 20px;color: #fff;display: inline-block;font-size: 14px;text-align: right;font-weight: 300;flex-shrink: 0;}
 .popup_ct .popup_form p select{width: calc(100% - 250px);padding: 10px;font-size: 14px;}
-.popup_ct .popup_form input{width: calc(100% - 250px);background: none;border:none;color: #fff;padding: 10px 0;}
+.popup_ct .popup_form input{width: calc(100% - 250px);background: none;border:none;color: #fff;padding: 10px 0;font-size: 14px;}
 .popup_ct .popup_form input::placeholder{color: #999;}
 
 .popup_ct .note{}
 .popup_ct .note span{color: #f00}
-.popup_ct .accept{position: relative;display: flex;justify-content: center;align-self: center}
-.popup_ct .accept label{width: 21px;height: 21px;background: url('../images/ic_rock_off.png') center /cover no-repeat;display: inline-block;margin: 2px 5px 0 0;flex-shrink: 0;}
+.popup_ct .accept{position: relative;display: flow-root;justify-content: center;align-self: center}
+.popup_ct .accept label{width: 21px;height: 21px;background: url('../images/ic_rock_off.png') center /cover no-repeat;display: inline-block;margin: 0 5px 0 0;flex-shrink: 0;position: relative;top: 6px}
 .popup_ct .accept input[type="checkbox"] {display: none;}
 .popup_ct .accept input[type="checkbox"]:checked + label {background: url('../images/ic_rock_on.png') center /cover no-repeat;}
-.popup_ct .btn_accept{width: 210px;height: 60px;border-radius: 5px;background: #f00;border:1px solid #f00;display: flex;align-items: center;justify-content: center;text-align: center;color: #fff;letter-spacing: 0.05em;font-size: 20px;transition: all ease 0.3s;margin: 0 auto;text-transform: uppercase;font-weight: 300;cursor: pointer;}
+.popup_ct .btn_accept{width: 210px;height: 50px;border-radius: 5px;background: #666;display: flex;align-items: center;justify-content: center;text-align: center;color: #fff;letter-spacing: 0.05em;font-size: 20px;transition: all ease 0.3s;margin: 0 auto;text-transform: uppercase;font-weight: 300;cursor: pointer;}
+.popup_ct .btn_accept.active{background: #f00}
+.popup_ct .accept a{color: dodgerblue;text-decoration: underline}
 
 .popup_ct .step_2{display: none}
 .popup_ct .step_2 p{font-weight: 300;font-size: 18px}
@@ -121,7 +124,7 @@ input[type=number] {-moz-appearance: textfield;}
 .fs20{font-size: 20px;}
 
 .btn{text-align: center;display: block;margin:0 auto;}
-.btn a{position: relative;text-align: center;color: #fff;width: 270px;height: 60px;background: #373737;font-size: 32px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto;box-sizing: border-box;transition: all ease 0.3s;font-weight: bold;text-transform: uppercase;border-radius: 5px;letter-spacing: 0.1em;}
+.btn a{position: relative;text-align: center;color: #fff;width: 270px;height: auto;background: #373737;font-size: 32px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto;box-sizing: border-box;transition: all ease 0.3s;font-weight: bold;text-transform: uppercase;border-radius: 5px;letter-spacing: 0.1em;line-height: 1em;padding: 15px 0 10px}
 .btn a:hover{background: #101010;color:#fff;}
 
 /*==========================================================================*/
@@ -293,4 +296,10 @@ footer .foot_tel ul li a{color: #fff;font-size: 14px;}
 
 .Toastify__toast{
   font-size: 15px !important;
+}
+
+.btn_accept-disable{
+  background: #373737 !important;
+  border: 1px solid #373737 !important;
+  cursor: not-allowed !important;
 }

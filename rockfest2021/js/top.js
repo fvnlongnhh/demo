@@ -17,7 +17,7 @@ $(document).ready(function () {
   });
 
 
-  $('.box_ticket_ct .btn a, .close').click(function () {
+  $('.box_ticket_ct .btn a, .close , .popup_bg').click(function () {
     $('.popup').toggleClass('open');
     $('body').toggleClass('active');
   });
