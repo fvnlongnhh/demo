@@ -246,6 +246,7 @@ footer .foot_info_list dl{display: flex;width: 100%;margin-bottom: 40px;}
 footer .foot_info_list dt{border-left: 3px solid #960000;font-size: 12px;width: 190px;padding:15px 0 15px 15px;flex-shrink: 0;display: flex;align-items: center;letter-spacing: 0.1em}
 footer .foot_info_list dd{width: calc(100% - 300px);display: flex;align-items: center;}
 footer .foot_info_list dd a{margin-right: 35px;}
+footer .foot_info_list dl:nth-child(2) dd a img{max-height: 50px}
 
 footer .foot_info_comp{padding-left: 20px;}
 footer .foot_info_comp p{font-size: 14px;font-weight: 300;margin-bottom: 5px;}
