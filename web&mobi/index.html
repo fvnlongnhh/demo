@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <!-- <link rel="stylesheet" href="./css/intlTelInput.css"> -->
+    <link rel="stylesheet" href="./css/intiTelInputs.css">
+    <link rel="stylesheet" href="./css/demo.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<style>
+    .MobileTerminal {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="MobileTerminal">
+        <div class="mainPage">
+        </div>
+        <img src="./img/mobi/Asset3.png" id="left_player">
+        <img src="./img/mobi/Asset2.png" id="right_player">
+        <div>
+            <!-- <img src="img/fireball.png" id="fireball"> -->
+            <div class="loginPhone">
+                <img src="./img/logo-rmbg.png" alt="Logo">
+            </div>
+            <div class="titleText" style="text-align:center" id="text">
+                <img src="./img/mobi/Asset11.png" alt="">
+            </div>
+            <div class="conIndex">
+                <div class="loginBox">
+                    <a href=""><img src=".//img/mobi/Asset7.png" alt="" style="display: inline;width: 45%;height: auto;"></a>
+                    <a href=""> <img src="./img/mobi/Asset8.png" alt="" style="display: inline-block;width: 45%;height: auto;
+                    "></a>
+                    <div class="loginData">
+                        <form>
+                            <input class="userNum" id="userNum" placeholder="Tên tài khoản" autofocus required type="text" maxlength="13">
+                            <input class="passWord" id="passWord" placeholder="Mật khẩu " type="password" maxlength="20" required>
+                            <input class="confirmPassword" id="confirmPassword" type="password" placeholder="Nhập lại mật khẩu" maxlength="20" required>
+                            <!-- <input id="phone" name="phone" type="tel" placeholder="Mã vùng +84 nên không cần số 0"> -->
+                            <div class="verification">
+                                <input class="captcha" id="captcha" placeholder="Mã kiểm tra" type="text" required>
+                                <img id="imageId" alt="captcha" src=""><img />
+                                <input type="hidden" id="captchauuid" value=""></input>
+                                <input type="hidden" id="jmpassword" value=""></input>
+                            </div>
+                            <span id="msg"></span>
+                            <label class="submitBtn" onclick="return validate_form()" id="submitBtn">
+                                <!-- ĐĂNG KÝ<strong>+88K</strong> -->
+                                <img src="./img/mobi/Asset10.png" width="60%" alt="">
+                            </label>
+                            <!-- <input class="submitBtn" onclick="return validate_form()" id="submitBtn" type="submit" -->
+                            <!-- value="ĐĂNG KÝ +88K"> -->
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="rightIcon">
+                    <ul style="margin-top: 30px;">
+                        <li style="height:90px;"><a href="https://tawk.to/chat/5f07fa0067771f3813c0c50c/default"
+                                target="_blank"><img src="./20200903160112.png" alt=""></a></li>
+                        <li style="height:90px;"> <a href="https://zalo.me/v7hieuky" target="_blank"><img
+                                    src="./20200903160104.png" alt=""></a></li>
+                        <li style="height:90px;"><a href="https://www.facebook.com/v7thethao"
+                                target="_blank"><img src="./20200903160108.png" alt=""></a></li>
+                        <li style="height:90px;"><a href="https://www.youtube.com/channel/UCa8fZKpLjspNrqIfEFhIdIw"
+                                target="_blank"> <img src="./20200903160059.png" alt=""></a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="computer">
+        <div class="mainPage">
+        </div>
+        <img src="./img/Asset3.png" id="left_player" class="left_player_fixed" style="transform:scaleX(-1)">
+        <img src="./img/Asset2.png" id="right_player" class="right_player_fixed">
+        <div style="position: fixed;">
+            <div class="loginImg loginPhone" style="text-align:center;padding-top: 30px;">
+                <img src="./img/logo-rmbg.png" alt="" class="logo_pc">
+            </div>
+            <div style="text-align:center;padding-top: 20px;">
+                <img style="width: 60%;" src="./img/Asset5.png" alt="" id="">
+            </div>
+            <div class="loginBox loginBox-fixed">
+                <!-- <p class="loginText">ĐĂNG KÝ </p> -->
+                <img src=".//img/Asset7.png" alt="" style="display: inline;width: 43%;height: auto;">
+                <img src="./img/Asset8.png" alt="" style="display: inline-block;width: 43%;height: auto;">
+                <div class="loginData">
+                    <form>
+                        <input class="userNum" id="userNum" placeholder="Tên đăng nhập không viết hoa" autofocus required type="text" maxlength="13">
+                        <input class="passWord" id="passWord" placeholder="Mật khẩu " type="password" maxlength="20" required>
+                        <input class="confirmPassword" id="confirmPassword" type="password" placeholder="Nhập lại mật khẩu" maxlength="20" required>
+                        <!-- <input id="phone" name="phone" type="tel" placeholder="Mã vùng +84 nên không cần số 0">
+                       -->
+                        <div class="verification">
+                            <input class="captcha" id="captcha" placeholder="Mã kiểm tra" type="text" required>
+                            <img id="imageId" alt="captcha" src=""><img />
+                            <input type="hidden" id="captchauuid" value=""></input>
+                            <input type="hidden" id="jmpassword" value=""></input>
+                        </div>
+                        <span id="msg"></span>
+                        <label class="submitBtn" onclick="return validate_form()" id="submitBtn">
+                            <img src="./img/Asset4.png" width="65%" alt="">
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="peopleImg">
+                <img src="./6.png" alt="">
+            </div> -->
+        </div>
+        <!-- <div class="card-install">
+            <img src="./img/Screen Shot 2022-08-18 at 00.46.15.png" style="width: 300px ;height:70px;padding-right: 20px ;" alt="">
+            <img src="./img/Screen Shot 2022-08-18 at 00.46.29.png" style="width: 300px;height:70px ;padding-left: 20px;" alt="">
+            </div> -->
+    </div>
+    </div>
+    <script charset="ga2312" src="./js/intlTelInputs.js"></script>
+    <script src="js/sha.js"></script>
+    <script type="text/javascript" src="./js/register.js"></script>
+    <script>
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        console.log("Mobile");
+        $(".MobileTerminal").css({
+            "display": "block"
+        })
+        $(".computer").css({
+            "display": "none"
+        })
+        $(".computer").empty()
+        $("#phone").intlTelInput({
+
+            defaultCountry: "vn",
+            utilsScript: "./js/utils.js",
+        });
+    } else {
+        console.log("PC");
+        $(".computer").css({
+            "display": "block"
+        })
+        $(".MobileTerminal").empty()
+        $("#phone").intlTelInput({
+
+            defaultCountry: "vn",
+            utilsScript: "./js/utils.js",
+        });
+    }
+    </script>
+</body>
+
+</html>
