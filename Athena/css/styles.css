@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+
+h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+	font-size: 160%;
+	-webkit-text-size-adjust: none;
+	font-weight: 400;
+}
+img {vertical-align: middle;max-width: 100%;height: auto;flex-shrink: 0;}
+table {width: 100%}
+p {margin: 0 0 1.5em;}
+div > p:last-child{margin-bottom: 0}
+*{box-sizing: border-box;outline: none;}
+/*==========================================================================*/
+/*                            Container                                     */
+/*==========================================================================*/
+html {background: none;}
+body {color: #fff;font-family: 'Roboto', sans-serif;}
+.inner {width:1200px;margin: 0 auto;}
+#wrapper {min-width:1220px;overflow: hidden}
+a{text-decoration: none;color: #000;}
+a:hover{color: var(--org);}
+
+/*==========================================================================*/
+/*                               ALL                                        */
+/*==========================================================================*/
+p,
+dd,
+dt,
+li,
+th,
+td{line-height: 1.75em}
+
+/* FONT PAGE  */
+.ttl h3,
+.en,
+.big}
+.italic{font-style: italic}
+.bold{font-weight: bold;font-size: 120%}
+
+/* FIX FONT + PADDING */
+.pdb30{padding: 0 0 30px}
+.pdb50{padding: 0 0 50px;}
+.mgb0{margin-bottom: 0;}
+.mgb30{margin-bottom: 30px;}
+.mgb50{margin-bottom: 50px;}
+.fs12{font-size: 12px;}
+.fs18{font-size: 18px;}
+
+/* COLOR */
+:root{
+	--org: #ff7d00;
+	--purple: #4e2e90;
+}
+
+.org{color: var(--org)}
+.purple{color: var(--purple)}
+
+/*==========================================================================*/
+/*                               Header                                     */
+/*==========================================================================*/
+
+header{position: fixed;top: 0;left: 0;width: 100%;z-index: 10;}
+header .head_content{width: 1260px;padding: 15px 0;max-width: 100%;display: flex;justify-content: space-between;align-items: center;margin: 0 auto}
+header #logo{width: 200px;}
+
+/* NAV */
+nav{display: flex;align-items: center;}
+nav ul{display: flex;}
+nav ul li{margin-right: 30px;}
+nav ul li a{font-size: 18px;font-weight: 700;color: #fff;text-decoration: none;text-transform: capitalize;}
+nav p{margin-bottom:0;}
+nav p a{margin-bottom:0;border-radius: 999px;background: rgba(255, 255, 255, 0.7);padding: 5px 10px;position: relative;width:100px;height: 24px;font-size: 12px;color: var(--purple);display: flex;align-items: center;justify-content: center;font-weight: 500;position: relative;}
+nav p a::before{background: url('../images/ic_lang.png') center /cover no-repeat;width: 12px;height: 12px;content: '';position: absolute;top: calc(50% - 6px);left: 15px;}
+nav p a::after{background: url('../images/ic_btn_lang.png') center /cover no-repeat;width: 6px;height: 5px;content: '';position: absolute;top: calc(50% - 2px);right: 5px;}
+
+/* BUTTON SP */
+.btn_open{width: 60px;height:60px;margin: 0;position: absolute;top: 0px;right: 0;}
+.btn_side{display:block;cursor:pointer;width:100%;height:100%;text-align:center;z-index:9999;position:relative;margin:0 auto;position:absolute;border-radius:0}
+.btn_side span{display:block;position:absolute;height: 2px;width:15px;background:#8352a5;opacity:1;transform:rotate(0deg);transition:.3s ease-in-out}
+.btn_side span:nth-child(even){left:calc(50% + 1px);}
+.btn_side span:nth-child(odd){left:calc(50% - 14px);}
+.btn_side span:nth-child(1),.btn_side span:nth-child(2){top:21px}
+.btn_side span:nth-child(3),.btn_side span:nth-child(4){top:30px}
+.btn_side span:nth-child(5),.btn_side span:nth-child(6){top:39px}
+
+.btn_side.open{background: #8352a5}
+.btn_side.open span{background: #fff}
+.btn_side.open span:nth-child(1),.btn_side.open span:nth-child(6){transform:rotate(45deg)}
+.btn_side.open span:nth-child(2),.btn_side.open span:nth-child(5){transform:rotate(-45deg)}
+.btn_side.open span:nth-child(1){left:calc(50% - 12px);top:25px}
+.btn_side.open span:nth-child(2){left:calc(50% - 2px);top:25px}
+.btn_side.open span:nth-child(3){left:-50%;opacity:0}
+.btn_side.open span:nth-child(4){left:100%;opacity:0}
+.btn_side.open span:nth-child(5){left:calc(50% - 12px);top:36px}
+.btn_side.open span:nth-child(6){left:calc(50% - 2px);top:36px}
+
+#btn_top{position:fixed;right: 15px;bottom: 30px;z-index: 9;cursor: pointer;box-sizing: border-box;margin-bottom: 0;display: none;}
+#btn_top:hover{opacity: 0.7;}
+
+
+/*==========================================================================*/
+/*                               Main                                       */
+/*==========================================================================*/
+main{position: relative;z-index: 2;background: url('../images/main_bg.jpg') center /cover fixed no-repeat;}
+
+/* ICON BACKGROUND */
+.icon_bg{position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;}
+.icon_bg .icon{position: absolute;}
+.icon_bg .icon1{animation: iconFly 10s infinite linear;left: 5%}
+.icon_bg .icon2{animation: iconFly 20s infinite ease;left: 15%}
+.icon_bg .icon3{animation: iconFly 18s infinite linear;left: 25%}
+.icon_bg .icon4{animation: iconFly 30s infinite ease;left: 35%}
+.icon_bg .icon5{animation: iconFly 12s infinite linear;left: 45%}
+.icon_bg .icon6{animation: iconFly 24s infinite linear;left: 55%}
+.icon_bg .icon7{animation: iconFly 25s infinite ease;left: 65%}
+.icon_bg .icon8{animation: iconFly 17s infinite linear;left: 75%}
+.icon_bg .icon9{animation: iconFly 14s infinite linear;left: 85%}
+.icon_bg .icon10{animation: iconFly 5s infinite ease;left: 95%}
+.icon_bg .icon11{animation: iconFly 25s infinite linear;left: 90%}
+.icon_bg .icon12{animation: iconFly 15s infinite linear;left: 83%}
+.icon_bg .icon13{animation: iconFly 9s infinite linear;left: 77%}
+.icon_bg .icon14{animation: iconFly 23s infinite ease;left: 69%}
+.icon_bg .icon15{animation: iconFly 6s infinite linear;left: 54%}
+.icon_bg .icon16{animation: iconFly 12s infinite linear;left: 43%;scale: 1.1;}
+.icon_bg .icon17{animation: iconFly 27s infinite ease;left: 88%;scale:0.9;}
+.icon_bg .icon18{animation: iconFly 35s infinite linear;left: 99%;scale: 0.8;}
+
+/* MATRIX BACKGROUND */
+.matrix_bg{position: fixed;width: 40%;height: 75vh;opacity: 0.2;z-index: -2;overflow: hidden;right: 0;top: 0;background: none;mix-blend-mode: screen}
+
+
+/* MAIN VISUAL */
+.main_visual{position: relative;height: 100vh;}
+.main_visual .polium{position: absolute;bottom: 0;right: 0;width: 50vw;}
+.main_visual .rocket_wrapper{position: absolute;width: 30vw;height: calc(30vw * 988 / 744);right: 5%;bottom: 0;}
+.main_visual .rocket{position: absolute;width: 100%;height:100%;z-index: 2;bottom: 0;right: 0;mix-blend-mode: screen;background: url('../images/rocket_bg.png') center /cover no-repeat;}
+.main_visual .rocket_it{position: absolute;width: 100%;height:100%;position: absolute;bottom: 0;right: 0;content: '';width: 100%;height: 100%;z-index: 0;background: url('../images/rocket_it.png') center /cover no-repeat;}
+
+.main_visual .inner{display: flex;align-items: center;height: 100%;width: 900px;max-width: 100%}
+
+.main_planet{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;pointer-events: none;}
+.main_planet .planet{position: absolute;margin-bottom:0;animation: rotatePlanet 60s infinite linear;}
+.main_planet .planet1{top: 40px;right: -60px;}
+.main_planet .planet2{bottom: -40px;left: -90px;animation: rotatePlanetRe 30s infinite linear;}
+.main_planet .planet3{top: 80px;right: 50%}
+.main_planet .planet4{bottom: 25%;right: 5%;animation: rotatePlanetRe 40s infinite linear;}
+
+
+
+
+/*==========================================================================*/
+/*                               Footer                                     */
+/*==========================================================================*/
+
+
+/*==========================================================================*/
+/*                               ANIMATION                                  */
+/*==========================================================================*/
+.rotate{margin:0;padding: 0;}
+.planet img{}
+
+@keyframes rotatePlanet {
+    0% {transform: rotateZ(0)}
+    50% {transform: rotateZ(-180deg)}
+    100% {transform: rotateZ(0)}
+}
+
+@keyframes rotatePlanetRe {
+    0% {transform: rotateZ(0)}
+    50% {transform: rotateZ(180deg)}
+    100% {transform: rotateZ(0)}
+}
+
+@keyframes iconFly {
+    0% {transform: rotate(0);top:120%;opacity: 0}
+    10% {transform: rotate(0);top:120%;opacity: 1}
+    50% {transform: rotate(360deg)}
+    90%{top:-20%}
+    95%{top: -20%;opacity: 0}
+    100%{top: 120%;opacity: 0}
+}
+
+
+@keyframes star {
+    0% {transform: rotate3d(0);}
+    25%{transform: rotate3d(1, 1, 1, 45deg)}
+    50%{transform: rotate3d(2, -1, -1, -0.2turn);}
+    75%{transform: rotate3d(1, 1, 1, 45deg);}
+    100% {transform: rotate3d(0);}
+}
+
+
+
