@@ -1,0 +1,72 @@
+/* responsive */
+.sp {display: none;}
+.pc {display: block;}
+
+/* PC ONLY */
+@media screen and (min-width: 769px) {
+    nav p a:hover{color: var(--purple);opacity: 0.7}
+}
+
+/* SCREEN LAPTOP */
+@media screen and (min-width: 768px) and (max-width: 1440px){
+  
+
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    input,
+    button,
+    textarea,
+    select,
+    p,
+    blockquote,
+    th,
+    td,
+    pre,
+    address,
+    li,
+    dt,
+    dd{font-size: 15px;}
+
+
+
+    #wrapper,
+    header,
+    main,
+    footer,
+    .inner {width: 100% !important;min-width: inherit !important;}
+    .inner {box-sizing: border-box;padding: 0 15px;}
+    .sp {display: block;}
+    .pc {display: none;}
+    /*---*/
+
+    /*==========================================================================*/
+    /*                               ALL                                        */
+    /*==========================================================================*/
+    header{}
+
+    /*==========================================================================*/
+    /*                               MAIN                                       */
+    /*==========================================================================*/
+    
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+
+}
+
+/* SMALL MOBILE - Iphone 5 */
+@media screen and (max-width: 380px) {
+}
+
+@media screen and (max-width: 320px) {
+
+}
